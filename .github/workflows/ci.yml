@@ -32,10 +32,10 @@ jobs:
         run: |
           docker exec "$(cat ${container_id})" nvchecker -c /nvchecker/nvchecker.toml
           nvcmp_output=$(docker exec "$(cat ${container_id})" nvcmp -c /nvchecker/nvchecker.toml)
-          echo "nvcmp_output=$nvcmp_output" >> $GITHUB_ENV
+          if [[ $nvcmp_output ]]; then HAS_CHANGED='true' ; fi
 
       - name: Create Issue.
-        if: $nvcmp_output
+        if: steps.vars.outputs.HAS_CHANGED
         uses: JasonEtco/create-an-issue@v2
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
