@@ -35,7 +35,7 @@ jobs:
           echo "nvcmp_output=$nvcmp_output" >> $GITHUB_ENV
 
       - name: Create Issue.
-        if: [[ $nvcmp_output ]]
+        if: $nvcmp_output
         uses: JasonEtco/create-an-issue@v2
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
