@@ -35,7 +35,7 @@ jobs:
           if [[ $nvcmp_output ]]; then HAS_CHANGED='true' ; fi
 
       - name: Create Issue.
-        if: ${{ env.HAS_CHANGED='true' }}
+        if: env.HAS_CHANGED == 'true'
         uses: JasonEtco/create-an-issue@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
