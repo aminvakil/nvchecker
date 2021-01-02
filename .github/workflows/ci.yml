@@ -16,13 +16,13 @@ jobs:
       - name: Check out the codebase.
         uses: actions/checkout@v2
 
-      - name: Pull devel image.
-        run: docker pull quay.io/aminvakil/archlinux:devel
+      - name: Pull base image.
+        run: docker pull quay.io/aminvakil/archlinux:latest
 
-      - name: Run a container of devel image and mount package on it.
+      - name: Run a container of base image and mount package on it.
         run: |
           container_id=$(mktemp)
-          docker run --detach --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro -v "${PWD}":/nvchecker quay.io/aminvakil/archlinux:devel > "${container_id}"
+          docker run --detach --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro -v "${PWD}":/nvchecker quay.io/aminvakil/archlinux:latest > "${container_id}"
           echo "container_id=$container_id" >> $GITHUB_ENV
 
       - name: Install nvchecker
