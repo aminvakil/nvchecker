@@ -129,13 +129,6 @@ use_latest_release = true
 source = "debianpkg"
 debianpkg = "devscripts"
 
-[thunderbird-extension-enigmail]
-source = "gitlab"
-gitlab = "enigmail/enigmail"
-prefix = "enigmail-"
-use_max_tag = true
-exclude_regex = ".*(alpha|beta).*"
-
 [exploitdb]
 source = "github"
 github = "offensive-security/exploitdb"
