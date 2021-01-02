@@ -32,7 +32,7 @@ jobs:
         run: |
           docker exec "$(cat ${container_id})" nvcmp -c /nvchecker/nvchecker.toml
           nvcmp_output=$(docker exec "$(cat ${container_id})" nvcmp -c /nvchecker/nvchecker.toml)
-          echo "nvcmp_output=$(nvcmp_output)" >> $GITHUB_ENV
+          echo "nvcmp_output=$nvcmp_output" >> $GITHUB_ENV
 
       - name: Check output
         run: if [[ $nvcmp_output ]]; then echo "there is something"; fi

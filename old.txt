@@ -1,6 +1,6 @@
 {
   "busybox": "1.32.0",
-  "checkbashisms": "2.20.5",
+  "checkbashisms": "2.20.1",
   "glib2-debug": "2.66.4-1",
   "gtk3-debug": "3.24.24-1",
   "mupdf": "1.18.0-1",
