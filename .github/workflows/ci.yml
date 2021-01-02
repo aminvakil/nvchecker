@@ -38,7 +38,7 @@ jobs:
         if: steps.vars.outputs.HAS_CHANGED
         uses: JasonEtco/create-an-issue@v2
         env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Stop and remove container forcefully.
         run: docker rm -f "$(cat ${container_id})"
