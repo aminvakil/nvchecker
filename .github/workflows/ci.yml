@@ -33,6 +33,7 @@ jobs:
           docker exec "$(cat ${container_id})" nvchecker -c /nvchecker/nvchecker.toml
           nvcmp_output=$(docker exec "$(cat ${container_id})" nvcmp -c /nvchecker/nvchecker.toml)
           if [[ $nvcmp_output ]]; then HAS_CHANGED='true' ; fi
+          echo "HAS_CHANGED=$HAS_CHANGED" >> $GITHUB_ENV
 
       - name: Create Issue.
         if: env.HAS_CHANGED == 'true'
