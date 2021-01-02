@@ -158,20 +158,6 @@ source = "github"
 github = "EFFOrg/https-everywhere"
 use_max_tag = true
 
-[firefox-adblock-plus]
-source = "cmd"
-cmd = "firefox-extension-testupdate.sh adblock-plus adblock_plus raw"
-#url = https://hg.adblockplus.org/adblockpluschrome/raw-file/tip/.hgtags
-#regex = [a-z0-9] ([0-9.]+)
-
-[firefox-noscript]
-source = "cmd"
-cmd = "firefox-extension-testupdate.sh noscript noscript_security_suite raw"
-
-[lastpass]
-source = "cmd"
-cmd = "firefox-extension-testupdate.sh lastpass-password-manager lastpass_password_manager raw"
-
 [git-crypt]
 source = "github"
 github = "AGWA/git-crypt"
