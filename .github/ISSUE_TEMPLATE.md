@@ -1,4 +1,4 @@
 ---
 title: {{ date | date('dddd, MMMM Do') }}
 ---
-{{ nvcmp_output }}.
+env.nvcmp_output
