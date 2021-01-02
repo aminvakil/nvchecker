@@ -34,8 +34,11 @@ jobs:
           nvcmp_output=$(docker exec "$(cat ${container_id})" nvcmp -c /nvchecker/nvchecker.toml)
           echo "nvcmp_output=$nvcmp_output" >> $GITHUB_ENV
 
-      - name: Check output
-        run: if [[ $nvcmp_output ]]; then echo "there is something"; fi
+      - name: Create Issue.
+        if: [[ $nvcmp_output ]]
+        uses: JasonEtco/create-an-issue@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Stop and remove container forcefully.
         run: docker rm -f "$(cat ${container_id})"
