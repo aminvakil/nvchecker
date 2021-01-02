@@ -1,3 +1,3 @@
 ---
-title: {{ env.nvcmp_output }}
+title: "{{ env.nvcmp_output }}"
 ---
