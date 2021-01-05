@@ -89,3 +89,21 @@ registry = "docker.io"
 container = "library/debian"
 include_regex = "buster-.*"
 exclude_regex = "buster-.*-slim"
+
+[ubuntu16]
+source = "container"
+registry = "docker.io"
+container = "library/ubuntu"
+include_regex = "xenial-.*"
+
+[ubuntu18]
+source = "container"
+registry = "docker.io"
+container = "library/ubuntu"
+include_regex = "bionic-.*"
+
+[ubuntu20]
+source = "container"
+registry = "docker.io"
+container = "library/ubuntu"
+include_regex = "focal-.*"
