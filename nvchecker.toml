@@ -52,3 +52,9 @@ source = "container"
 registry = "docker.io"
 container = "library/python"
 include_regex = "3.7.*-alpine.*"
+
+[alpine]
+source = "container"
+registry = "docker.io"
+container = "library/alpine"
+include_regex = "3.*"
