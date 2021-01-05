@@ -70,3 +70,15 @@ source = "container"
 registry = "docker.io"
 container = "library/archlinux"
 include_regex = "base-2.*"
+
+[centos7]
+source = "container"
+registry = "docker.io"
+container = "library/centos"
+include_regex = "7.*"
+
+[centos8]
+source = "container"
+registry = "docker.io"
+container = "library/centos"
+include_regex = "8.*"
