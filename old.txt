@@ -7,6 +7,7 @@
   "jmeter-plugins-manager": "20201202.071649",
   "obfs4proxy": "0.0.11",
   "python:3.7-alpine": "3.7.9-alpine3.12",
+  "python:3.8-alpine": "3.8.7-alpine3.12",
   "tor-browser": "10.0.7-1",
   "xssmap": "20200305.152024"
 }
