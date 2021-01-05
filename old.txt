@@ -1,10 +1,10 @@
 {
-  "assetfinder": "v0.1.0",
-  "fcct": "v0.8.0",
-  "gnome-shell-extension-workspace-matrix": "v5.0.0-beta",
+  "assetfinder": "0.1.0",
+  "fcct": "0.8.0",
+  "gnome-shell-extension-workspace-matrix": "5.0.0-beta",
   "google-tsunami-security-scanner": "0.0.2",
   "jmeter-plugins-manager": "20201202.071649",
-  "obfs4proxy": "obfs4proxy-0.0.11",
+  "obfs4proxy": "0.0.11",
   "tor-browser": "10.0.7-1",
   "xssmap": "20200305.152024"
 }
