@@ -4,6 +4,7 @@
   "assetfinder": "0.1.0",
   "centos7": "7.9.2009",
   "centos8": "8.3.2011",
+  "debian10": "buster-20201209",
   "fcct": "0.8.0",
   "gnome-shell-extension-workspace-matrix": "4.0.3",
   "google-tsunami-security-scanner": "0.0.2",
