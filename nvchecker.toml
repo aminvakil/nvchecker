@@ -2,7 +2,7 @@
 oldver = "old.txt"
 newver = "new.txt"
 
-# aur maintained by me
+# aur packages maintained by me
 
 [assetfinder]
 source = "github"
@@ -44,3 +44,11 @@ github = "tor-browser"
 [xssmap]
 source = "github"
 github = "secdec/xssmap"
+
+# docker base images i use
+
+["python:3.7-alpine"]
+source = "container"
+registry = "docker.io"
+container = "library/python"
+include_regex = "3.7.*-alpine.*"
