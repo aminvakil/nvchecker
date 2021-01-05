@@ -64,3 +64,9 @@ source = "container"
 registry = "docker.io"
 container = "library/alpine"
 include_regex = "3.*"
+
+[archlinux]
+source = "container"
+registry = "docker.io"
+container = "library/archlinux"
+include_regex = "base-2.*"

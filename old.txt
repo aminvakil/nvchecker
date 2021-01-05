@@ -1,5 +1,6 @@
 {
   "alpine": "3.12.3",
+  "archlinux": "base-20201220.0.11678",
   "assetfinder": "0.1.0",
   "fcct": "0.8.0",
   "gnome-shell-extension-workspace-matrix": "4.0.3",
