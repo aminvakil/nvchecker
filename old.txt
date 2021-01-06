@@ -8,7 +8,7 @@
   "fcct": "0.8.0",
   "gnome-shell-extension-workspace-matrix": "4.0.3",
   "google-tsunami-security-scanner": "0.0.2",
-  "jmeter-plugins-manager": "20201202.071649",
+  "jmeter-plugins-manager": "20210106.073835",
   "obfs4proxy": "0.0.11",
   "python:3.7-alpine": "3.7.9-alpine3.12",
   "python:3.8-alpine": "3.8.7-alpine3.12",
