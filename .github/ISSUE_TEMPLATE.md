@@ -1,4 +1,4 @@
 ---
-title: "{{ date | date('dddd, MMMM Do') }}"
+title: Upgrade
 ---
 "{{ env.nvcmp_output }}"
