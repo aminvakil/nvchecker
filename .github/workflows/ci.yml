@@ -39,7 +39,7 @@ jobs:
           echo 'EOF' >> $GITHUB_ENV
 
       - name: Create Issue.
-        if: env.HAS_CHANGED == 'true'
+        if: env.HAS_CHANGED == 'true' && github.event_name != 'pull_request'
         uses: JasonEtco/create-an-issue@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
