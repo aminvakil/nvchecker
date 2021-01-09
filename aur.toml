@@ -1,0 +1,46 @@
+[__config__]
+oldver = "aur_old.txt"
+newver = "aur_new.txt"
+
+# aur packages maintained by me
+
+[assetfinder]
+source = "github"
+github = "tomnomnom/assetfinder"
+use_max_tag = true
+prefix = "v"
+
+[fcct]
+source = "github"
+github = "coreos/fcct"
+use_latest_release = true
+prefix = "v"
+
+[gnome-shell-extension-workspace-matrix]
+source = "github"
+github = "mzur/gnome-shell-wsmatrix"
+use_latest_release = true
+prefix = "v"
+
+[google-tsunami-security-scanner]
+source = "github"
+github = "google/tsunami-security-scanner"
+use_latest_release = true
+
+[jmeter-plugins-manager]
+source = "github"
+github = "undera/jmeter-plugins"
+
+[obfs4proxy]
+source = "github"
+github = "Yawning/obfs4"
+use_max_tag = true
+prefix = "obfs4proxy-"
+
+[tor-browser]
+source = "aur"
+github = "tor-browser"
+
+[xssmap]
+source = "github"
+github = "secdec/xssmap"
