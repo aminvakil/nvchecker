@@ -78,6 +78,7 @@ jobs:
           delete-branch: true
           title: 'Bump'
           body: |
+            Fixes #${{ steps.create-issue.outputs.number }}
             - $aur_nvcmp_output
             - $docker_nvcmp_output
 
