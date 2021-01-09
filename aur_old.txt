@@ -4,7 +4,7 @@
   "gnome-shell-extension-workspace-matrix": "4.0.3",
   "google-tsunami-security-scanner": "0.0.2",
   "jmeter-plugins-manager": "20210107.111420",
-  "obfs4proxy": "0.0.11",
+  "obfs4proxy": "0.0.10",
   "tor-browser": "10.0.7-1",
   "xssmap": "20200305.152024"
 }
