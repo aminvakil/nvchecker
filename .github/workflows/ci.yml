@@ -54,12 +54,16 @@ jobs:
         uses: JasonEtco/create-an-issue@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          update_existing: true
 
       - name: Create Docker Issue.
         if: env.DOCKER_HAS_CHANGED == 'true' && github.event_name != 'pull_request'
         uses: JasonEtco/create-an-issue@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          update_existing: true
 
       - name: Create Pull Request
         if: (env.AUR_HAS_CHANGED == 'true' || env.DOCKER_HAS_CHANGED == 'true') && github.event_name != 'pull_request'
