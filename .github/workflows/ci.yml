@@ -50,20 +50,24 @@ jobs:
           mv docker_new.txt docker_old.txt
 
       - name: Create AUR Issue.
+        id: create-issue
         if: env.AUR_HAS_CHANGED == 'true' && github.event_name != 'pull_request'
         uses: JasonEtco/create-an-issue@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           update_existing: true
+          filename: .github/AUR_ISSUE_TEMPLATE.md
 
       - name: Create Docker Issue.
+        id: create-issue
         if: env.DOCKER_HAS_CHANGED == 'true' && github.event_name != 'pull_request'
         uses: JasonEtco/create-an-issue@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           update_existing: true
+          filename: .github/DOCKER_ISSUE_TEMPLATE.md
 
       - name: Create Pull Request
         if: (env.AUR_HAS_CHANGED == 'true' || env.DOCKER_HAS_CHANGED == 'true') && github.event_name != 'pull_request'
@@ -78,7 +82,7 @@ jobs:
           delete-branch: true
           title: 'Bump'
           body: |
-            Fixes #${{ steps.create-issue.outputs.number }}
+            Fixes ${{ steps.create-issue.outputs.url }}
             - $aur_nvcmp_output
             - $docker_nvcmp_output
 
