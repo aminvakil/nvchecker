@@ -84,8 +84,8 @@ jobs:
           body: |
             Fixes ${{ steps.aur-create-issue.outputs.url }}
             Fixes ${{ steps.docker-create-issue.outputs.url }}
-            - $aur_nvcmp_output
-            - $docker_nvcmp_output
+            - ${aur_nvcmp_output}
+            - ${docker_nvcmp_output}
 
           labels: |
             automated pr
