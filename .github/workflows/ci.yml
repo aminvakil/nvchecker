@@ -44,8 +44,6 @@ jobs:
           echo 'docker_nvcmp_output<<EOF' >> $GITHUB_ENV
           echo $docker_nvcmp_output >> $GITHUB_ENV
           echo 'EOF' >> $GITHUB_ENV
-          echo "aur_nvcmp_output=$aur_nvcmp_output" >> $GITHUB_ENV
-          echo "docker_nvcmp_output=$docker_nvcmp_output" >> $GITHUB_ENV
           mv aur_new.txt aur_old.txt
           mv docker_new.txt docker_old.txt
 
