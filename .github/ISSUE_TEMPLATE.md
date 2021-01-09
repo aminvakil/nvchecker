@@ -1,4 +1,5 @@
 ---
 title: Upgrade
 ---
-"{{ env.nvcmp_output }}"
+"{{ env.aur_nvcmp_output }}"
+"{{ env.docker_nvcmp_output }}"
