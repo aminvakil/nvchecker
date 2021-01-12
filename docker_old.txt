@@ -1,9 +1,9 @@
 {
   "alpine": "3.12.3",
-  "archlinux": "base-20201220.0.11678",
+  "archlinux": "base-20210110.0.13332",
   "centos7": "7.9.2009",
   "centos8": "8.3.2011",
-  "debian10": "buster-20201209",
+  "debian10": "buster-20210111",
   "python:3.7-alpine": "3.7.9-alpine3.12",
   "python:3.8-alpine": "3.8.7-alpine3.12",
   "ubuntu16": "xenial-20201030",
