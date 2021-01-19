@@ -1,4 +1,4 @@
 ---
 title: Docker Upgrade
 ---
-"{{ env.docker_nvcmp_output }}"
+{{ env.docker_nvcmp_output }}

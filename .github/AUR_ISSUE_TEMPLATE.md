@@ -1,4 +1,4 @@
 ---
 title: AUR Upgrade
 ---
-"{{ env.aur_nvcmp_output }}"
+{{ env.aur_nvcmp_output }}
