@@ -67,21 +67,34 @@ jobs:
           update_existing: true
           filename: .github/DOCKER_ISSUE_TEMPLATE.md
 
-      - name: Create Pull Request
-        if: (env.AUR_HAS_CHANGED == 'true' || env.DOCKER_HAS_CHANGED == 'true') && github.event_name != 'pull_request'
+      - name: Create AUR Pull Request
+        if: env.AUR_HAS_CHANGED == 'true' && github.event_name != 'pull_request'
         uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: Bump
+          commit-message: AUR Bump
           committer: GitHub <noreply@github.com>
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           signoff: false
-          branch: bump
+          branch: aurbump
           delete-branch: true
-          title: 'Bump'
-          body: |
-            Fixes ${{ steps.aur-create-issue.outputs.url }}
-            Fixes ${{ steps.docker-create-issue.outputs.url }}
+          title: 'AUR Bump'
+          body: Fixes ${{ steps.aur-create-issue.outputs.url }}
+          draft: false
+
+      - name: Create Docker Pull Request
+        if: env.DOCKER_HAS_CHANGED == 'true' && github.event_name != 'pull_request'
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: Docker Bump
+          committer: GitHub <noreply@github.com>
+          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+          signoff: false
+          branch: dockerbump
+          delete-branch: true
+          title: 'Docker Bump'
+          body: Fixes ${{ steps.docker-create-issue.outputs.url }}
           draft: false
 
       - name: Stop and remove container forcefully.
