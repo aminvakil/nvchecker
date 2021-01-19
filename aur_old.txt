@@ -3,7 +3,7 @@
   "fcct": "0.9.0",
   "gnome-shell-extension-workspace-matrix": "4.0.3",
   "google-tsunami-security-scanner": "0.0.2",
-  "jmeter-plugins-manager": "20210118.081847",
+  "jmeter-plugins-manager": "20210119.203022",
   "obfs4proxy": "0.0.11",
   "tor-browser": "10.0.8-1",
   "xssmap": "20200305.152024"
