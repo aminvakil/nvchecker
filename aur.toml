@@ -28,8 +28,8 @@ github = "google/tsunami-security-scanner"
 use_latest_release = true
 
 [jmeter-plugins-manager]
-source = "github"
-github = "undera/jmeter-plugins"
+source = "cmd"
+cmd = "curl -Is https://jmeter-plugins.org/get/ | grep Location | sed 's:.*/::;s:.*-::;s:.jar::'"
 
 [obfs4proxy]
 source = "github"
