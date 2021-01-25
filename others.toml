@@ -1,0 +1,9 @@
+[__config__]
+oldver = "others_old.txt"
+newver = "others_new.txt"
+
+# other packages i need
+
+[ocserv]
+source = "cmd"
+cmd = "curl -s ftp://ftp.infradead.org/pub/ocserv/ | awk '{print $9}' | tail -n 1 | sed 's:.*-::;s:.tar.*::'"
