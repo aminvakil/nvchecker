@@ -32,20 +32,28 @@ jobs:
         run: |
           docker exec "$(cat ${container_id})" nvchecker -c /nvchecker/aur.toml
           docker exec "$(cat ${container_id})" nvchecker -c /nvchecker/docker.toml
+          docker exec "$(cat ${container_id})" nvchecker -c /nvchecker/others.toml
           aur_nvcmp_output=$(docker exec "$(cat ${container_id})" nvcmp -c /nvchecker/aur.toml)
           docker_nvcmp_output=$(docker exec "$(cat ${container_id})" nvcmp -c /nvchecker/docker.toml)
+          others_nvcmp_output=$(docker exec "$(cat ${container_id})" nvcmp -c /nvchecker/others.toml)
           if [[ $aur_nvcmp_output ]]; then AUR_HAS_CHANGED='true' ; fi
           if [[ $docker_nvcmp_output ]]; then DOCKER_HAS_CHANGED='true' ; fi
+          if [[ $others_nvcmp_output ]]; then OTHERS_HAS_CHANGED='true' ; fi
           echo "AUR_HAS_CHANGED=$AUR_HAS_CHANGED" >> $GITHUB_ENV
           echo "DOCKER_HAS_CHANGED=$DOCKER_HAS_CHANGED" >> $GITHUB_ENV
+          echo "OTHERS_HAS_CHANGED=$DOCKER_HAS_CHANGED" >> $GITHUB_ENV
           echo 'aur_nvcmp_output<<EOF' >> $GITHUB_ENV
           echo $aur_nvcmp_output >> $GITHUB_ENV
           echo 'EOF' >> $GITHUB_ENV
           echo 'docker_nvcmp_output<<EOF' >> $GITHUB_ENV
           echo $docker_nvcmp_output >> $GITHUB_ENV
           echo 'EOF' >> $GITHUB_ENV
+          echo 'others_nvcmp_output<<EOF' >> $GITHUB_ENV
+          echo $others_nvcmp_output >> $GITHUB_ENV
+          echo 'EOF' >> $GITHUB_ENV
           mv aur_new.txt aur_old.txt
           mv docker_new.txt docker_old.txt
+          mv others_new.txt others_old.txt
 
       - name: Create AUR Issue.
         id: aur-create-issue
@@ -66,6 +74,16 @@ jobs:
         with:
           update_existing: true
           filename: .github/DOCKER_ISSUE_TEMPLATE.md
+
+      - name: Create Others Issue.
+        id: others-create-issue
+        if: env.OTHERS_HAS_CHANGED == 'true' && github.event_name != 'pull_request'
+        uses: JasonEtco/create-an-issue@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          update_existing: true
+          filename: .github/OTHERS_ISSUE_TEMPLATE.md
 
       - name: Create AUR Pull Request
         if: env.AUR_HAS_CHANGED == 'true' && github.event_name != 'pull_request'
@@ -95,6 +113,21 @@ jobs:
           delete-branch: true
           title: 'Docker Bump'
           body: Fixes ${{ steps.docker-create-issue.outputs.url }}
+          draft: false
+
+      - name: Create Others Pull Request
+        if: env.OTHERS_HAS_CHANGED == 'true' && github.event_name != 'pull_request'
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: ${{ env.others_nvcmp_output }}
+          committer: GitHub <noreply@github.com>
+          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+          signoff: false
+          branch: othersbump
+          delete-branch: true
+          title: 'Others Bump'
+          body: Fixes ${{ steps.others-create-issue.outputs.url }}
           draft: false
 
       - name: Stop and remove container forcefully.
