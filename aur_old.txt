@@ -5,6 +5,6 @@
   "google-tsunami-security-scanner": "0.0.2",
   "jmeter-plugins-manager": "1.6",
   "obfs4proxy": "0.0.11",
-  "tor-browser": "10.0.8-1",
+  "tor-browser": "10.0.9-1",
   "xssmap": "20200305.152024"
 }
