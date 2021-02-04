@@ -4,17 +4,17 @@ newver = "docker_new.txt"
 
 # docker base images i use
 
-["python:3.7-alpine"]
-source = "container"
-registry = "docker.io"
-container = "library/python"
-include_regex = "3.7.*-alpine.*"
-
-["python:3.8-alpine"]
-source = "container"
-registry = "docker.io"
-container = "library/python"
-include_regex = "3.8.*-alpine.*"
+#["python:3.7-alpine"]
+#source = "container"
+#registry = "docker.io"
+#container = "library/python"
+#include_regex = "3.7.*-alpine.*"
+#
+#["python:3.8-alpine"]
+#source = "container"
+#registry = "docker.io"
+#container = "library/python"
+#include_regex = "3.8.*-alpine.*"
 
 [alpine]
 source = "container"
