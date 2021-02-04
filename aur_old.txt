@@ -1,6 +1,6 @@
 {
   "assetfinder": "0.1.1",
-  "fcct": "0.9.0",
+  "fcct": "0.10.0",
   "gnome-shell-extension-workspace-matrix": "4.0.3",
   "google-tsunami-security-scanner": "0.0.2",
   "jmeter-plugins-manager": "1.6",
