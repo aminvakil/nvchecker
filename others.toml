@@ -12,3 +12,7 @@ cmd = "curl -s ftp://ftp.infradead.org/pub/ocserv/ | awk '{print $9}' | tail -n 
 source = "github"
 github = "prometheus/node_exporter"
 use_max_tag = true
+
+[grafana_dashboard_1860]
+source = "cmd"
+cmd = "curl -s https://grafana.com/api/dashboards/1860/revisions/latest/download | grep schemaVersion | awk '{print $2}' | sed 's/,//'"
