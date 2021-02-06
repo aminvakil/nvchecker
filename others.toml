@@ -7,3 +7,8 @@ newver = "others_new.txt"
 [ocserv]
 source = "cmd"
 cmd = "curl -s ftp://ftp.infradead.org/pub/ocserv/ | awk '{print $9}' | tail -n 1 | sed 's:.*-::;s:.tar.*::'"
+
+[node_exporter]
+source = "github"
+github = "prometheus/node_exporter"
+use_max_tag = true
