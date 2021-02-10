@@ -26,7 +26,7 @@ jobs:
           echo "container_id=$container_id" >> $GITHUB_ENV
 
       - name: Install nvchecker and git.
-        run: docker exec "$(cat ${container_id})" pacman -S nvchecker git --noconfirm
+        run: docker exec "$(cat ${container_id})" pacman -Syu nvchecker git --noconfirm
 
       - name: Nvcheck!
         run: |
