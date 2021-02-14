@@ -1,4 +1,4 @@
 ---
-title: OTHERS Upgrade
+title: Others Upgrade
 ---
-{{ env.other_nvcmp_output }}
+{{ env.others_nvcmp_output }}
