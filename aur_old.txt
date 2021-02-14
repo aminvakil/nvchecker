@@ -1,5 +1,6 @@
 {
   "assetfinder": "0.1.1",
+  "awx": "17.0.1",
   "fcct": "0.10.0",
   "gnome-shell-extension-workspace-matrix": "4.0.3",
   "google-tsunami-security-scanner": "v0.0.3",

@@ -10,6 +10,12 @@ github = "tomnomnom/assetfinder"
 use_max_tag = true
 prefix = "v"
 
+[awx]
+source = "github"
+github = "ansible/awx"
+use_max_tag = true
+prefix = "v"
+
 [fcct]
 source = "github"
 github = "coreos/fcct"
