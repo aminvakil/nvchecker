@@ -1,11 +1,13 @@
 {
   "assetfinder": "0.1.1",
   "awx": "17.0.1",
+  "dash-to-dock": "20201226.170912",
   "fcct": "0.10.0",
   "gnome-shell-extension-workspace-matrix": "4.0.3",
   "google-tsunami-security-scanner": "v0.0.3",
   "jmeter-plugins-manager": "1.6",
   "obfs4proxy": "0.0.11",
   "tor-browser": "10.0.12-1",
+  "vim-markdown": "20200714.122550",
   "xssmap": "20200305.152024"
 }

@@ -50,3 +50,11 @@ github = "tor-browser"
 [xssmap]
 source = "github"
 github = "secdec/xssmap"
+
+[dash-to-dock]
+source = "github"
+github = "micheleg/dash-to-dock"
+
+[vim-markdown]
+source = "github"
+github = "plasticboy/vim-markdown"
