@@ -62,3 +62,5 @@ github = "plasticboy/vim-markdown"
 [hadolint]
 source = "github"
 github = "hadolint/hadolint"
+use_max_tag = true
+prefix = "v"
