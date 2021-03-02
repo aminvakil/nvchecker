@@ -5,6 +5,7 @@
   "fcct": "0.10.0",
   "gnome-shell-extension-workspace-matrix": "4.0.3",
   "google-tsunami-security-scanner": "v0.0.3",
+  "hadolint": "1.23.0",
   "jmeter-plugins-manager": "1.6",
   "obfs4proxy": "0.0.11",
   "tor-browser": "10.0.12-1",
