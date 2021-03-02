@@ -58,3 +58,7 @@ github = "micheleg/dash-to-dock"
 [vim-markdown]
 source = "github"
 github = "plasticboy/vim-markdown"
+
+[hadolint]
+source = "github"
+github = "hadolint/hadolint"
