@@ -64,3 +64,9 @@ source = "github"
 github = "hadolint/hadolint"
 use_max_tag = true
 prefix = "v"
+
+[trivy]
+source = "github"
+github = "aquasecurity/trivy"
+use_max_tag = true
+prefix = "v"
