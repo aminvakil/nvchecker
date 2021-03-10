@@ -1,6 +1,6 @@
 {
   "assetfinder": "0.1.1",
-  "awx": "17.0.1",
+  "awx": "17.1.0",
   "dash-to-dock": "20201226.170912",
   "fcct": "0.10.0",
   "gnome-shell-extension-workspace-matrix": "4.0.3",
