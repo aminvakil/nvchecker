@@ -1,10 +1,10 @@
 {
-  "alpine": "3.13.2",
+  "alpine": "3.13.3",
   "archlinux": "base-20210321.0.17674",
   "centos7": "7.9.2009",
   "centos8": "8.3.2011",
   "debian10": "buster-20210311",
   "ubuntu16": "xenial-20210114",
-  "ubuntu18": "bionic-20210222",
-  "ubuntu20": "focal-20210217"
+  "ubuntu18": "bionic-20210325",
+  "ubuntu20": "focal-20210325"
 }
