@@ -6,5 +6,5 @@
   "debian10": "buster-20210329",
   "ubuntu16": "xenial-20210114",
   "ubuntu18": "bionic-20210325",
-  "ubuntu20": "focal-20210325"
+  "ubuntu20": "focal-20210401"
 }
