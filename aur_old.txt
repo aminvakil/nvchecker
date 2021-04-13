@@ -1,8 +1,8 @@
 {
   "assetfinder": "0.1.1",
   "awx": "19.0.0",
+  "butane": "0.11.0",
   "dash-to-dock": "20210321.203702",
-  "fcct": "0.11.0",
   "gnome-shell-extension-workspace-matrix": "5.0.0",
   "google-tsunami-security-scanner": "v0.0.3",
   "hadolint": "2.1.0",

@@ -16,9 +16,9 @@ github = "ansible/awx"
 use_max_tag = true
 prefix = "v"
 
-[fcct]
+[butane]
 source = "github"
-github = "coreos/fcct"
+github = "coreos/butane"
 use_latest_release = true
 prefix = "v"
 
