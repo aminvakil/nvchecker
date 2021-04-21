@@ -8,7 +8,7 @@
   "hadolint": "2.2.0",
   "jmeter-plugins-manager": "1.6",
   "obfs4proxy": "0.0.11",
-  "tor-browser": "10.0.15-1",
+  "tor-browser": "10.0.15-2",
   "trivy": "0.16.0",
   "vim-markdown": "20200714.122550",
   "xssmap": "20200305.152024"
