@@ -4,7 +4,7 @@
   "centos7": "7.9.2009",
   "centos8": "8.3.2011",
   "debian10": "buster-20210408",
-  "ubuntu16": "xenial-20210114",
-  "ubuntu18": "bionic-20210325",
-  "ubuntu20": "focal-20210401"
+  "ubuntu16": "xenial-20210416",
+  "ubuntu18": "bionic-20210416",
+  "ubuntu20": "focal-20210416"
 }
