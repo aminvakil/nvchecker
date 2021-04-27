@@ -1,6 +1,6 @@
 {
   "alpine": "3.13.5",
-  "archlinux": "base-20210418.0.20194",
+  "archlinux": "base-20210425.0.20608",
   "centos7": "7.9.2009",
   "centos8": "8.3.2011",
   "debian10": "buster-20210408",
