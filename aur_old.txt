@@ -1,6 +1,6 @@
 {
   "assetfinder": "0.1.1",
-  "awx": "19.0.0",
+  "awx": "19.1.0",
   "butane": "0.11.0",
   "dash-to-dock": "20210321.203702",
   "gnome-shell-extension-workspace-matrix": "5.0.0",
@@ -9,7 +9,7 @@
   "jmeter-plugins-manager": "1.6",
   "obfs4proxy": "0.0.11",
   "tor-browser": "10.0.16-1",
-  "trivy": "0.17.1",
+  "trivy": "0.17.2",
   "vim-markdown": "20200714.122550",
   "xssmap": "20200305.152024"
 }
