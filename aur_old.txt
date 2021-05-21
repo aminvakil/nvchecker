@@ -9,7 +9,7 @@
   "jmeter-plugins-manager": "1.6",
   "obfs4proxy": "0.0.11",
   "tor-browser": "10.0.16-1",
-  "trivy": "0.18.1",
+  "trivy": "0.18.2",
   "vim-markdown": "20200714.122550",
   "xssmap": "20200305.152024"
 }
