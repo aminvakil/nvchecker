@@ -1,6 +1,6 @@
 {
   "grafana_dashboard_1860": "26",
   "node_exporter": "v1.1.2",
-  "ocserv": "1.1.2",
+  "ocserv": "1.1.3",
   "thelounge": "4.2.0-2"
 }
