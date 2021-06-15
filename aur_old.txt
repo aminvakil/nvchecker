@@ -1,11 +1,11 @@
 {
   "assetfinder": "0.1.1",
   "awx": "19.2.0",
-  "butane": "0.12.0",
+  "butane": "0.12.1",
   "dash-to-dock": "20210321.203702",
   "gnome-shell-extension-workspace-matrix": "5.0.0",
   "google-tsunami-security-scanner": "v0.0.4",
-  "hadolint": "2.4.1",
+  "hadolint": "2.5.0",
   "jmeter-plugins-manager": "1.6",
   "obfs4proxy": "0.0.11",
   "tor-browser": "10.0.17-2",
