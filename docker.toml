@@ -47,6 +47,13 @@ container = "library/debian"
 include_regex = "buster-.*"
 exclude_regex = "buster-.*-slim"
 
+[debian11]
+source = "container"
+registry = "docker.io"
+container = "library/debian"
+include_regex = "bullseye-.*"
+exclude_regex = "bullseye-.*-slim"
+
 [ubuntu16]
 source = "container"
 registry = "docker.io"
