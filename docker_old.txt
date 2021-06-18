@@ -5,7 +5,7 @@
   "centos8": "8.3.2011",
   "debian10": "buster-20210511",
   "debian11": "bullseye-20210511",
-  "ubuntu16": "xenial-20210429",
-  "ubuntu18": "bionic-20210512",
-  "ubuntu20": "focal-20210416"
+  "ubuntu16": "xenial-20210611",
+  "ubuntu18": "bionic-20210615.1",
+  "ubuntu20": "focal-20210609"
 }
