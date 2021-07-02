@@ -5,7 +5,7 @@
   "dash-to-dock": "20210616.001608",
   "gnome-shell-extension-workspace-matrix": "5.0.0",
   "google-tsunami-security-scanner": "v0.0.4",
-  "hadolint": "2.5.0",
+  "hadolint": "2.6.0",
   "jmeter-plugins-manager": "1.6",
   "obfs4proxy": "0.0.11",
   "tor-browser": "10.0.18-1",
