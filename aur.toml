@@ -43,10 +43,6 @@ github = "Yawning/obfs4"
 use_max_tag = true
 prefix = "obfs4proxy-"
 
-[tor-browser]
-source = "aur"
-github = "tor-browser"
-
 [xssmap]
 source = "github"
 github = "secdec/xssmap"
