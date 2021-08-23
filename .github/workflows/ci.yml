@@ -90,7 +90,7 @@ jobs:
         uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          path: aur.toml
+          path: GITHUB_WORKSPACE/aur.toml
           commit-message: ${{ env.aur_nvcmp_output }}
           committer: GitHub <noreply@github.com>
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
@@ -106,7 +106,7 @@ jobs:
         uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          path: docker.toml
+          path: GITHUB_WORKSPACE/docker.toml
           commit-message: ${{ env.docker_nvcmp_output }}
           committer: GitHub <noreply@github.com>
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
@@ -122,7 +122,7 @@ jobs:
         uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          path: others.toml
+          path: GITHUB_WORKSPACE/others.toml
           commit-message: ${{ env.others_nvcmp_output }}
           committer: GitHub <noreply@github.com>
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
