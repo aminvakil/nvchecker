@@ -52,15 +52,15 @@ jobs:
           if [[ "${{ env.docker_nvcmp_output }}" == *"ubuntu16"* ]]; then UBUNTU16='true'; fi
           if [[ "${{ env.docker_nvcmp_output }}" == *"ubuntu18"* ]]; then UBUNTU18='true'; fi
           if [[ "${{ env.docker_nvcmp_output }}" == *"ubuntu20"* ]]; then UBUNTU20='true'; fi
-          echo $ALPINE
-          echo $ARCHLINUX
-          echo $CENTOS7
-          echo $CENTOS8
-          echo $DEBIAN10
-          echo $DEBIAN11
-          echo $UBUNTU16
-          echo $UBUNTU18
-          echo $UBUNTU20
+          echo "ALPINE=$ALPINE" >> $GITHUB_ENV
+          echo "ARCHLINUX=$ARCHLINUX" >> $GITHUB_ENV
+          echo "CENTOS7=$CENTOS7" >> $GITHUB_ENV
+          echo "CENTOS8=$CENTOS8" >> $GITHUB_ENV
+          echo "DEBIAN10=$DEBIAN10" >> $GITHUB_ENV
+          echo "DEBIAN11=$DEBIAN11" >> $GITHUB_ENV
+          echo "UBUNTU16=$UBUNTU16" >> $GITHUB_ENV
+          echo "UBUNTU18=$UBUNTU18" >> $GITHUB_ENV
+          echo "UBUNTU20=$UBUNTU20" >> $GITHUB_ENV
 
           #      - name: Create Docker Issue.
           #        id: docker-create-issue
