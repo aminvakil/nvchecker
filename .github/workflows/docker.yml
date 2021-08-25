@@ -43,7 +43,7 @@ jobs:
       - name: Check docker/archlinux
         if: env.DOCKER_HAS_CHANGED == 'true'
         run: |
-          if [[ ${{ env.docker_nvcmp_output }} == *"archlinux"* ]]; then ARCHLINUX='true'; fi
+          if [[ "${{ env.docker_nvcmp_output }}" == *"archlinux"* ]]; then ARCHLINUX='true'; fi
           echo $ARCHLINUX
 
       - name: Create Docker Issue.
