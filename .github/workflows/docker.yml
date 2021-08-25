@@ -61,30 +61,30 @@ jobs:
           echo "UBUNTU18=$UBUNTU18" >> $GITHUB_ENV
           echo "UBUNTU20=$UBUNTU20" >> $GITHUB_ENV
 
-          #      - name: Create Docker Issue.
-          #        id: docker-create-issue
-          #        if: env.DOCKER_HAS_CHANGED == 'true' && github.event_name != 'pull_request'
-          #        uses: JasonEtco/create-an-issue@v2
-          #        env:
-          #          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          #        with:
-          #          update_existing: true
-          #          filename: .github/DOCKER_ISSUE_TEMPLATE.md
-          #
-          #      - name: Create Docker Pull Request
-          #        if: env.DOCKER_HAS_CHANGED == 'true' && github.event_name != 'pull_request'
-          #        uses: peter-evans/create-pull-request@v3
-          #        with:
-          #          token: ${{ secrets.GITHUB_TOKEN }}
-          #          commit-message: ${{ env.docker_nvcmp_output }}
-          #          committer: GitHub <noreply@github.com>
-          #          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
-          #          signoff: false
-          #          branch: dockerbump
-          #          delete-branch: true
-          #          title: 'Docker Bump'
-          #          body: Fixes ${{ steps.docker-create-issue.outputs.url }}
-          #          draft: false
+      - name: Create Docker Issue.
+        id: docker-create-issue
+        if: env.DOCKER_HAS_CHANGED == 'true' && github.event_name != 'pull_request'
+        uses: JasonEtco/create-an-issue@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          update_existing: true
+          filename: .github/DOCKER_ISSUE_TEMPLATE.md
+
+      - name: Create Docker Pull Request
+        if: env.DOCKER_HAS_CHANGED == 'true' && github.event_name != 'pull_request'
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: ${{ env.docker_nvcmp_output }}
+          committer: GitHub <noreply@github.com>
+          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+          signoff: false
+          branch: dockerbump
+          delete-branch: true
+          title: 'Docker Bump'
+          body: Fixes ${{ steps.docker-create-issue.outputs.url }}
+          draft: false
 
       - name: Stop and remove container forcefully.
         run: docker rm -f "$(cat ${container_id})"
