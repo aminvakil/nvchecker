@@ -62,6 +62,30 @@ jobs:
           echo "UBUNTU18=$UBUNTU18" >> $GITHUB_ENV
           echo "UBUNTU20=$UBUNTU20" >> $GITHUB_ENV
 
+      - uses: actions/checkout@v2
+        if: env.ARCHLINUX == 'true'
+        with:
+          repository: aminvakil/docker-archlinux
+          path: ./docker-archlinux
+
+      - name: Test a change
+        if: env.ARCHLINUX == 'true'
+        run: |
+          sed -i "s/container/container2/g" docker-archlinux/Dockerfile
+
+      - uses: tibdex/github-app-token@v1
+        if: env.ARCHLINUX == 'true'
+        id: generate-token
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
+
+      - name: Create Archlinux Pull Request
+        if: env.ARCHLINUX == 'true'
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ steps.generate-token.outputs.token }}
+
           #      - name: Create Docker Issue.
           #        id: docker-create-issue
           #        if: env.DOCKER_HAS_CHANGED == 'true' && github.event_name != 'pull_request'
