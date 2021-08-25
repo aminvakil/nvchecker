@@ -85,6 +85,7 @@ jobs:
         uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ steps.generate-token.outputs.token }}
+          path: docker-archlinux
 
           #      - name: Create Docker Issue.
           #        id: docker-create-issue
