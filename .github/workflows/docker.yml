@@ -13,6 +13,34 @@ jobs:
   Docker:
     name: Docker
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dockerfile_location: ['']
+        include:
+          - repository: docker-archlinux
+            image: archlinux
+          - repository: docker-os-systemd
+            image: centos7
+            dockerfile_location: images/
+          - repository: docker-os-systemd
+            image: centos8
+            dockerfile_location: images/
+          - repository: docker-os-systemd
+            image: debian10
+            dockerfile_location: images/
+          - repository: docker-os-systemd
+            image: debian11
+            dockerfile_location: images/
+          - repository: docker-os-systemd
+            image: ubuntu16
+            dockerfile_location: images/
+          - repository: docker-os-systemd
+            image: ubuntu18
+            dockerfile_location: images/
+          - repository: docker-os-systemd
+            image: ubuntu20
+            dockerfile_location: images/
+
     steps:
       - name: Check out the codebase.
         uses: actions/checkout@v2
@@ -43,53 +71,50 @@ jobs:
       - name: Check what has been changed
         if: env.DOCKER_HAS_CHANGED == 'true'
         run: |
-          if [[ "${{ env.docker_nvcmp_output }}" == *"alpine"* ]]; then ALPINE='true'; fi
-          if [[ "${{ env.docker_nvcmp_output }}" == *"archlinux"* ]]; then ARCHLINUX='true'; fi
-          if [[ "${{ env.docker_nvcmp_output }}" == *"centos7"* ]]; then CENTOS7='true'; fi
-          if [[ "${{ env.docker_nvcmp_output }}" == *"centos8"* ]]; then CENTOS8='true'; fi
-          if [[ "${{ env.docker_nvcmp_output }}" == *"debian10"* ]]; then DEBIAN10='true'; fi
-          if [[ "${{ env.docker_nvcmp_output }}" == *"debian11"* ]]; then DEBIAN11='true'; fi
-          if [[ "${{ env.docker_nvcmp_output }}" == *"ubuntu16"* ]]; then UBUNTU16='true'; fi
-          if [[ "${{ env.docker_nvcmp_output }}" == *"ubuntu18"* ]]; then UBUNTU18='true'; fi
-          if [[ "${{ env.docker_nvcmp_output }}" == *"ubuntu20"* ]]; then UBUNTU20='true'; fi
-          echo "ALPINE=$ALPINE" >> $GITHUB_ENV
-          echo "ARCHLINUX=$ARCHLINUX" >> $GITHUB_ENV
-          echo "CENTOS7=$CENTOS7" >> $GITHUB_ENV
-          echo "CENTOS8=$CENTOS8" >> $GITHUB_ENV
-          echo "DEBIAN10=$DEBIAN10" >> $GITHUB_ENV
-          echo "DEBIAN11=$DEBIAN11" >> $GITHUB_ENV
-          echo "UBUNTU16=$UBUNTU16" >> $GITHUB_ENV
-          echo "UBUNTU18=$UBUNTU18" >> $GITHUB_ENV
-          echo "UBUNTU20=$UBUNTU20" >> $GITHUB_ENV
+          if [[ "${{ env.docker_nvcmp_output }}" == *"$image"* ]]; then OS_CHANGED='true'; fi
+          echo "OS_CHANGED=$OS_CHANGED" >> $GITHUB_ENV
+        env:
+          image: ${{ matrix.image }}
 
       - uses: actions/checkout@v2
-        if: env.ARCHLINUX == 'true'
+        if: env.OS_CHANGED == 'true'
         with:
-          repository: aminvakil/docker-archlinux
-          path: ./docker-archlinux
+          repository: "aminvakil/${{ env.repository }}"
+          path: "./${{ env.repository }}"
+        env:
+          repository: ${{ matrix.repository }}
 
       - name: Test a change
-        if: env.ARCHLINUX == 'true'
+        if: env.OS_CHANGED == 'true'
         run: |
-          before=$(echo "{{ env.docker_nvcmp_output }}" | sed "s/.*archlinux/archlinux/g" | awk '{print $2}')
-          after=$(echo "{{ env.docker_nvcmp_output }}" | sed "s/.*archlinux/archlinux/g" | awk '{print $4}')
+          before=$(echo "${{ env.docker_nvcmp_output }}" | sed "s/.*$image/$image/g" | awk '{print $2}')
+          after=$(echo "${{ env.docker_nvcmp_output }}" | sed "s/.*$image/$image/g" | awk '{print $4}')
           echo $before
           echo $after
-          sed -i "s/$before/$after/g" docker-archlinux/Dockerfile*
+          sed -i "s/$before/$after/g" "${{ env.repository }}/${{ env.dockerfile_location }}"Dockerfile*
+        env:
+          image: ${{ matrix.image }}
+          repository: ${{ matrix.repository }}
+          dockerfile_location: ${{ matrix.dockerfile_location }}
 
       - uses: tibdex/github-app-token@v1
-        if: env.ARCHLINUX == 'true'
+        if: env.OS_CHANGED == 'true'
         id: generate-token
         with:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
+        env:
+          image: ${{ matrix.image }}
 
       - name: Create Archlinux Pull Request
-        if: env.ARCHLINUX == 'true'
+        if: env.OS_CHANGED == 'true'
         uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ steps.generate-token.outputs.token }}
-          path: docker-archlinux
+          path: "./${{ env.repository }}"
+        env:
+          image: ${{ matrix.image }}
+          repository: ${{ matrix.repository }}
 
           #      - name: Create Docker Issue.
           #        id: docker-create-issue
