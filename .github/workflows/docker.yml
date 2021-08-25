@@ -71,7 +71,11 @@ jobs:
       - name: Test a change
         if: env.ARCHLINUX == 'true'
         run: |
-          sed -i "s/container/container2/g" docker-archlinux/Dockerfile
+          before=$(echo "{{ env.docker_nvcmp_output }}" | sed "s/.*archlinux/archlinux/g" | awk '{print $2}')
+          after=$(echo "{{ env.docker_nvcmp_output }}" | sed "s/.*archlinux/archlinux/g" | awk '{print $4}')
+          echo $before
+          echo $after
+          sed -i "s/$before/$after/g" docker-archlinux/Dockerfile*
 
       - uses: tibdex/github-app-token@v1
         if: env.ARCHLINUX == 'true'
