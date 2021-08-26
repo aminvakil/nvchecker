@@ -15,7 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        dockerfile_location: ['']
         include:
           - repository: docker-archlinux
             image: archlinux
