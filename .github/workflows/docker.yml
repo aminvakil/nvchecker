@@ -14,7 +14,6 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        dockerfile_location: ['']
         include:
           - repository: docker-archlinux
             image: archlinux
@@ -39,6 +38,18 @@ jobs:
           - repository: docker-os-systemd
             image: ubuntu20
             dockerfile_location: images/
+          - repository: docker-alpine-ftp-server-tls
+            image: alpine
+          - repository: docker-alpine-nfs-sever
+            image: alpine
+          - repository: prometheus_bot
+            image: alpine
+          - repository: docker-squid
+            image: alpine
+          - repository: docker-sshd
+            image: alpine
+          - repository: docker-ocserv
+            image: alpine
 
     steps:
       - name: Check out the codebase.
@@ -83,13 +94,13 @@ jobs:
         env:
           repository: ${{ matrix.repository }}
 
-      - name: Test a change
+      - name: Bump version
         if: env.OS_CHANGED == 'true'
         run: |
           before=$(echo "${{ env.docker_nvcmp_output }}" | sed "s/.*$image/$image/g" | awk '{print $2}')
           after=$(echo "${{ env.docker_nvcmp_output }}" | sed "s/.*$image/$image/g" | awk '{print $4}')
-          echo $before
-          echo $after
+          commit_message="$before -> $after"
+          echo "commit_message=$commit_message" >> $GITHUB_ENV
           sed -i "s/$before/$after/g" "${{ env.repository }}/${{ env.dockerfile_location }}"Dockerfile*
         env:
           image: ${{ matrix.image }}
@@ -105,12 +116,17 @@ jobs:
         env:
           image: ${{ matrix.image }}
 
-      - name: Create Archlinux Pull Request
+      - name: Create ${{ env.image }} Pull Request
         if: env.OS_CHANGED == 'true'
         uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ steps.generate-token.outputs.token }}
           path: "./${{ env.repository }}"
+          commit-message: ${{ env.commit_message }}
+          branch: ${{ env.image }}
+          delete-branch: true
+          title: Bump ${{ env.image }}
+          body: ${{ env.commit_message }}
         env:
           image: ${{ matrix.image }}
           repository: ${{ matrix.repository }}
