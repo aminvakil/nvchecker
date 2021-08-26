@@ -4,6 +4,7 @@ name: Docker
   push:
     branches:
       - main
+      - alpine_docker
   schedule:
     - cron: '0 2 * * *'
 
@@ -39,6 +40,18 @@ jobs:
           - repository: docker-os-systemd
             image: ubuntu20
             dockerfile_location: images/
+          - repository: docker-alpine-ftp-server-tls
+            image: alpine
+          - repository: docker-alpine-nfs-sever
+            image: alpine
+          - repository: prometheus_bot
+            image: alpine
+          - repository: docker-squid
+            image: alpine
+          - repository: docker-sshd
+            image: alpine
+          - repository: docker-ocserv
+            image: alpine
 
     steps:
       - name: Check out the codebase.
