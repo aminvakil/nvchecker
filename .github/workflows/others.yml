@@ -39,15 +39,15 @@ jobs:
           echo 'EOF' >> $GITHUB_ENV
           mv others_new.txt others_old.txt
 
-      - name: Create Others Issue.
-        id: others-create-issue
-        if: env.OTHERS_HAS_CHANGED == 'true' && github.event_name != 'pull_request'
-        uses: JasonEtco/create-an-issue@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          update_existing: true
-          filename: .github/OTHERS_ISSUE_TEMPLATE.md
+      # - name: Create Others Issue.
+      #   id: others-create-issue
+      #   if: env.OTHERS_HAS_CHANGED == 'true' && github.event_name != 'pull_request'
+      #   uses: JasonEtco/create-an-issue@v2
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     update_existing: true
+      #     filename: .github/OTHERS_ISSUE_TEMPLATE.md
 
       - name: Create Others Pull Request
         if: env.OTHERS_HAS_CHANGED == 'true' && github.event_name != 'pull_request'
@@ -61,7 +61,7 @@ jobs:
           branch: othersbump
           delete-branch: true
           title: 'Others Bump'
-          body: Fixes ${{ steps.others-create-issue.outputs.url }}
+          body: ${{ env.others_nvcmp_output }}
           draft: false
 
       - name: Stop and remove container forcefully.
