@@ -131,15 +131,15 @@ jobs:
           image: ${{ matrix.image }}
           repository: ${{ matrix.repository }}
 
-      - name: Create Docker Issue.
-        id: docker-create-issue
-        if: env.DOCKER_HAS_CHANGED == 'true' && github.event_name != 'pull_request'
-        uses: JasonEtco/create-an-issue@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          update_existing: true
-          filename: .github/DOCKER_ISSUE_TEMPLATE.md
+      # - name: Create Docker Issue.
+      #   id: docker-create-issue
+      #   if: env.DOCKER_HAS_CHANGED == 'true' && github.event_name != 'pull_request'
+      #   uses: JasonEtco/create-an-issue@v2
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     update_existing: true
+      #     filename: .github/DOCKER_ISSUE_TEMPLATE.md
 
       - name: Create Docker Pull Request
         if: env.DOCKER_HAS_CHANGED == 'true' && github.event_name != 'pull_request'
@@ -153,7 +153,7 @@ jobs:
           branch: dockerbump
           delete-branch: true
           title: 'Docker Bump'
-          body: Fixes ${{ steps.docker-create-issue.outputs.url }}
+          body: ${{ env.docker_nvcmp_output }}
           draft: false
 
       - name: Stop and remove container forcefully.
