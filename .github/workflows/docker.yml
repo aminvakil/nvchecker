@@ -39,28 +39,6 @@ jobs:
           echo 'EOF' >> $GITHUB_ENV
           mv docker_new.txt docker_old.txt
 
-      - name: Check what has been changed
-        if: env.DOCKER_HAS_CHANGED == 'true'
-        run: |
-          if [[ "${{ env.docker_nvcmp_output }}" == *"alpine"* ]]; then ALPINE='true'; fi
-          if [[ "${{ env.docker_nvcmp_output }}" == *"archlinux"* ]]; then ARCHLINUX='true'; fi
-          if [[ "${{ env.docker_nvcmp_output }}" == *"centos7"* ]]; then CENTOS7='true'; fi
-          if [[ "${{ env.docker_nvcmp_output }}" == *"centos8"* ]]; then CENTOS8='true'; fi
-          if [[ "${{ env.docker_nvcmp_output }}" == *"debian10"* ]]; then DEBIAN10='true'; fi
-          if [[ "${{ env.docker_nvcmp_output }}" == *"debian11"* ]]; then DEBIAN11='true'; fi
-          if [[ "${{ env.docker_nvcmp_output }}" == *"ubuntu16"* ]]; then UBUNTU16='true'; fi
-          if [[ "${{ env.docker_nvcmp_output }}" == *"ubuntu18"* ]]; then UBUNTU18='true'; fi
-          if [[ "${{ env.docker_nvcmp_output }}" == *"ubuntu20"* ]]; then UBUNTU20='true'; fi
-          echo "ALPINE=$ALPINE" >> $GITHUB_ENV
-          echo "ARCHLINUX=$ARCHLINUX" >> $GITHUB_ENV
-          echo "CENTOS7=$CENTOS7" >> $GITHUB_ENV
-          echo "CENTOS8=$CENTOS8" >> $GITHUB_ENV
-          echo "DEBIAN10=$DEBIAN10" >> $GITHUB_ENV
-          echo "DEBIAN11=$DEBIAN11" >> $GITHUB_ENV
-          echo "UBUNTU16=$UBUNTU16" >> $GITHUB_ENV
-          echo "UBUNTU18=$UBUNTU18" >> $GITHUB_ENV
-          echo "UBUNTU20=$UBUNTU20" >> $GITHUB_ENV
-
       - name: Create Docker Issue.
         id: docker-create-issue
         if: env.DOCKER_HAS_CHANGED == 'true' && github.event_name != 'pull_request'
