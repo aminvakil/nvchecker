@@ -4,6 +4,7 @@ name: Docker
   push:
     branches:
       - main
+      - alpine_docker
   schedule:
     - cron: '0 2 * * *'
 
