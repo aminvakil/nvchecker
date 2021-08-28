@@ -66,3 +66,7 @@ source = "github"
 github = "aquasecurity/trivy"
 use_max_tag = true
 prefix = "v"
+
+[zoiper]
+source = "cmd"
+cmd = "curl 'https://www.zoiper.com/en/voip-softphone/download/zoiper5/for/linux' --header 'Cookie: PHPSESSID=' -J -v -o /dev/null 2>&1 | grep filename | sed -e 's/.*Zoiper5_//g' -e 's/_x86_64.tar.xz//g'"
