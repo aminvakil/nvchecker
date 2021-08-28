@@ -12,44 +12,6 @@ jobs:
   Docker:
     name: Docker
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        include:
-          - repository: docker-archlinux
-            image: archlinux
-          - repository: docker-os-systemd
-            image: centos7
-            dockerfile_location: images/
-          - repository: docker-os-systemd
-            image: centos8
-            dockerfile_location: images/
-          - repository: docker-os-systemd
-            image: debian10
-            dockerfile_location: images/
-          - repository: docker-os-systemd
-            image: debian11
-            dockerfile_location: images/
-          - repository: docker-os-systemd
-            image: ubuntu16
-            dockerfile_location: images/
-          - repository: docker-os-systemd
-            image: ubuntu18
-            dockerfile_location: images/
-          - repository: docker-os-systemd
-            image: ubuntu20
-            dockerfile_location: images/
-          - repository: docker-alpine-ftp-server-tls
-            image: alpine
-          - repository: docker-alpine-nfs-sever
-            image: alpine
-          - repository: prometheus_bot
-            image: alpine
-          - repository: docker-squid
-            image: alpine
-          - repository: docker-sshd
-            image: alpine
-          - repository: docker-ocserv
-            image: alpine
 
     steps:
       - name: Check out the codebase.
@@ -77,59 +39,6 @@ jobs:
           echo $docker_nvcmp_output >> $GITHUB_ENV
           echo 'EOF' >> $GITHUB_ENV
           mv docker_new.txt docker_old.txt
-
-      - name: Check what has been changed
-        if: env.DOCKER_HAS_CHANGED == 'true'
-        run: |
-          if [[ "${{ env.docker_nvcmp_output }}" == *"$image"* ]]; then OS_CHANGED='true'; fi
-          echo "OS_CHANGED=$OS_CHANGED" >> $GITHUB_ENV
-        env:
-          image: ${{ matrix.image }}
-
-      - uses: actions/checkout@v2
-        if: env.OS_CHANGED == 'true'
-        with:
-          repository: "aminvakil/${{ env.repository }}"
-          path: "./${{ env.repository }}"
-        env:
-          repository: ${{ matrix.repository }}
-
-      - name: Bump version
-        if: env.OS_CHANGED == 'true'
-        run: |
-          before=$(echo "${{ env.docker_nvcmp_output }}" | sed "s/.*$image/$image/g" | awk '{print $2}')
-          after=$(echo "${{ env.docker_nvcmp_output }}" | sed "s/.*$image/$image/g" | awk '{print $4}')
-          commit_message="$before -> $after"
-          echo "commit_message=$commit_message" >> $GITHUB_ENV
-          sed -i "s/$before/$after/g" "${{ env.repository }}/${{ env.dockerfile_location }}"Dockerfile*
-        env:
-          image: ${{ matrix.image }}
-          repository: ${{ matrix.repository }}
-          dockerfile_location: ${{ matrix.dockerfile_location }}
-
-      - uses: tibdex/github-app-token@v1
-        if: env.OS_CHANGED == 'true'
-        id: generate-token
-        with:
-          app_id: ${{ secrets.APP_ID }}
-          private_key: ${{ secrets.APP_PRIVATE_KEY }}
-        env:
-          image: ${{ matrix.image }}
-
-      - name: Create ${{ env.image }} Pull Request
-        if: env.OS_CHANGED == 'true'
-        uses: peter-evans/create-pull-request@v3
-        with:
-          token: ${{ steps.generate-token.outputs.token }}
-          path: "./${{ env.repository }}"
-          commit-message: ${{ env.commit_message }}
-          branch: ${{ env.image }}
-          delete-branch: true
-          title: Bump ${{ env.image }}
-          body: ${{ env.commit_message }}
-        env:
-          image: ${{ matrix.image }}
-          repository: ${{ matrix.repository }}
 
       # - name: Create Docker Issue.
       #   id: docker-create-issue
