@@ -40,7 +40,7 @@ jobs:
             dockerfile_location: images/
           - repository: docker-alpine-ftp-server-tls
             image: alpine
-          - repository: docker-alpine-nfs-sever
+          - repository: docker-alpine-nfs-server
             image: alpine
           - repository: prometheus_bot
             image: alpine
