@@ -50,10 +50,6 @@ jobs:
             image: alpine
           - repository: docker-ocserv
             image: alpine
-          - repository: slowloris
-            image: alpine
-          - repository: SiteBroker
-            image: alpine
 
     steps:
       - name: Check out the codebase.
