@@ -3,8 +3,8 @@
   "archlinux": "base-20210829.0.32635",
   "centos7": "7.9.2009",
   "centos8": "8.3.2011",
-  "debian10": "buster-20210816",
-  "debian11": "bullseye-20210816",
+  "debian10": "buster-20210902",
+  "debian11": "bullseye-20210902",
   "ubuntu16": "xenial-20210804",
   "ubuntu18": "bionic-20210827",
   "ubuntu20": "focal-20210827"
