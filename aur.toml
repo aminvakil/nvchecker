@@ -82,3 +82,9 @@ source = "github"
 github = "alexei-led/pumba"
 use_max_tag = true
 prefix = "v"
+
+[dockle]
+source = "github"
+github = "goodwithtech/dockle"
+use_max_tag = true
+prefix = "v"
