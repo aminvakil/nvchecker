@@ -76,3 +76,9 @@ source = "github"
 github = "rhysd/actionlint"
 use_max_tag = true
 prefix = "v"
+
+[pumba]
+source = "github"
+github = "alexei-led/pumba"
+use_max_tag = true
+prefix = "v"
