@@ -4,7 +4,7 @@
   "awx": "19.3.0",
   "butane": "0.13.1",
   "dash-to-dock": "20210616.001608",
-  "dockle": "0.4.0",
+  "dockle": "0.4.1",
   "gnome-shell-extension-workspace-matrix": "5.0.0",
   "google-tsunami-security-scanner": "v0.0.4",
   "hadolint": "2.7.0",
