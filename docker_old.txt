@@ -2,7 +2,7 @@
   "alpine": "3.14.2",
   "archlinux": "base-20210829.0.32635",
   "centos7": "7.9.2009",
-  "centos8": "8.3.2011",
+  "centos8": "8.4.2105",
   "debian10": "buster-20210902",
   "debian11": "bullseye-20210902",
   "ubuntu16": "xenial-20210804",
