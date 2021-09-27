@@ -5,7 +5,7 @@
   "butane": "0.13.1",
   "dash-to-dock": "20210616.001608",
   "dockle": "0.4.2",
-  "gnome-shell-extension-workspace-matrix": "6.0",
+  "gnome-shell-extension-workspace-matrix": "6.1",
   "google-tsunami-security-scanner": "v0.0.4",
   "hadolint": "2.7.0",
   "jmeter-plugins-manager": "1.6",
