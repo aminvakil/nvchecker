@@ -1,7 +1,7 @@
 {
   "actionlint": "1.6.4",
   "assetfinder": "0.1.1",
-  "awx": "19.3.0",
+  "awx": "19.4.0",
   "butane": "0.13.1",
   "dash-to-dock": "20210616.001608",
   "dockle": "0.4.2",
