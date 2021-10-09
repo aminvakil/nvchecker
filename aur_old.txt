@@ -6,7 +6,7 @@
   "dash-to-dock": "20211003.183551",
   "dockle": "0.4.3",
   "gnome-shell-extension-workspace-matrix": "6.1",
-  "google-tsunami-security-scanner": "v0.0.4",
+  "google-tsunami-security-scanner": "v0.0.5",
   "hadolint": "2.7.0",
   "jmeter-plugins-manager": "1.6",
   "obfs4proxy": "0.0.11",
