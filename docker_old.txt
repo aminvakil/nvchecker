@@ -7,5 +7,5 @@
   "debian11": "bullseye-20211011",
   "ubuntu16": "xenial-20210804",
   "ubuntu18": "bionic-20210930",
-  "ubuntu20": "focal-20210921"
+  "ubuntu20": "focal-20211006"
 }
