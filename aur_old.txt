@@ -3,7 +3,7 @@
   "assetfinder": "0.1.1",
   "awx": "19.4.0",
   "butane": "0.13.1",
-  "dash-to-dock": "20211024.190031",
+  "dash-to-dock": "20211104.202802",
   "dockle": "0.4.3",
   "gnome-shell-extension-workspace-matrix": "6.2",
   "google-tsunami-security-scanner": "v0.0.5",
@@ -14,5 +14,5 @@
   "trivy": "0.20.2",
   "vim-markdown": "20200714.122550",
   "xssmap": "20200305.152024",
-  "zoiper": "5.5.7"
+  "zoiper": "5.5.8"
 }
