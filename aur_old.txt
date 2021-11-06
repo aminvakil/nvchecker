@@ -7,7 +7,7 @@
   "dockle": "0.4.3",
   "gnome-shell-extension-workspace-matrix": "6.2",
   "google-tsunami-security-scanner": "v0.0.5",
-  "hadolint": "2.7.0",
+  "hadolint": "2.8.0",
   "jmeter-plugins-manager": "1.6",
   "obfs4proxy": "0.0.11",
   "pumba": "0.8.0",
