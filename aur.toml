@@ -84,3 +84,9 @@ source = "github"
 github = "goodwithtech/dockle"
 use_max_tag = true
 prefix = "v"
+
+[ddosify]
+source = "github"
+github = "ddosify/ddosify"
+use_max_tag = true
+prefix = "v"
