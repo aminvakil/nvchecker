@@ -104,7 +104,7 @@ jobs:
           after=$(echo "${{ env.docker_nvcmp_output }}" | sed "s/.*$image/$image/g" | awk '{print $4}')
           commit_message="$before -> $after"
           echo "commit_message=$commit_message" >> $GITHUB_ENV
-          sed -i "s/$before$/$after/g" "${{ env.repository }}/${{ env.dockerfile_location }}"Dockerfile*
+          sed -i "s/${before/\./\\.}$/$after/g" "${{ env.repository }}/${{ env.dockerfile_location }}"Dockerfile*
         env:
           image: ${{ matrix.image }}
           repository: ${{ matrix.repository }}
