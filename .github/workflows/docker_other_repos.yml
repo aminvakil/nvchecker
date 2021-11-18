@@ -24,6 +24,9 @@ jobs:
             image: centos8
             dockerfile_location: images/
           - repository: docker-os-systemd
+            image: rockylinux8
+            dockerfile_location: images/
+          - repository: docker-os-systemd
             image: debian10
             dockerfile_location: images/
           - repository: docker-os-systemd
