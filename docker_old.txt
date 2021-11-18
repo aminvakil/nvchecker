@@ -5,6 +5,7 @@
   "centos8": "8.4.2105",
   "debian10": "buster-20211011",
   "debian11": "bullseye-20211011",
+  "rockylinux8": "8.4",
   "ubuntu16": "xenial-20210804",
   "ubuntu18": "bionic-20210930",
   "ubuntu20": "focal-20211006"
