@@ -3,7 +3,7 @@
   "assetfinder": "0.1.1",
   "awx": "19.5.0",
   "butane": "0.13.1",
-  "ddosify": "0.5.2",
+  "ddosify": "0.6.0",
   "dockle": "0.4.3",
   "gnome-shell-extension-workspace-matrix": "6.2",
   "google-tsunami-security-scanner": "v0.0.6",
