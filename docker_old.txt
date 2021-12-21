@@ -1,10 +1,10 @@
 {
   "alpine": "3.15.0",
-  "archlinux": "base-20211212.0.41353",
+  "archlinux": "base-20211219.0.41944",
   "centos7": "7.9.2009",
   "centos8": "8.4.2105",
-  "debian10": "buster-20211201",
-  "debian11": "bullseye-20211201",
+  "debian10": "buster-20211220",
+  "debian11": "bullseye-20211220",
   "rockylinux8": "8.5",
   "ubuntu16": "xenial-20210804",
   "ubuntu18": "bionic-20210930",
