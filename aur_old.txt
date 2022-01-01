@@ -10,7 +10,7 @@
   "google-tsunami-security-scanner": "v0.0.9",
   "hadolint": "2.8.0",
   "jmeter-plugins-manager": "1.7",
-  "obfs4proxy": "0.0.11",
+  "obfs4proxy": "0.0.12",
   "pumba": "0.9.0",
   "vim-markdown": "20200714.122550",
   "xssmap": "20200305.152024",
