@@ -37,12 +37,6 @@ use_latest_release = true
 source = "cmd"
 cmd = "curl -Is https://jmeter-plugins.org/get/ | grep Location | sed 's:.*/::;s:.*-::;s:.jar::'"
 
-[obfs4proxy]
-source = "github"
-github = "Yawning/obfs4"
-use_max_tag = true
-prefix = "obfs4proxy-"
-
 [xssmap]
 source = "github"
 github = "secdec/xssmap"
