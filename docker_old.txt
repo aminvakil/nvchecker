@@ -7,6 +7,6 @@
   "debian11": "bullseye-20211220",
   "rockylinux8": "8.5",
   "ubuntu16": "xenial-20210804",
-  "ubuntu18": "bionic-20210930",
-  "ubuntu20": "focal-20211006"
+  "ubuntu18": "bionic-20220105",
+  "ubuntu20": "focal-20220105"
 }
