@@ -1,7 +1,7 @@
 {
   "actionlint": "1.6.8",
   "assetfinder": "0.1.1",
-  "awx": "19.5.0",
+  "awx": "19.5.1",
   "butane": "0.13.1",
   "ddosify": "0.7.2",
   "dockle": "0.4.3",
