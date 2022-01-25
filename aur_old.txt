@@ -12,7 +12,7 @@
   "jmeter-plugins-manager": "1.7",
   "pumba": "0.9.0",
   "spotdl": "3.9.2",
-  "vim-markdown": "20200714.122550",
+  "vim-markdown": "20220124.171545",
   "xssmap": "20200305.152024",
   "zoiper": "5.5.9"
 }
