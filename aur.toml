@@ -43,7 +43,7 @@ github = "secdec/xssmap"
 
 [vim-markdown]
 source = "github"
-github = "plasticboy/vim-markdown"
+github = "preservim/vim-markdown"
 
 [hadolint]
 source = "github"
