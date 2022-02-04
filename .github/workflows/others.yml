@@ -33,7 +33,7 @@ jobs:
 
       - name: Nvcheck!
         run: |
-          docker exec "$(cat ${container_id})" nvchecker -c /nvchecker/others.toml
+          docker exec "$(cat ${container_id})" nvchecker --failures -c /nvchecker/others.toml
           others_nvcmp_output=$(docker exec "$(cat ${container_id})" nvcmp -c /nvchecker/others.toml)
           if [[ $others_nvcmp_output ]]; then OTHERS_HAS_CHANGED='true' ; fi
           echo "OTHERS_HAS_CHANGED=$OTHERS_HAS_CHANGED" >> $GITHUB_ENV

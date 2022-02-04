@@ -33,7 +33,7 @@ jobs:
 
       - name: Nvcheck!
         run: |
-          docker exec "$(cat ${container_id})" nvchecker -c /nvchecker/aur.toml
+          docker exec "$(cat ${container_id})" nvchecker --failures -c /nvchecker/aur.toml
           aur_nvcmp_output=$(docker exec "$(cat ${container_id})" nvcmp -c /nvchecker/aur.toml)
           if [[ $aur_nvcmp_output ]]; then AUR_HAS_CHANGED='true' ; fi
           echo "AUR_HAS_CHANGED=$AUR_HAS_CHANGED" >> $GITHUB_ENV
