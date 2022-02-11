@@ -41,10 +41,6 @@ cmd = "curl -Is https://jmeter-plugins.org/get/ | grep Location | sed 's:.*/::;s
 source = "github"
 github = "secdec/xssmap"
 
-[vim-markdown]
-source = "github"
-github = "preservim/vim-markdown"
-
 [hadolint]
 source = "github"
 github = "hadolint/hadolint"
