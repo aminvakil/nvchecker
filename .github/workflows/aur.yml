@@ -49,6 +49,7 @@ jobs:
           (*)
           release_url=None
           ;;
+          esac
           echo $release_url
           if [[ $aur_nvcmp_output ]]; then AUR_HAS_CHANGED='true' ; fi
           echo "AUR_HAS_CHANGED=$AUR_HAS_CHANGED" >> $GITHUB_ENV
