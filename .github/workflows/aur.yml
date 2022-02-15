@@ -37,10 +37,11 @@ jobs:
           aur_nvcmp_output=$(docker exec "$(cat ${container_id})" nvcmp -c /nvchecker/aur.toml)
           nvchecker_source=$(docker exec "$(cat ${container_id})" awk "/\[$(echo $aur_nvcmp_output | awk '{print $1}')\]/{getline; print}" /nvchecker/aur.toml | awk '{print $3}' | tr -d '"')
           nvchecker_repository=$(docker exec "$(cat ${container_id})" awk "/\[$(echo $aur_nvcmp_output | awk '{print $1}')\]/{getline; getline; print}" /nvchecker/aur.toml | awk '{print $3}' | tr -d '"')
+          nvchecker_prefix=$(docker exec "$(cat ${container_id})" awk "/\[$(echo $aur_nvcmp_output | awk '{print $1}')\]/{getline; getline; getline; getline; print}" /nvchecker/aur.toml | awk '{print $3}' | tr -d '"')
           new_version=$(echo ${aur_nvcmp_output} | awk '{print $4}')
           case "$nvchecker_source" in
           ("github")
-          release_url="https://github.com/${nvchecker_repository}/releases/tag/${new_version}"
+          release_url="https://github.com/${nvchecker_repository}/releases/tag/${nvchecker_prefix}${new_version}"
           ;;
           (*)
           release_url=None
