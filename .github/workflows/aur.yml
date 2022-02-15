@@ -52,6 +52,7 @@ jobs:
           echo 'aur_nvcmp_output<<EOF' >> $GITHUB_ENV
           echo $aur_nvcmp_output >> $GITHUB_ENV
           echo 'EOF' >> $GITHUB_ENV
+          echo "release_url=${release_url}" >> $GITHUB_ENV
           mv aur_new.txt aur_old.txt
 
       # - name: Create AUR Issue.
@@ -76,7 +77,7 @@ jobs:
           branch: aurbump
           delete-branch: true
           title: 'AUR Bump'
-          body: ${{ env.aur_nvcmp_output }}
+          body: ${{ env.release_url }}
           draft: false
 
       - name: Stop and remove container forcefully.
