@@ -36,7 +36,7 @@ jobs:
         run: |
           docker exec "$(cat ${container_id})" nvchecker --failures -c /nvchecker/aur.toml
           aur_nvcmp_output=$(docker exec "$(cat ${container_id})" nvcmp -c /nvchecker/aur.toml)
-          nvchecker_source=$(docker exec "$(cat ${container_id})" awk "/\[$(nvcmp -c aur.toml | awk '{print $1}')\]/{getline; print}" aur.toml | awk '{print $3}' | tr -d '"')
+          nvchecker_source=$(docker exec "$(cat ${container_id})" "awk \"/\[$(nvcmp -c aur.toml | awk '{print $1}')\]/{getline; print}\" aur.toml | awk '{print $3}' | tr -d '"')"
           echo "${nvchecker_source}"
           nvchecker_repository=$(docker exec "$(cat ${container_id})" awk "/\[$(nvcmp -c aur.toml | awk '{print $1}')\]/{getline; getline; print}" aur.toml | awk '{print $3}' | tr -d '"')
           echo "${nvchecker_repository}"
