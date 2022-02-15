@@ -40,7 +40,7 @@ jobs:
           new_version=$(echo aur_nvcmp_output | awk '{print $4}')
           case "$nvchecker_source" in
           ("github")
-          release_url='https://github.com/"$nvchecker_repository"/releases/tag/"$new_version"'
+          release_url="https://github.com/${nvchecker_repository}/releases/tag/${new_version}"
           ;;
           (*)
           release_url=None
