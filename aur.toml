@@ -73,6 +73,7 @@ prefix = "v"
 source = "github"
 github = "ddosify/ddosify"
 use_max_tag = true
+prefix = "v"
 
 [dstp]
 source = "github"
