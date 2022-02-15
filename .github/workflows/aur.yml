@@ -35,6 +35,17 @@ jobs:
         run: |
           docker exec "$(cat ${container_id})" nvchecker --failures -c /nvchecker/aur.toml
           aur_nvcmp_output=$(docker exec "$(cat ${container_id})" nvcmp -c /nvchecker/aur.toml)
+          nvchecker_source=$(docker exec "$(cat $(container_id})" awk "/\[$(nvcmp -c aur.toml | awk '{print $1}')\]/{getline; print}" aur.toml | awk '{print $3}' | tr -d '"')
+          nvchecker_repository=$(docker exec "$(cat ${container_id})" awk "/\[$(nvcmp -c aur.toml | awk '{print $1}')\]/{getline; getline; print}" aur.toml | awk '{print $3}' | tr -d '"')
+          new_version=$(echo aur_nvcmp_output | awk '{print $4}')
+          case "$nvchecker_source" in
+          ("github")
+          release_url='https://github.com/"$nvchecker_repository"/releases/tag/"$new_version"'
+          ;;
+          (*)
+          release_url=None
+          ;;
+          esac
           if [[ $aur_nvcmp_output ]]; then AUR_HAS_CHANGED='true' ; fi
           echo "AUR_HAS_CHANGED=$AUR_HAS_CHANGED" >> $GITHUB_ENV
           echo 'aur_nvcmp_output<<EOF' >> $GITHUB_ENV
