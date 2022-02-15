@@ -44,7 +44,7 @@ jobs:
           echo "${new_version}"
           case "$nvchecker_source" in
           ("github")
-          release_url='https://github.com/"$nvchecker_repository"/releases/tag/"$new_version"'
+          release_url="https://github.com/${nvchecker_repository}/releases/tag/${new_version}"
           ;;
           (*)
           release_url=None
