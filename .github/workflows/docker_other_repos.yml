@@ -4,6 +4,7 @@ name: Docker Other Repos
   push:
     branches:
       - main
+      - release_url
   schedule:
     - cron: '0 2 * * *'
 

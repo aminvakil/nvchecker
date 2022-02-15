@@ -4,6 +4,7 @@ name: AUR
   push:
     branches:
       - main
+      - release_url
   schedule:
     - cron: '0 2 * * *'
 
