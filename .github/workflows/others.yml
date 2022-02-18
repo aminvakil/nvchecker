@@ -35,11 +35,24 @@ jobs:
         run: |
           docker exec "$(cat ${container_id})" nvchecker --failures -c /nvchecker/others.toml
           others_nvcmp_output=$(docker exec "$(cat ${container_id})" nvcmp -c /nvchecker/others.toml)
+          nvchecker_source=$(docker exec "$(cat ${container_id})" awk "/\[$(echo $others_nvcmp_output | awk '{print $1}')\]/{getline; print}" /nvchecker/others.toml | awk '{print $3}' | tr -d '"')
+          nvchecker_repository=$(docker exec "$(cat ${container_id})" awk "/\[$(echo $others_nvcmp_output | awk '{print $1}')\]/{getline; getline; print}" /nvchecker/others.toml | awk '{print $3}' | tr -d '"')
+          nvchecker_prefix=$(docker exec "$(cat ${container_id})" awk "/\[$(echo $others_nvcmp_output | awk '{print $1}')\]/{getline; getline; getline; getline; print}" /nvchecker/others.toml | awk '{print $3}' | tr -d '"')
+          new_version=$(echo ${others_nvcmp_output} | awk '{print $4}')
+          case "$nvchecker_source" in
+          ("github")
+          release_url="https://github.com/${nvchecker_repository}/releases/tag/${nvchecker_prefix}${new_version}"
+          ;;
+          (*)
+          release_url=None
+          ;;
+          esac
           if [[ $others_nvcmp_output ]]; then OTHERS_HAS_CHANGED='true' ; fi
           echo "OTHERS_HAS_CHANGED=$OTHERS_HAS_CHANGED" >> $GITHUB_ENV
           echo 'others_nvcmp_output<<EOF' >> $GITHUB_ENV
           echo $others_nvcmp_output >> $GITHUB_ENV
           echo 'EOF' >> $GITHUB_ENV
+          echo "release_url=${release_url}" >> $GITHUB_ENV
           mv others_new.txt others_old.txt
 
       # - name: Create Others Issue.
@@ -64,7 +77,7 @@ jobs:
           branch: othersbump
           delete-branch: true
           title: 'Others Bump'
-          body: ${{ env.others_nvcmp_output }}
+          body: ${{ env.release_url }}
           draft: false
 
       - name: Stop and remove container forcefully.
