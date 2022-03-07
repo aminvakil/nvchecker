@@ -20,3 +20,7 @@ cmd = "curl -s 'https://api.github.com/repos/rfrail3/grafana-dashboards/commits?
 [thelounge]
 source = "aur"
 github = "thelounge"
+
+[cloudflare_ipv4]
+source = "cmd"
+cmd = "curl 'https://api.cloudflare.com/client/v4/ips' -s | jq -r '.result.etag'"
