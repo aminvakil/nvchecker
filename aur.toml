@@ -85,3 +85,9 @@ source = "github"
 github = "spotDL/spotify-downloader"
 use_max_tag = true
 prefix = "v"
+
+[docker-bench-security]
+source = "github"
+github = "docker/docker-bench-security"
+use_max_tag = true
+prefix = "v"
