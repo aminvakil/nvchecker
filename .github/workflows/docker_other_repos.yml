@@ -33,9 +33,6 @@ jobs:
             image: debian11
             dockerfile_location: images/
           - repository: docker-os-systemd
-            image: ubuntu16
-            dockerfile_location: images/
-          - repository: docker-os-systemd
             image: ubuntu18
             dockerfile_location: images/
           - repository: docker-os-systemd

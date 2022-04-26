@@ -6,7 +6,6 @@
   "debian10": "buster-20220418",
   "debian11": "bullseye-20220418",
   "rockylinux8": "8.5.20220328",
-  "ubuntu16": "xenial-20210804",
   "ubuntu18": "bionic-20220415",
   "ubuntu20": "focal-20220415"
 }
