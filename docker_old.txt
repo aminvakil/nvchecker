@@ -5,6 +5,7 @@
   "centos8": "8.4.2105",
   "debian10": "buster-20220418",
   "debian11": "bullseye-20220418",
+  "python:3.9-slim-bullseye": "3.9.12-slim-bullseye",
   "rockylinux8": "8.5.20220328",
   "ubuntu18": "bionic-20220427",
   "ubuntu20": "focal-20220426",
