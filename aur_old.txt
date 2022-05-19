@@ -1,5 +1,5 @@
 {
-  "actionlint": "1.6.12",
+  "actionlint": "1.6.13",
   "assetfinder": "0.1.1",
   "awx": "21.0.0",
   "butane": "0.14.0",
@@ -8,7 +8,7 @@
   "dockle": "0.4.5",
   "dstp": "0.4.0",
   "gnome-shell-extension-workspace-matrix": "7.0",
-  "google-tsunami-security-scanner": "v0.0.10",
+  "google-tsunami-security-scanner": "v0.0.11",
   "hadolint": "2.10.0",
   "pumba": "0.9.0",
   "spotdl": "3.9.6",
