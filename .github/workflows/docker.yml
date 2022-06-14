@@ -55,7 +55,7 @@ jobs:
 
       - name: Create Docker Pull Request
         if: env.DOCKER_HAS_CHANGED == 'true' && github.event_name != 'pull_request'
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: ${{ env.docker_nvcmp_output }}
