@@ -11,7 +11,7 @@ cmd = "curl -s ftp://ftp.infradead.org/pub/ocserv/ | awk '{print $9}' | tail -n 
 [node_exporter]
 source = "github"
 github = "prometheus/node_exporter"
-use_max_tag = true
+use_latest_release = true
 
 [grafana_dashboard_1860]
 source = "cmd"
