@@ -1,13 +1,13 @@
 {
   "alpine": "3.16.1",
-  "archlinux": "base-20220724.0.70393",
+  "archlinux": "base-20220731.0.71623",
   "centos7": "7.9.2009",
   "centos8": "8.4.2105",
-  "debian10": "buster-20220711",
-  "debian11": "bullseye-20220711",
+  "debian10": "buster-20220801",
+  "debian11": "bullseye-20220801",
   "python:3.9-slim-bullseye": "3.9.13-slim-bullseye",
   "rockylinux8": "8.5.20220328",
-  "ubuntu18": "bionic-20220531",
-  "ubuntu20": "focal-20220531",
-  "ubuntu22": "jammy-20220531"
+  "ubuntu18": "bionic-20220801",
+  "ubuntu20": "focal-20220801",
+  "ubuntu22": "jammy-20220801"
 }
