@@ -1,5 +1,5 @@
 {
-  "actionlint": "1.6.19",
+  "actionlint": "1.6.20",
   "assetfinder": "0.1.1",
   "awx": "21.6.0",
   "butane": "0.15.0",
@@ -11,7 +11,7 @@
   "google-tsunami-security-scanner": "v0.0.14",
   "hadolint": "2.10.0",
   "pumba": "0.9.0",
-  "spotdl": "4.0.0-rc.3",
+  "spotdl": "4.0.0-rc.4",
   "xssmap": "20200305.152024",
   "zoiper": "5.5.13"
 }
