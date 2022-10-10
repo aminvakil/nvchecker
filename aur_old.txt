@@ -1,5 +1,5 @@
 {
-  "actionlint": "1.6.20",
+  "actionlint": "1.6.21",
   "assetfinder": "0.1.1",
   "awx": "21.7.0",
   "butane": "0.15.0",
