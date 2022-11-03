@@ -9,5 +9,5 @@
   "rockylinux8": "8.5.20220328",
   "ubuntu18": "bionic-20221019",
   "ubuntu20": "focal-20221019",
-  "ubuntu22": "jammy-20221020"
+  "ubuntu22": "jammy-20221101"
 }
