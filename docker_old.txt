@@ -6,7 +6,7 @@
   "debian10": "buster-20221114",
   "debian11": "bullseye-20221114",
   "python:3.9-slim-bullseye": "3.9.15-slim-bullseye",
-  "rockylinux8": "8.5.20220328",
+  "rockylinux8": "8.7.20221112",
   "ubuntu18": "bionic-20221019",
   "ubuntu20": "focal-20221019",
   "ubuntu22": "jammy-20221101"
