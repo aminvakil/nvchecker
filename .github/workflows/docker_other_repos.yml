@@ -49,8 +49,6 @@ jobs:
             image: alpine
           - repository: docker-squid
             image: alpine
-          - repository: docker-sshd
-            image: alpine
           - repository: docker-ocserv
             image: alpine
 
