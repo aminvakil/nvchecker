@@ -11,7 +11,7 @@ jobs:
 
   Others:
     name: Others
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - name: Check out the codebase.
         uses: actions/checkout@v2
