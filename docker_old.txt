@@ -7,6 +7,7 @@
   "debian11": "bullseye-20221219",
   "golang1.19": "1.19.4-alpine",
   "python:3.9-slim-bullseye": "3.9.16-slim-bullseye",
+  "rebloom": "2.4.3",
   "rockylinux8": "8.7.20221112",
   "ubuntu18": "bionic-20221130",
   "ubuntu20": "focal-20221130",
