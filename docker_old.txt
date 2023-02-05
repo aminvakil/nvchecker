@@ -1,15 +1,14 @@
 {
   "alpine": "3.17.1",
-  "archlinux": "base-20230122.0.120412",
+  "archlinux": "base-20230129.0.122153",
   "centos7": "7.9.2009",
   "centos8": "8.4.2105",
-  "debian10": "buster-20230109",
-  "debian11": "bullseye-20230109",
+  "debian10": "buster-20230202",
+  "debian11": "bullseye-20230202",
   "golang1.19": "1.19.5-alpine",
   "python:3.9-slim-bullseye": "3.9.16-slim-bullseye",
-  "rebloom": "2.4.3",
   "rockylinux8": "8.7.20221112",
-  "ubuntu18": "bionic-20221215",
-  "ubuntu20": "focal-20221130",
-  "ubuntu22": "jammy-20221130"
+  "ubuntu18": "bionic-20230126",
+  "ubuntu20": "focal-20230126",
+  "ubuntu22": "jammy-20230126"
 }
