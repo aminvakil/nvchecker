@@ -77,9 +77,3 @@ source = "container"
 registry = "docker.io"
 container = "library/golang"
 include_regex = "1.19.*-alpine"
-
-["rebloom"]
-source = "container"
-registry = "docker.io"
-container = "redislabs/rebloom"
-include_regex = "2.*"
