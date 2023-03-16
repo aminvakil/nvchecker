@@ -8,7 +8,7 @@
   "golang1.19": "1.19.7-alpine",
   "python:3.9-slim-bullseye": "3.9.16-slim-bullseye",
   "rockylinux8": "8.7.20230215",
-  "ubuntu18": "bionic-20230301",
-  "ubuntu20": "focal-20230301",
-  "ubuntu22": "jammy-20230301"
+  "ubuntu18": "bionic-20230308",
+  "ubuntu20": "focal-20230308",
+  "ubuntu22": "jammy-20230308"
 }
