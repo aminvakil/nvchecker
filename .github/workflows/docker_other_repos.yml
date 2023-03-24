@@ -54,7 +54,7 @@ jobs:
 
     steps:
       - name: Check out the codebase.
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Pull base image.
         run: docker pull quay.io/aminvakil/archlinux:latest
@@ -90,7 +90,7 @@ jobs:
         env:
           image: ${{ matrix.image }}
 
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         if: env.OS_CHANGED == 'true'
         with:
           repository: "aminvakil/${{ env.repository }}"
