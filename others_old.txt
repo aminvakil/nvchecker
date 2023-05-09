@@ -2,6 +2,6 @@
   "cloudflare_ipv4": "38f79d050aa027e3be3865e495dcc9bc",
   "grafana_dashboard_1860": "31",
   "node_exporter": "v1.5.0",
-  "ocserv": "1.1.6",
+  "ocserv": "1.1.7",
   "thelounge": "4.3.1-1"
 }
