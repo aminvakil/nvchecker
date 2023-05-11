@@ -3,7 +3,7 @@
   "assetfinder": "0.1.1",
   "awx": "22.2.0",
   "butane": "0.18.0",
-  "ddosify": "1.0.0",
+  "ddosify": "1.0.1",
   "docker-bench-security": "1.5.0",
   "dockle": "0.4.11",
   "dstp": "0.4.0",
