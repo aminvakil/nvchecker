@@ -53,6 +53,8 @@ jobs:
             image: alpine
           - repository: docker-flarectl
             image: alpine
+          - repository: docker-flarectl
+            image: golang
 
     steps:
       - name: Check out the codebase.
