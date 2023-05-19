@@ -72,8 +72,8 @@ registry = "docker.io"
 container = "library/ubuntu"
 include_regex = "jammy-.*"
 
-["golang1.19"]
+["golang1.20"]
 source = "container"
 registry = "docker.io"
 container = "library/golang"
-include_regex = "1.19.*-alpine"
+include_regex = "1.20.*-alpine"
