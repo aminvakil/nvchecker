@@ -51,6 +51,8 @@ jobs:
             image: alpine
           - repository: docker-ocserv
             image: alpine
+          - repository: docker-flarectl
+            image: alpine
 
     steps:
       - name: Check out the codebase.
