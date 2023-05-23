@@ -1,10 +1,10 @@
 {
   "alpine": "3.18.0",
-  "archlinux": "base-20230514.0.150299",
+  "archlinux": "base-20230521.0.152478",
   "centos7": "7.9.2009",
   "centos8": "8.4.2105",
-  "debian10": "buster-20230502",
-  "debian11": "bullseye-20230502",
+  "debian10": "buster-20230522",
+  "debian11": "bullseye-20230522",
   "golang1.20": "1.20.4-alpine",
   "python:3.9-slim-bullseye": "3.9.16-slim-bullseye",
   "rockylinux8": "8.7.20230215",
