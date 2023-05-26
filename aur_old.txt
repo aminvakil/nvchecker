@@ -11,7 +11,7 @@
   "google-tsunami-security-scanner": "v0.0.16",
   "hadolint": "2.12.1-beta",
   "pumba": "0.9.7",
-  "spotdl": "4.1.10",
+  "spotdl": "4.1.11",
   "xssmap": "20200305.152024",
   "zoiper": "5.5.15"
 }
