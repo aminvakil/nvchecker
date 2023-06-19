@@ -3,5 +3,5 @@
   "grafana_dashboard_1860": "31",
   "node_exporter": "v1.6.0",
   "ocserv": "1.1.7",
-  "thelounge": "4.4.0-1"
+  "thelounge": "4.4.1-1"
 }
