@@ -54,6 +54,14 @@ container = "library/debian"
 include_regex = "bullseye-.*"
 exclude_regex = "bullseye-.*-slim"
 
+[debian12]
+source = "container"
+registry = "docker.io"
+container = "library/debian"
+include_regex = "bookworm-.*"
+exclude_regex = "bookworm-.*-slim"
+
+
 [ubuntu18]
 source = "container"
 registry = "docker.io"
