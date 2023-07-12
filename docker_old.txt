@@ -6,7 +6,7 @@
   "debian10": "buster-20230703",
   "debian11": "bullseye-20230703",
   "debian12": "bookworm-20230703",
-  "golang1.20": "1.20.5-alpine",
+  "golang1.20": "1.20.6-alpine",
   "python:3.9-slim-bullseye": "3.9.17-slim-bullseye",
   "rockylinux8": "8.7.20230215",
   "ubuntu18": "bionic-20230530",
