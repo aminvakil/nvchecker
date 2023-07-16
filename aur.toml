@@ -90,9 +90,3 @@ source = "github"
 github = "docker/docker-bench-security"
 use_max_tag = true
 prefix = "v"
-
-[dstp]
-source = "github"
-github = "ycd/dstp"
-use_max_tag = true
-prefix = "v"
