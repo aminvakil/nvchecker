@@ -8,7 +8,7 @@
   "dockle": "0.4.13",
   "dstp": "0.4.0",
   "gnome-shell-extension-workspace-matrix": "8.0",
-  "google-tsunami-security-scanner": "v0.0.16",
+  "google-tsunami-security-scanner": "v0.0.18",
   "hadolint": "2.12.1-beta",
   "pumba": "0.9.7",
   "spotdl": "4.2.0",
