@@ -28,12 +28,6 @@ registry = "docker.io"
 container = "library/centos"
 include_regex = "7.*"
 
-[centos8]
-source = "container"
-registry = "docker.io"
-container = "library/centos"
-include_regex = "8.*"
-
 [rockylinux8]
 source = "container"
 registry = "quay.io"
