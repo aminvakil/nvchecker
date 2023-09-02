@@ -6,9 +6,8 @@
   "debian11": "bullseye-20230814",
   "debian12": "bookworm-20230814",
   "golang1.20": "1.20.7-alpine",
-  "python:3.9-slim-bullseye": "3.9.18-slim-bullseye",
   "rockylinux8": "8.7.20230215",
   "ubuntu18": "bionic-20230530",
   "ubuntu20": "focal-20230801",
-  "ubuntu22": "jammy-20230804"
+  "ubuntu22": "jammy-20230816"
 }
