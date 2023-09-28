@@ -1,7 +1,7 @@
 {
   "actionlint": "1.6.26",
   "assetfinder": "0.1.1",
-  "awx": "23.1.0",
+  "awx": "23.2.0",
   "butane": "0.18.0",
   "ddosify": "1.0.5",
   "docker-bench-security": "1.6.0",
