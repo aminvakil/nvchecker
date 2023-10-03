@@ -1,6 +1,6 @@
 {
   "alpine": "3.18.4",
-  "archlinux": "base-20230921.0.180222",
+  "archlinux": "base-20231001.0.182270",
   "centos7": "7.9.2009",
   "debian10": "buster-20230919",
   "debian11": "bullseye-20230919",
@@ -9,5 +9,5 @@
   "rockylinux8": "8.7.20230215",
   "ubuntu18": "bionic-20230530",
   "ubuntu20": "focal-20230801",
-  "ubuntu22": "jammy-20230816"
+  "ubuntu22": "jammy-20230916"
 }
