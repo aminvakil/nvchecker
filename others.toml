@@ -24,3 +24,8 @@ github = "thelounge"
 [cloudflare_ipv4]
 source = "cmd"
 cmd = "curl 'https://api.cloudflare.com/client/v4/ips' -s | jq -r '.result.etag'"
+
+[nginx-vod-module]
+source = "github"
+github = "kaltura/nginx-vod-module"
+use_max_tag = true
