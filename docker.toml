@@ -73,3 +73,9 @@ source = "container"
 registry = "docker.io"
 container = "library/golang"
 include_regex = "1.20.*-alpine"
+
+["redis6"]
+source = "container"
+registry = "docker.io"
+container = "library/redis"
+include_regex = "6.*-alpine"
