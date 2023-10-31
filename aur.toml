@@ -90,3 +90,7 @@ source = "github"
 github = "docker/docker-bench-security"
 use_max_tag = true
 prefix = "v"
+
+[jmeter-plugins-manager]
+source = "cmd"
+cmd = "curl -Is https://jmeter-plugins.org/get/ | grep Location | sed -e 's/.*jmeter-plugins-manager-//g' -e 's/.jar//'"
