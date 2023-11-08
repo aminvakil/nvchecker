@@ -84,4 +84,4 @@ include_regex = "6.*-alpine"
 source = "container"
 registry = "docker.io"
 container = "fluent/fluentd"
-include_regex = "v1.16[0-9|\-\.]+$"
+include_regex = 'v1.16[0-9\-\.]+$'
