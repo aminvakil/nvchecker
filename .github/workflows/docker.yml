@@ -30,7 +30,7 @@ jobs:
         run: docker exec "$(cat ${container_id})" pacman -Syu --noconfirm
 
       - name: Install nvchecker and git.
-        run: docker exec "$(cat ${container_id})" pacman -S nvchecker git --noconfirm
+        run: docker exec "$(cat ${container_id})" pacman -S nvchecker git pyalpm --noconfirm
 
       - name: Nvcheck!
         run: |
