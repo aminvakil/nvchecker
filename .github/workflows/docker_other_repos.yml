@@ -58,6 +58,8 @@ jobs:
             image: alpine
           - repository: docker-flarectl
             image: golang
+          - repository: docker-fluentd-elasticsearch
+            image: fluentd
 
     steps:
       - name: Check out the codebase.
