@@ -85,3 +85,4 @@ source = "container"
 registry = "docker.io"
 container = "fluent/fluentd"
 include_regex = 'v1.16[0-9\-\.]+$'
+sort_version_key = "vercmp"
