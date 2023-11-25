@@ -8,7 +8,7 @@
   "fluentd": "v1.16.3-1.0",
   "golang1.20": "1.20.11-alpine",
   "redis6": "6.2.14-alpine",
-  "rockylinux8": "8.7.20230215",
+  "rockylinux8": "8.9.20231119",
   "ubuntu18": "bionic-20230530",
   "ubuntu20": "focal-20231003",
   "ubuntu22": "jammy-20231004"
