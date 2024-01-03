@@ -46,3 +46,4 @@ github = "fluent-plugin-prometheus"
 source = "github"
 github = "albertodonato/query-exporter"
 use_max_tag = true
+prefix = ""
