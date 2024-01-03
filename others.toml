@@ -41,3 +41,8 @@ github = "elasticsearch-xpack"
 [fluent-plugin-prometheus]
 source = "gems"
 github = "fluent-plugin-prometheus"
+
+[query-exporter]
+source = "github"
+github = "albertodonato/query-exporter"
+use_max_tag = true
