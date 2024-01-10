@@ -6,7 +6,7 @@
   "debian11": "bullseye-20231218",
   "debian12": "bookworm-20231218",
   "fluentd": "v1.16.3-1.0",
-  "golang1.20": "1.20.12-alpine",
+  "golang1.20": "1.20.13-alpine",
   "redis6": "6.2.14-alpine",
   "rockylinux8": "8.9.20231119",
   "ubuntu18": "bionic-20230530",
