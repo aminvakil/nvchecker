@@ -50,4 +50,4 @@ prefix = ""
 
 [iptables-persistent-deb10]
 source = "cmd"
-cmd = "curl -s http://deb.debian.org/debian/pool/main/i/iptables-persistent/ | grep 'deb10' | tail -1 | sed -nr 's/<a href=".*">(.*\.deb)<\/a>.*/\1/p' | cut -d '_' -f2"
+cmd = "curl -s http://deb.debian.org/debian/pool/main/i/iptables-persistent/ | grep 'deb10' | tail -1 | sed 's/.*netfilter-persistent_//' | sed 's/_all.*//'"
