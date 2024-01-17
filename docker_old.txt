@@ -5,7 +5,7 @@
   "debian10": "buster-20240110",
   "debian11": "bullseye-20240110",
   "debian12": "bookworm-20240110",
-  "fluentd": "v1.16.3-1.0",
+  "fluentd": "v1.16.3-2.0",
   "golang1.20": "1.20.13-alpine",
   "redis6": "6.2.14-alpine",
   "rockylinux8": "8.9.20231119",
