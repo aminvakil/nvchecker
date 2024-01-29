@@ -8,6 +8,6 @@
   "nginx-vod-module": "1.33",
   "node_exporter": "v1.7.0",
   "ocserv": "1.2.4",
-  "query-exporter": "2.9.2",
+  "query-exporter": "2.10.0",
   "thelounge": "4.4.1-1"
 }
