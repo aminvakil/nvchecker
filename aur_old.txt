@@ -5,7 +5,7 @@
   "butane": "0.19.0",
   "ddosify": "1.0.6",
   "docker-bench-security": "1.6.1",
-  "dockle": "0.4.13",
+  "dockle": "0.4.14",
   "dstp": "0.4.0",
   "gnome-shell-extension-workspace-matrix": "9.1",
   "google-tsunami-security-scanner": "v0.0.21",
