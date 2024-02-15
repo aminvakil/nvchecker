@@ -1,7 +1,7 @@
 {
   "actionlint": "1.6.26",
   "assetfinder": "0.1.1",
-  "awx": "23.7.0",
+  "awx": "23.8.0",
   "butane": "0.19.0",
   "ddosify": "1.0.6",
   "docker-bench-security": "1.6.1",
@@ -14,5 +14,5 @@
   "pumba": "0.10.1",
   "spotdl": "4.2.4",
   "xssmap": "20200305.152024",
-  "zoiper": "5.6.2"
+  "zoiper": "5.6.3"
 }
