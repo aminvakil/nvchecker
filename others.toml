@@ -56,3 +56,4 @@ cmd = "curl -s http://deb.debian.org/debian/pool/main/i/iptables-persistent/ | g
 source = "github"
 github = "healthchecks/healthchecks"
 prefix = ""
+use_max_tag = true
