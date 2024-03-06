@@ -10,6 +10,6 @@
   "redis6": "6.2.14-alpine",
   "rockylinux8": "8.9.20231119",
   "ubuntu18": "bionic-20230530",
-  "ubuntu20": "focal-20240123",
-  "ubuntu22": "jammy-20240212"
+  "ubuntu20": "focal-20240216",
+  "ubuntu22": "jammy-20240227"
 }
