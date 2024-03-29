@@ -74,10 +74,8 @@ use_max_tag = true
 prefix = "v"
 
 [spotdl]
-source = "github"
-github = "spotDL/spotify-downloader"
-use_max_tag = true
-prefix = "v"
+source = "pypi"
+github = "spotdl"
 
 [docker-bench-security]
 source = "github"
