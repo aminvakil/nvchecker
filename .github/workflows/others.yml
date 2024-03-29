@@ -67,7 +67,7 @@ jobs:
 
       - name: Create Others Pull Request
         if: env.OTHERS_HAS_CHANGED == 'true' && github.event_name != 'pull_request'
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: ${{ env.others_nvcmp_output }}
