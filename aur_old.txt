@@ -11,7 +11,7 @@
   "hadolint": "2.12.1-beta",
   "jmeter-plugins-manager": "1.10",
   "pumba": "0.10.1",
-  "spotdl": "4.2.4",
+  "spotdl": "4.2.5",
   "xssmap": "20200305.152024",
   "zoiper": "5.6.4"
 }
