@@ -4,7 +4,7 @@
   "fluent-plugin-elasticsearch": "5.4.3",
   "fluent-plugin-prometheus": "2.1.0",
   "grafana_dashboard_1860": "36",
-  "healthchecks": "3.2",
+  "healthchecks": "3.3",
   "iptables-persistent-deb10": "1.0.11+deb10u1",
   "nginx-vod-module": "1.33",
   "node_exporter": "v1.7.0",
