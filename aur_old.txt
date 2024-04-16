@@ -6,7 +6,7 @@
   "docker-bench-security": "1.6.1",
   "dockle": "0.4.14",
   "dstp": "0.4.0",
-  "gnome-shell-extension-workspace-matrix": "9.1",
+  "gnome-shell-extension-workspace-matrix": "10.0",
   "google-tsunami-security-scanner": "v0.0.21",
   "hadolint": "2.12.1-beta",
   "jmeter-plugins-manager": "1.10",
