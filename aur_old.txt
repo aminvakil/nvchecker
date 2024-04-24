@@ -1,17 +1,83 @@
 {
-  "assetfinder": "0.1.1",
-  "awx": "24.2.0",
-  "butane": "0.20.0",
-  "ddosify": "1.0.6",
-  "docker-bench-security": "1.6.1",
-  "dockle": "0.4.14",
-  "dstp": "0.4.0",
-  "gnome-shell-extension-workspace-matrix": "10.0",
-  "google-tsunami-security-scanner": "v0.0.21",
-  "hadolint": "2.12.1-beta",
-  "jmeter-plugins-manager": "1.10",
-  "pumba": "0.10.1",
-  "spotdl": "4.2.5",
-  "xssmap": "20200305.152024",
-  "zoiper": "5.6.4"
+  "version": 2,
+  "data": {
+    "assetfinder": {
+      "version": "0.1.1",
+      "gitref": "refs/tags/v0.1.1",
+      "revision": "4e95d8701aae8cff1c27af2626eb22ba110ad583",
+      "url": "https://github.com/tomnomnom/assetfinder/releases/tag/v0.1.1"
+    },
+    "awx": {
+      "version": "24.3.0",
+      "gitref": "refs/tags/24.3.0",
+      "revision": "814ceb0d0690cedcfc638f86f4e861b0d2b9ee6e",
+      "url": "https://github.com/ansible/awx/releases/tag/24.3.0"
+    },
+    "butane": {
+      "version": "0.20.0",
+      "gitref": "refs/tags/v0.20.0",
+      "url": "https://github.com/coreos/butane/releases/tag/v0.20.0"
+    },
+    "ddosify": {
+      "version": "1.0.6",
+      "gitref": "refs/tags/v1.0.6",
+      "revision": "ae9bcd54059f412e3eefd23db27febc489168fb9",
+      "url": "https://github.com/ddosify/ddosify/releases/tag/v1.0.6"
+    },
+    "docker-bench-security": {
+      "version": "1.6.1",
+      "gitref": "refs/tags/v1.6.1",
+      "revision": "ba0b402ea56aafbb9a56f09cc13ee629160c58b6",
+      "url": "https://github.com/docker/docker-bench-security/releases/tag/v1.6.1"
+    },
+    "dockle": {
+      "version": "0.4.14",
+      "gitref": "refs/tags/v0.4.14",
+      "revision": "61a2fccb44fd4bac8f4825e74854acf3f4fac7a2",
+      "url": "https://github.com/goodwithtech/dockle/releases/tag/v0.4.14"
+    },
+    "dstp": {
+      "version": "0.4.0",
+      "gitref": "refs/tags/v0.4.0",
+      "revision": "424bac3662b18785717bcc846a402ed9e4c14bba",
+      "url": "https://github.com/ycd/dstp/releases/tag/v0.4.0"
+    },
+    "gnome-shell-extension-workspace-matrix": {
+      "version": "10.0",
+      "gitref": "refs/tags/v10.0",
+      "url": "https://github.com/mzur/gnome-shell-wsmatrix/releases/tag/v10.0"
+    },
+    "google-tsunami-security-scanner": {
+      "version": "v0.0.21",
+      "gitref": "refs/tags/v0.0.21",
+      "url": "https://github.com/google/tsunami-security-scanner/releases/tag/v0.0.21"
+    },
+    "hadolint": {
+      "version": "2.12.1-beta",
+      "gitref": "refs/tags/v2.12.1-beta",
+      "revision": "02c491342ac7c7a4c0617c01ddd51f49010a77f6",
+      "url": "https://github.com/hadolint/hadolint/releases/tag/v2.12.1-beta"
+    },
+    "jmeter-plugins-manager": {
+      "version": "1.10"
+    },
+    "pumba": {
+      "version": "0.10.1",
+      "gitref": "refs/tags/0.10.1",
+      "revision": "09321ab213288f742de16d3e2f724a8537b90813",
+      "url": "https://github.com/alexei-led/pumba/releases/tag/0.10.1"
+    },
+    "spotdl": {
+      "version": "4.2.5",
+      "url": "https://pypi.org/project/spotdl/4.2.5/"
+    },
+    "xssmap": {
+      "version": "20200305.152024",
+      "revision": "1a208b11fdcfdd413d1cf76a6c8fc570f4b802d2",
+      "url": "https://github.com/secdec/xssmap/commit/1a208b11fdcfdd413d1cf76a6c8fc570f4b802d2"
+    },
+    "zoiper": {
+      "version": "5.6.4"
+    }
+  }
 }
