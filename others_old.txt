@@ -1,14 +1,56 @@
 {
-  "cloudflare_ipv4": "38f79d050aa027e3be3865e495dcc9bc",
-  "elasticsearch-xpack": "7.17.10",
-  "fluent-plugin-elasticsearch": "5.4.3",
-  "fluent-plugin-prometheus": "2.1.0",
-  "grafana_dashboard_1860": "36",
-  "healthchecks": "3.3",
-  "iptables-persistent-deb10": "1.0.11+deb10u1",
-  "nginx-vod-module": "1.33",
-  "node_exporter": "v1.7.0",
-  "ocserv": "1.2.4",
-  "query-exporter": "2.10.0",
-  "thelounge": "4.4.3-1"
+  "version": 2,
+  "data": {
+    "cloudflare_ipv4": {
+      "version": "38f79d050aa027e3be3865e495dcc9bc"
+    },
+    "elasticsearch-xpack": {
+      "version": "7.17.10",
+      "url": "https://rubygems.org/gems/elasticsearch-xpack/versions/7.17.10"
+    },
+    "fluent-plugin-elasticsearch": {
+      "version": "5.4.3",
+      "url": "https://rubygems.org/gems/fluent-plugin-elasticsearch/versions/5.4.3"
+    },
+    "fluent-plugin-prometheus": {
+      "version": "2.1.0",
+      "url": "https://rubygems.org/gems/fluent-plugin-prometheus/versions/2.1.0"
+    },
+    "grafana_dashboard_1860": {
+      "version": "36"
+    },
+    "healthchecks": {
+      "version": "3.3",
+      "gitref": "refs/tags/v3.3",
+      "revision": "6e2df6a71cbde8be2bcc761731752453c5f853b7",
+      "url": "https://github.com/healthchecks/healthchecks/releases/tag/v3.3"
+    },
+    "iptables-persistent-deb10": {
+      "version": "1.0.11+deb10u1"
+    },
+    "nginx-vod-module": {
+      "version": "1.33",
+      "gitref": "refs/tags/1.33",
+      "revision": "1750eb08021e362859887fdfe842ed6a4997f576",
+      "url": "https://github.com/kaltura/nginx-vod-module/releases/tag/1.33"
+    },
+    "node_exporter": {
+      "version": "v1.8.0",
+      "gitref": "refs/tags/v1.8.0",
+      "url": "https://github.com/prometheus/node_exporter/releases/tag/v1.8.0"
+    },
+    "ocserv": {
+      "version": "1.2.4"
+    },
+    "query-exporter": {
+      "version": "2.10.0",
+      "gitref": "refs/tags/2.10.0",
+      "revision": "b482bb7102103b5c6fe90fa767db6583b89abe3e",
+      "url": "https://github.com/albertodonato/query-exporter/releases/tag/2.10.0"
+    },
+    "thelounge": {
+      "version": "4.4.3-1",
+      "url": "https://aur.archlinux.org/packages/thelounge"
+    }
+  }
 }
