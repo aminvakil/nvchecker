@@ -35,10 +35,10 @@
       "version": "bionic-20230530"
     },
     "ubuntu20": {
-      "version": "focal-20240410"
+      "version": "focal-20240416"
     },
     "ubuntu22": {
-      "version": "jammy-20240405"
+      "version": "jammy-20240416"
     }
   }
 }
