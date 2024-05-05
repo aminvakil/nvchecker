@@ -58,7 +58,7 @@ prefix = "v"
 [anteon]
 source = "github"
 github = "getanteon/anteon"
-use_max_tag = true
+use_latest_release = true
 prefix = "selfhosted-"
 
 [dstp]
