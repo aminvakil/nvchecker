@@ -1,6 +1,11 @@
 {
   "version": 2,
   "data": {
+    "anteon": {
+      "version": "1.7.2",
+      "gitref": "refs/tags/selfhosted-1.7.2",
+      "url": "https://github.com/getanteon/anteon/releases/tag/selfhosted-1.7.2"
+    },
     "assetfinder": {
       "version": "0.1.1",
       "gitref": "refs/tags/v0.1.1",
@@ -17,12 +22,6 @@
       "version": "0.20.0",
       "gitref": "refs/tags/v0.20.0",
       "url": "https://github.com/coreos/butane/releases/tag/v0.20.0"
-    },
-    "ddosify": {
-      "version": "1.0.6",
-      "gitref": "refs/tags/v1.0.6",
-      "revision": "ae9bcd54059f412e3eefd23db27febc489168fb9",
-      "url": "https://github.com/ddosify/ddosify/releases/tag/v1.0.6"
     },
     "docker-bench-security": {
       "version": "1.6.1",
