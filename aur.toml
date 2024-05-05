@@ -55,11 +55,11 @@ github = "goodwithtech/dockle"
 use_max_tag = true
 prefix = "v"
 
-[ddosify]
+[anteon]
 source = "github"
-github = "ddosify/ddosify"
+github = "getanteon/anteon"
 use_max_tag = true
-prefix = "v"
+prefix = "selfhosted-"
 
 [dstp]
 source = "github"
