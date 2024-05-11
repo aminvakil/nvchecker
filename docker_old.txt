@@ -23,7 +23,7 @@
       "version": "v1.16.5-1.0"
     },
     "golang1.22": {
-      "version": "1.22.2-alpine"
+      "version": "1.22.3-alpine"
     },
     "redis6": {
       "version": "6.2.14-alpine"
