@@ -11,13 +11,13 @@
       "version": "7.9.2009"
     },
     "debian10": {
-      "version": "buster-20240423"
+      "version": "buster-20240513"
     },
     "debian11": {
-      "version": "bullseye-20240423"
+      "version": "bullseye-20240513"
     },
     "debian12": {
-      "version": "bookworm-20240423"
+      "version": "bookworm-20240513"
     },
     "fluentd": {
       "version": "v1.16.5-1.0"
