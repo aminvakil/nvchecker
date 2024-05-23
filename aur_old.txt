@@ -13,10 +13,10 @@
       "url": "https://github.com/tomnomnom/assetfinder/releases/tag/v0.1.1"
     },
     "awx": {
-      "version": "24.3.1",
-      "gitref": "refs/tags/24.3.1",
-      "revision": "918d5b3565e5997bdbd57117b92852ba13bb55d6",
-      "url": "https://github.com/ansible/awx/releases/tag/24.3.1"
+      "version": "24.4.0",
+      "gitref": "refs/tags/24.4.0",
+      "revision": "0d4f6537944b7260e59ad04919290b84cb5a27b2",
+      "url": "https://github.com/ansible/awx/releases/tag/24.4.0"
     },
     "butane": {
       "version": "0.20.0",
