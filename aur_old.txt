@@ -2,9 +2,9 @@
   "version": 2,
   "data": {
     "anteon": {
-      "version": "1.7.2",
-      "gitref": "refs/tags/selfhosted-1.7.2",
-      "url": "https://github.com/getanteon/anteon/releases/tag/selfhosted-1.7.2"
+      "version": "2.2.0",
+      "gitref": "refs/tags/selfhosted-2.2.0",
+      "url": "https://github.com/getanteon/anteon/releases/tag/selfhosted-2.2.0"
     },
     "assetfinder": {
       "version": "0.1.1",
