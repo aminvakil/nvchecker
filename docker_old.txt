@@ -29,7 +29,7 @@
       "version": "6.2.14-alpine"
     },
     "rockylinux8": {
-      "version": "8.9.20231119"
+      "version": "8.10.20240528"
     },
     "ubuntu18": {
       "version": "bionic-20230530"
