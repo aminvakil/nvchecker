@@ -30,18 +30,6 @@ source = "github"
 github = "kaltura/nginx-vod-module"
 use_max_tag = true
 
-[fluent-plugin-elasticsearch]
-source = "gems"
-github = "fluent-plugin-elasticsearch"
-
-[elasticsearch-xpack]
-source = "gems"
-github = "elasticsearch-xpack"
-
-[fluent-plugin-prometheus]
-source = "gems"
-github = "fluent-plugin-prometheus"
-
 [query-exporter]
 source = "github"
 github = "albertodonato/query-exporter"
