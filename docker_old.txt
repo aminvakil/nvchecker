@@ -19,11 +19,8 @@
     "debian12": {
       "version": "bookworm-20240513"
     },
-    "fluentd": {
-      "version": "v1.16.5-1.0"
-    },
     "golang1.22": {
-      "version": "1.22.3-alpine"
+      "version": "1.22.4-alpine"
     },
     "redis6": {
       "version": "6.2.14-alpine"
@@ -35,10 +32,10 @@
       "version": "bionic-20230530"
     },
     "ubuntu20": {
-      "version": "focal-20240427"
+      "version": "focal-20240530"
     },
     "ubuntu22": {
-      "version": "jammy-20240427"
+      "version": "jammy-20240530"
     }
   }
 }
