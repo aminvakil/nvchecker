@@ -16,18 +16,6 @@ registry = "docker.io"
 container = "library/archlinux"
 include_regex = "base-2.*"
 
-[centos7]
-source = "container"
-registry = "docker.io"
-container = "library/centos"
-include_regex = "7.*"
-
-[rockylinux8]
-source = "container"
-registry = "quay.io"
-container = "rockylinux/rockylinux"
-include_regex = "8.*"
-
 [debian10]
 source = "container"
 registry = "docker.io"
@@ -50,12 +38,6 @@ include_regex = "bookworm-.*"
 exclude_regex = "bookworm-.*-slim"
 
 
-[ubuntu18]
-source = "container"
-registry = "docker.io"
-container = "library/ubuntu"
-include_regex = "bionic-.*"
-
 [ubuntu20]
 source = "container"
 registry = "docker.io"
@@ -67,6 +49,12 @@ source = "container"
 registry = "docker.io"
 container = "library/ubuntu"
 include_regex = "jammy-.*"
+
+[ubuntu24]
+source = "container"
+registry = "docker.io"
+container = "library/ubuntu"
+include_regex = "noble-.*"
 
 ["golang1.22"]
 source = "container"
