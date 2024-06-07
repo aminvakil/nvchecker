@@ -7,9 +7,6 @@
     "archlinux": {
       "version": "base-20240101.0.204074"
     },
-    "centos7": {
-      "version": "7.9.2009"
-    },
     "debian10": {
       "version": "buster-20240513"
     },
@@ -25,17 +22,14 @@
     "redis6": {
       "version": "6.2.14-alpine"
     },
-    "rockylinux8": {
-      "version": "8.10.20240528"
-    },
-    "ubuntu18": {
-      "version": "bionic-20230530"
-    },
     "ubuntu20": {
       "version": "focal-20240530"
     },
     "ubuntu22": {
       "version": "jammy-20240530"
+    },
+    "ubuntu24": {
+      "version": "noble-20240530"
     }
   }
 }
