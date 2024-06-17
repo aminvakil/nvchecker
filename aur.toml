@@ -80,3 +80,7 @@ prefix = "v"
 [jmeter-plugins-manager]
 source = "cmd"
 cmd = "curl -Is https://jmeter-plugins.org/get/ | grep Location | sed -e 's/.*jmeter-plugins-manager-//g' -e 's/.jar//'"
+
+[android-sdk-build-tools]
+source = "cmd"
+cmd = "curl -s https://developer.android.com/tools/releases/build-tools | grep 'buildToolsVersion = ' | awk '{print $3}' | sed 's/\"//g'"
