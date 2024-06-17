@@ -1,6 +1,9 @@
 {
   "version": 2,
   "data": {
+    "android-sdk-build-tools": {
+      "version": "34.0.0"
+    },
     "anteon": {
       "version": "2.2.0",
       "gitref": "refs/tags/selfhosted-2.2.0",
