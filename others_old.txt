@@ -4,26 +4,14 @@
     "cloudflare_ipv4": {
       "version": "38f79d050aa027e3be3865e495dcc9bc"
     },
-    "elasticsearch-xpack": {
-      "version": "7.17.11",
-      "url": "https://rubygems.org/gems/elasticsearch-xpack/versions/7.17.11"
-    },
-    "fluent-plugin-elasticsearch": {
-      "version": "5.4.3",
-      "url": "https://rubygems.org/gems/fluent-plugin-elasticsearch/versions/5.4.3"
-    },
-    "fluent-plugin-prometheus": {
-      "version": "2.1.0",
-      "url": "https://rubygems.org/gems/fluent-plugin-prometheus/versions/2.1.0"
-    },
     "grafana_dashboard_1860": {
       "version": "37"
     },
     "healthchecks": {
-      "version": "3.3",
-      "gitref": "refs/tags/v3.3",
-      "revision": "6e2df6a71cbde8be2bcc761731752453c5f853b7",
-      "url": "https://github.com/healthchecks/healthchecks/releases/tag/v3.3"
+      "version": "3.4",
+      "gitref": "refs/tags/v3.4",
+      "revision": "17d01ee6e25d73932c22500518cdad6169baa730",
+      "url": "https://github.com/healthchecks/healthchecks/releases/tag/v3.4"
     },
     "iptables-persistent-deb10": {
       "version": "1.0.11+deb10u1"
