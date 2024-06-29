@@ -19,6 +19,9 @@
     "golang1.22": {
       "version": "1.22.4-alpine"
     },
+    "redis-stack7": {
+      "version": "7.2.0-v11"
+    },
     "redis6": {
       "version": "6.2.14-alpine"
     },
