@@ -2,19 +2,19 @@
   "version": 2,
   "data": {
     "alpine": {
-      "version": "3.20.1"
+      "version": "3.20.2"
     },
     "archlinux": {
-      "version": "base-20240714.0.246936"
+      "version": "base-20240721.0.248532"
     },
     "debian10": {
       "version": "buster-20240612"
     },
     "debian11": {
-      "version": "bullseye-20240701"
+      "version": "bullseye-20240722"
     },
     "debian12": {
-      "version": "bookworm-20240701"
+      "version": "bookworm-20240722"
     },
     "golang1.22": {
       "version": "1.22.5-alpine"
