@@ -32,10 +32,6 @@ source = "github"
 github = "google/tsunami-security-scanner"
 use_latest_release = true
 
-# [jmeter-plugins-manager]
-# source = "cmd"
-# cmd = "curl -Is https://jmeter-plugins.org/get/ | grep Location | sed 's:.*/::;s:.*-::;s:.jar::'"
-
 [xssmap]
 source = "github"
 github = "secdec/xssmap"
@@ -77,9 +73,9 @@ github = "docker/docker-bench-security"
 use_max_tag = true
 prefix = "v"
 
-[jmeter-plugins-manager]
-source = "cmd"
-cmd = "curl -Is https://jmeter-plugins.org/get/ | grep Location | sed -e 's/.*jmeter-plugins-manager-//g' -e 's/.jar//'"
+# [jmeter-plugins-manager]
+# source = "cmd"
+# cmd = "curl -Is https://jmeter-plugins.org/get/ | grep Location | sed -e 's/.*jmeter-plugins-manager-//g' -e 's/.jar//'"
 
 [android-sdk-build-tools]
 source = "cmd"
