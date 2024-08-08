@@ -5,9 +5,9 @@
       "version": "34.0.0"
     },
     "anteon": {
-      "version": "2.5.0",
-      "gitref": "refs/tags/selfhosted-2.5.0",
-      "url": "https://github.com/getanteon/anteon/releases/tag/selfhosted-2.5.0"
+      "version": "2.6.0",
+      "gitref": "refs/tags/selfhosted-2.6.0",
+      "url": "https://github.com/getanteon/anteon/releases/tag/selfhosted-2.6.0"
     },
     "assetfinder": {
       "version": "0.1.1",
@@ -53,9 +53,6 @@
       "version": "v0.0.23",
       "gitref": "refs/tags/v0.0.23",
       "url": "https://github.com/google/tsunami-security-scanner/releases/tag/v0.0.23"
-    },
-    "jmeter-plugins-manager": {
-      "version": "1.10"
     },
     "pumba": {
       "version": "0.10.1",
