@@ -26,10 +26,10 @@
       "version": "focal-20240530"
     },
     "ubuntu22": {
-      "version": "jammy-20240627.1"
+      "version": "jammy-20240808"
     },
     "ubuntu24": {
-      "version": "noble-20240605"
+      "version": "noble-20240801"
     }
   }
 }
