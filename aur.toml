@@ -79,4 +79,4 @@ prefix = "v"
 
 [android-sdk-build-tools]
 source = "cmd"
-cmd = "curl -s https://developer.android.com/tools/releases/build-tools | grep -oP 'Build Tools, Revision \K[0-9.]+(?!-rc)' | head -n 1"
+cmd = "curl -s https://developer.android.com/tools/releases/build-tools | grep -oP 'Build Tools, Revision [0-9.]+(?!-rc)' | sed 's/Build Tools, Revision //' | head -n 1"
