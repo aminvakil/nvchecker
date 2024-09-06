@@ -11,13 +11,13 @@
       "version": "buster-20240612"
     },
     "debian11": {
-      "version": "bullseye-20240812"
+      "version": "bullseye-20240904"
     },
     "debian12": {
-      "version": "bookworm-20240812"
+      "version": "bookworm-20240904"
     },
     "golang1.22": {
-      "version": "1.22.6-alpine"
+      "version": "1.22.7-alpine"
     },
     "redis6": {
       "version": "6.2.14-alpine"
