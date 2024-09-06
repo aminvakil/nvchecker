@@ -8,10 +8,10 @@
       "version": "37"
     },
     "healthchecks": {
-      "version": "3.5.2",
-      "gitref": "refs/tags/v3.5.2",
-      "revision": "320a7c77335b9ff5d55abf94f27067223958d126",
-      "url": "https://github.com/healthchecks/healthchecks/releases/tag/v3.5.2"
+      "version": "3.6",
+      "gitref": "refs/tags/v3.6",
+      "revision": "5a19f9658ac557ce4ef4c3b8e0c33fc2dd20d239",
+      "url": "https://github.com/healthchecks/healthchecks/releases/tag/v3.6"
     },
     "iptables-persistent-deb10": {
       "version": "1.0.11+deb10u1"
