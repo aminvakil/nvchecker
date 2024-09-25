@@ -22,9 +22,9 @@
       "url": "https://github.com/ansible/awx/releases/tag/24.6.1"
     },
     "butane": {
-      "version": "0.21.0",
-      "gitref": "refs/tags/v0.21.0",
-      "url": "https://github.com/coreos/butane/releases/tag/v0.21.0"
+      "version": "0.22.0",
+      "gitref": "refs/tags/v0.22.0",
+      "url": "https://github.com/coreos/butane/releases/tag/v0.22.0"
     },
     "docker-bench-security": {
       "version": "1.6.1",
