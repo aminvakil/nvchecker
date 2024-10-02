@@ -17,19 +17,19 @@
       "version": "bookworm-20240926"
     },
     "golang1.22": {
-      "version": "1.22.7-alpine"
+      "version": "1.22.8-alpine"
     },
     "redis6": {
       "version": "6.2.14-alpine"
     },
     "ubuntu20": {
-      "version": "focal-20240530"
+      "version": "focal-20240918"
     },
     "ubuntu22": {
       "version": "jammy-20240911.1"
     },
     "ubuntu24": {
-      "version": "noble-20240827.1"
+      "version": "noble-20240904.1"
     }
   }
 }
