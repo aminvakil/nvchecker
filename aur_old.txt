@@ -45,9 +45,9 @@
       "url": "https://github.com/ycd/dstp/releases/tag/v0.4.0"
     },
     "gnome-shell-extension-workspace-matrix": {
-      "version": "10.0",
-      "gitref": "refs/tags/v10.0",
-      "url": "https://github.com/mzur/gnome-shell-wsmatrix/releases/tag/v10.0"
+      "version": "11.0",
+      "gitref": "refs/tags/v11.0",
+      "url": "https://github.com/mzur/gnome-shell-wsmatrix/releases/tag/v11.0"
     },
     "google-tsunami-security-scanner": {
       "version": "v0.0.24",
