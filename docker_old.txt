@@ -11,10 +11,10 @@
       "version": "buster-20240612"
     },
     "debian11": {
-      "version": "bullseye-20240926"
+      "version": "bullseye-20241016"
     },
     "debian12": {
-      "version": "bookworm-20240926"
+      "version": "bookworm-20241016"
     },
     "golang1.22": {
       "version": "1.22.8-alpine"
@@ -23,13 +23,13 @@
       "version": "6.2.16-alpine"
     },
     "ubuntu20": {
-      "version": "focal-20240918"
+      "version": "focal-20241011"
     },
     "ubuntu22": {
       "version": "jammy-20240911.1"
     },
     "ubuntu24": {
-      "version": "noble-20241009"
+      "version": "noble-20241011"
     }
   }
 }
