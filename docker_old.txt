@@ -17,7 +17,7 @@
       "version": "bookworm-20241016"
     },
     "golang1.22": {
-      "version": "1.22.8-alpine"
+      "version": "1.22.9-alpine"
     },
     "redis6": {
       "version": "6.2.16-alpine"
