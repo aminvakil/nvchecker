@@ -30,6 +30,9 @@
     "ocserv": {
       "version": "1.3.0"
     },
+    "prometheus-lts": {
+      "version": "2.53"
+    },
     "query-exporter": {
       "version": "2.10.0",
       "gitref": "refs/tags/2.10.0",
