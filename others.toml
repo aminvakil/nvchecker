@@ -45,3 +45,7 @@ source = "github"
 github = "healthchecks/healthchecks"
 use_max_tag = true
 prefix = "v"
+
+[prometheus-lts]
+source = "cmd"
+cmd = 'curl -s "https://prometheus.io/docs/introduction/release-cycle/" | xmllint --html --nowarning --recover --noout --xpath "//tr[@class=\"success\"]/td/text()" - 2>/dev/null | grep Prometheus | awk "{print \$2}"'
