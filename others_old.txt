@@ -34,10 +34,10 @@
       "version": "2.53"
     },
     "query-exporter": {
-      "version": "2.10.0",
-      "gitref": "refs/tags/2.10.0",
-      "revision": "b482bb7102103b5c6fe90fa767db6583b89abe3e",
-      "url": "https://github.com/albertodonato/query-exporter/releases/tag/2.10.0"
+      "version": "2.11.1",
+      "gitref": "refs/tags/2.11.1",
+      "revision": "04f6045ead80571ebadb1c5c32f7015af39c090e",
+      "url": "https://github.com/albertodonato/query-exporter/releases/tag/2.11.1"
     },
     "thelounge": {
       "version": "4.4.3-3",
