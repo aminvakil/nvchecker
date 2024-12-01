@@ -16,8 +16,8 @@
     "debian12": {
       "version": "bookworm-20241111"
     },
-    "golang1.22": {
-      "version": "1.22.9-alpine"
+    "golang1.23": {
+      "version": "1.23.3-alpine"
     },
     "redis6": {
       "version": "6.2.16-alpine"
