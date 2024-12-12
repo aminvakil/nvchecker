@@ -84,5 +84,5 @@ cmd = "curl -s https://developer.android.com/tools/releases/build-tools | grep -
 [cadvisor]
 source = "github"
 github = "google/cadvisor"
-use_max_tag = true
+use_latest_release = true
 prefix = "v"
