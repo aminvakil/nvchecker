@@ -26,6 +26,11 @@
       "gitref": "refs/tags/v0.22.0",
       "url": "https://github.com/coreos/butane/releases/tag/v0.22.0"
     },
+    "cadvisor": {
+      "version": "0.49.2",
+      "gitref": "refs/tags/v0.49.2",
+      "url": "https://github.com/google/cadvisor/releases/tag/v0.49.2"
+    },
     "docker-bench-security": {
       "version": "1.6.1",
       "gitref": "refs/tags/v1.6.1",
