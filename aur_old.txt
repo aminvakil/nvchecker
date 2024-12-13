@@ -55,9 +55,9 @@
       "url": "https://github.com/mzur/gnome-shell-wsmatrix/releases/tag/v11.1"
     },
     "google-tsunami-security-scanner": {
-      "version": "v0.0.25",
-      "gitref": "refs/tags/v0.0.25",
-      "url": "https://github.com/google/tsunami-security-scanner/releases/tag/v0.0.25"
+      "version": "v0.0.26",
+      "gitref": "refs/tags/v0.0.26",
+      "url": "https://github.com/google/tsunami-security-scanner/releases/tag/v0.0.26"
     },
     "pumba": {
       "version": "0.10.1",
