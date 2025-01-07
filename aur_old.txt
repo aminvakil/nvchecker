@@ -38,10 +38,10 @@
       "url": "https://github.com/docker/docker-bench-security/releases/tag/v1.6.1"
     },
     "dockle": {
-      "version": "0.4.14",
-      "gitref": "refs/tags/v0.4.14",
-      "revision": "61a2fccb44fd4bac8f4825e74854acf3f4fac7a2",
-      "url": "https://github.com/goodwithtech/dockle/releases/tag/v0.4.14"
+      "version": "0.4.15",
+      "gitref": "refs/tags/v0.4.15",
+      "revision": "54368575d2a0c34a82fb05c904b8207284a64891",
+      "url": "https://github.com/goodwithtech/dockle/releases/tag/v0.4.15"
     },
     "dstp": {
       "version": "0.4.0",
