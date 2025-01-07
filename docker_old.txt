@@ -2,10 +2,10 @@
   "version": 2,
   "data": {
     "alpine": {
-      "version": "3.21.0"
+      "version": "3.21.1"
     },
     "archlinux": {
-      "version": "base-20241229.0.293060"
+      "version": "base-20250105.0.295102"
     },
     "debian10": {
       "version": "buster-20240612"
@@ -18,9 +18,6 @@
     },
     "golang1.23": {
       "version": "1.23.4-alpine"
-    },
-    "redis6": {
-      "version": "6.2.16-alpine"
     },
     "ubuntu20": {
       "version": "focal-20241011"
