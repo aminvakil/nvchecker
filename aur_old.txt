@@ -44,10 +44,10 @@
       "url": "https://github.com/goodwithtech/dockle/releases/tag/v0.4.15"
     },
     "dstp": {
-      "version": "0.4.0",
-      "gitref": "refs/tags/v0.4.0",
-      "revision": "424bac3662b18785717bcc846a402ed9e4c14bba",
-      "url": "https://github.com/ycd/dstp/releases/tag/v0.4.0"
+      "version": "0.4.23",
+      "gitref": "refs/tags/v0.4.23",
+      "revision": "2a57b85da5b6f1f434fc26a1a269a38fac95ccb5",
+      "url": "https://github.com/ycd/dstp/releases/tag/v0.4.23"
     },
     "gnome-shell-extension-workspace-matrix": {
       "version": "11.2",
