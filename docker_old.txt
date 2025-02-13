@@ -19,6 +19,9 @@
     "golang1.23": {
       "version": "1.23.6-alpine"
     },
+    "golang1.24": {
+      "version": "1.24rc3-alpine"
+    },
     "ubuntu20": {
       "version": "focal-20241011"
     },
