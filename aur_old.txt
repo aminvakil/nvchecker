@@ -55,10 +55,10 @@
       "url": "https://github.com/google/tsunami-security-scanner/releases/tag/v0.0.26"
     },
     "pumba": {
-      "version": "0.11.1",
-      "gitref": "refs/tags/0.11.1",
-      "revision": "bce9960df3e06c4ddcb55bf3a54d6121d024c6c7",
-      "url": "https://github.com/alexei-led/pumba/releases/tag/0.11.1"
+      "version": "0.11.5",
+      "gitref": "refs/tags/0.11.5",
+      "revision": "f722a589385423062fef79cc4c469c0c1a02e7b9",
+      "url": "https://github.com/alexei-led/pumba/releases/tag/0.11.5"
     },
     "spotdl": {
       "version": "4.2.11",
