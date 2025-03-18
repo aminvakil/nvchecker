@@ -45,9 +45,9 @@
       "url": "https://github.com/ycd/dstp/releases/tag/v0.4.23"
     },
     "gnome-shell-extension-workspace-matrix": {
-      "version": "11.3",
-      "gitref": "refs/tags/v11.3",
-      "url": "https://github.com/mzur/gnome-shell-wsmatrix/releases/tag/v11.3"
+      "version": "12.0",
+      "gitref": "refs/tags/v12.0",
+      "url": "https://github.com/mzur/gnome-shell-wsmatrix/releases/tag/v12.0"
     },
     "google-tsunami-security-scanner": {
       "version": "v0.0.26",
@@ -55,10 +55,10 @@
       "url": "https://github.com/google/tsunami-security-scanner/releases/tag/v0.0.26"
     },
     "pumba": {
-      "version": "0.11.5",
-      "gitref": "refs/tags/0.11.5",
-      "revision": "f722a589385423062fef79cc4c469c0c1a02e7b9",
-      "url": "https://github.com/alexei-led/pumba/releases/tag/0.11.5"
+      "version": "0.11.6",
+      "gitref": "refs/tags/0.11.6",
+      "revision": "636b568844e76e27899bb94c372fc09f5e0c18b2",
+      "url": "https://github.com/alexei-led/pumba/releases/tag/0.11.6"
     },
     "spotdl": {
       "version": "4.2.11",
