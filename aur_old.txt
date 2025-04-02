@@ -55,10 +55,10 @@
       "url": "https://github.com/google/tsunami-security-scanner/releases/tag/v0.0.26"
     },
     "opkssh": {
-      "version": "0.3.0",
-      "gitref": "refs/tags/v0.3.0",
-      "revision": "15ab593536c5c52fd648749705691992c1b6131e",
-      "url": "https://github.com/openpubkey/opkssh/releases/tag/v0.3.0"
+      "version": "0.4.0",
+      "gitref": "refs/tags/v0.4.0",
+      "revision": "fd59ad413fd6ef35bd356cc9c5063b1dd1e2bbec",
+      "url": "https://github.com/openpubkey/opkssh/releases/tag/v0.4.0"
     },
     "pumba": {
       "version": "0.11.6",
