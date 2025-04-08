@@ -86,3 +86,9 @@ source = "github"
 github = "openpubkey/opkssh"
 use_max_tag = true
 prefix = "v"
+
+[cadvisor]
+source = "github"
+github = "google/cadvisor"
+use_latest_release = true
+prefix = "v"
