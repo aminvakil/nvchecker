@@ -23,13 +23,13 @@
       "version": "1.24.2-alpine"
     },
     "ubuntu20": {
-      "version": "focal-20241011"
+      "version": "focal-20250404"
     },
     "ubuntu22": {
-      "version": "jammy-20250126"
+      "version": "jammy-20250404"
     },
     "ubuntu24": {
-      "version": "noble-20250127"
+      "version": "noble-20250404"
     }
   }
 }
