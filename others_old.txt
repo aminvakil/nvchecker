@@ -5,7 +5,7 @@
       "version": "38f79d050aa027e3be3865e495dcc9bc"
     },
     "grafana_dashboard_1860": {
-      "version": "37"
+      "version": "38"
     },
     "healthchecks": {
       "version": "3.9",
