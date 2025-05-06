@@ -5,7 +5,7 @@
       "version": "3.21.3"
     },
     "archlinux": {
-      "version": "base-20250427.0.341977"
+      "version": "base-20250504.0.344409"
     },
     "debian10": {
       "version": "buster-20240612"
@@ -26,10 +26,10 @@
       "version": "focal-20250404"
     },
     "ubuntu22": {
-      "version": "jammy-20250404"
+      "version": "jammy-20250415.1"
     },
     "ubuntu24": {
-      "version": "noble-20250404"
+      "version": "noble-20250415.1"
     }
   }
 }
