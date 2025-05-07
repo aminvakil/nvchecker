@@ -17,10 +17,10 @@
       "version": "bookworm-20250428"
     },
     "golang1.23": {
-      "version": "1.23.8-alpine"
+      "version": "1.23.9-alpine"
     },
     "golang1.24": {
-      "version": "1.24.2-alpine"
+      "version": "1.24.3-alpine"
     },
     "ubuntu20": {
       "version": "focal-20250404"
