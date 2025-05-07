@@ -56,12 +56,6 @@ registry = "docker.io"
 container = "library/ubuntu"
 include_regex = "noble-.*"
 
-["golang1.23"]
-source = "container"
-registry = "docker.io"
-container = "library/golang"
-include_regex = "1.23.*-alpine"
-
 ["golang1.24"]
 source = "container"
 registry = "docker.io"
