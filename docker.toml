@@ -37,13 +37,6 @@ container = "library/debian"
 include_regex = "bookworm-.*"
 exclude_regex = "bookworm-.*-slim"
 
-
-[ubuntu20]
-source = "container"
-registry = "docker.io"
-container = "library/ubuntu"
-include_regex = "focal-.*"
-
 [ubuntu22]
 source = "container"
 registry = "docker.io"

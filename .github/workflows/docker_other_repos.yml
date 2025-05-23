@@ -27,9 +27,6 @@ jobs:
             image: debian12
             dockerfile_location: images/
           - repository: docker-os-systemd
-            image: ubuntu20
-            dockerfile_location: images/
-          - repository: docker-os-systemd
             image: ubuntu22
             dockerfile_location: images/
           - repository: docker-os-systemd
