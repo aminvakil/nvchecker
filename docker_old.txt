@@ -5,7 +5,7 @@
       "version": "3.21.3"
     },
     "archlinux": {
-      "version": "base-20250518.0.352066"
+      "version": "base-20250525.0.354646"
     },
     "debian10": {
       "version": "buster-20240612"
@@ -24,9 +24,6 @@
     },
     "kong-gateway3.9": {
       "version": "3.9.1.1"
-    },
-    "ubuntu20": {
-      "version": "focal-20250404"
     },
     "ubuntu22": {
       "version": "jammy-20250415.1"
