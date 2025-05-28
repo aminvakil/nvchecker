@@ -48,4 +48,4 @@ prefix = "v"
 
 [prometheus-lts]
 source = "cmd"
-cmd = 'curl -s "https://prometheus.io/docs/introduction/release-cycle/" | xmllint --html --nowarning --recover --noout --xpath "//tr[@class=\"success\"]/td/text()" - 2>/dev/null | grep Prometheus | awk "{print \$2}"'
+cmd = 'curl -s "https://raw.githubusercontent.com/prometheus/docs/refs/heads/main/docs/introduction/release-cycle.md" | xmllint --html --nowarning --recover --noout --xpath "//tr[@class=\"success\"]/td/text()" - 2>/dev/null | grep Prometheus | awk "{print \$2}"'
