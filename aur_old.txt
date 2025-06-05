@@ -55,9 +55,9 @@
       "url": "https://github.com/mzur/gnome-shell-wsmatrix/releases/tag/v12.0"
     },
     "google-tsunami-security-scanner": {
-      "version": "v0.0.26",
-      "gitref": "refs/tags/v0.0.26",
-      "url": "https://github.com/google/tsunami-security-scanner/releases/tag/v0.0.26"
+      "version": "v0.0.29",
+      "gitref": "refs/tags/v0.0.29",
+      "url": "https://github.com/google/tsunami-security-scanner/releases/tag/v0.0.29"
     },
     "opkssh": {
       "version": "0.7.0",
