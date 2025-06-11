@@ -11,10 +11,10 @@
       "version": "buster-20240612"
     },
     "debian11": {
-      "version": "bullseye-20250520"
+      "version": "bullseye-20250610"
     },
     "debian12": {
-      "version": "bookworm-20250520"
+      "version": "bookworm-20250610"
     },
     "golang1.24": {
       "version": "1.24.4-alpine"
