@@ -17,6 +17,10 @@ use_latest_release = true
 source = "cmd"
 cmd = "curl -s https://grafana.com/api/dashboards/1860/revisions | jq -r '.items | last | .revision'"
 
+[grafana_dashboard_15798]
+source = "cmd"
+cmd = "curl -s https://grafana.com/api/dashboards/15798/revisions | jq -r '.items | last | .revision'"
+
 [thelounge]
 source = "aur"
 github = "thelounge"
