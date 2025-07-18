@@ -40,10 +40,6 @@ github = "albertodonato/query-exporter"
 use_max_tag = true
 prefix = ""
 
-[iptables-persistent-deb11]
-source = "cmd"
-cmd = "curl -s http://deb.debian.org/debian/pool/main/i/iptables-persistent/ | grep 'deb11' | tail -1 | sed 's/.*netfilter-persistent_//' | sed 's/_all.*//'"
-
 [healthchecks]
 source = "github"
 github = "healthchecks/healthchecks"
