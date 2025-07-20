@@ -21,6 +21,10 @@ cmd = "curl -s https://grafana.com/api/dashboards/1860/revisions | jq -r '.items
 source = "cmd"
 cmd = "curl -s https://grafana.com/api/dashboards/15798/revisions | jq -r '.items | last | .revision'"
 
+[grafana_dashboard_12309]
+source = "cmd"
+cmd = "curl -s https://grafana.com/api/dashboards/12309/revisions | jq -r '.items | last | .revision'"
+
 [thelounge]
 source = "aur"
 github = "thelounge"
