@@ -4,6 +4,9 @@
     "cloudflare_ipv4": {
       "version": "38f79d050aa027e3be3865e495dcc9bc"
     },
+    "grafana_dashboard_12309": {
+      "version": "5"
+    },
     "grafana_dashboard_15798": {
       "version": "13"
     },
@@ -15,9 +18,6 @@
       "gitref": "refs/tags/v3.10",
       "revision": "49b5fcd402309adf1a9a5cdb80d48b978da4f412",
       "url": "https://github.com/healthchecks/healthchecks/releases/tag/v3.10"
-    },
-    "iptables-persistent-deb10": {
-      "version": "1.0.11+deb10u1"
     },
     "nginx-vod-module": {
       "version": "1.33",
