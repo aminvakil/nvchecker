@@ -97,4 +97,3 @@ prefix = "v"
 source = "github"
 github = "fboender/multi-git-status"
 use_latest_release = true
-prefix = "v"
