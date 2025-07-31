@@ -59,6 +59,11 @@
       "gitref": "refs/tags/v0.1.0",
       "url": "https://github.com/google/tsunami-security-scanner/releases/tag/v0.1.0"
     },
+    "multi-git-status": {
+      "version": "2.3",
+      "gitref": "refs/tags/2.3",
+      "url": "https://github.com/fboender/multi-git-status/releases/tag/2.3"
+    },
     "opkssh": {
       "version": "0.8.0",
       "gitref": "refs/tags/v0.8.0",
