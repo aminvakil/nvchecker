@@ -17,10 +17,10 @@
       "version": "bookworm-20250721"
     },
     "golang1.24": {
-      "version": "1.24.5-alpine"
+      "version": "1.24.6-alpine"
     },
     "kong-gateway3.10": {
-      "version": "3.10.0.3"
+      "version": "3.10.0.4"
     },
     "kong-gateway3.9": {
       "version": "3.9.1.2"
