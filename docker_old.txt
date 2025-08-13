@@ -11,10 +11,10 @@
       "version": "buster-20240612"
     },
     "debian11": {
-      "version": "bullseye-20250721"
+      "version": "bullseye-20250811"
     },
     "debian12": {
-      "version": "bookworm-20250721"
+      "version": "bookworm-20250811"
     },
     "golang1.24": {
       "version": "1.24.6-alpine"
@@ -26,10 +26,10 @@
       "version": "3.9.1.2"
     },
     "ubuntu22": {
-      "version": "jammy-20250714"
+      "version": "jammy-20250730"
     },
     "ubuntu24": {
-      "version": "noble-20250714"
+      "version": "noble-20250716"
     }
   }
 }
