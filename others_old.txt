@@ -14,10 +14,10 @@
       "version": "41"
     },
     "healthchecks": {
-      "version": "3.11",
-      "gitref": "refs/tags/v3.11",
-      "revision": "e56a3ea49de0852f00830810465ecb82b74192f9",
-      "url": "https://github.com/healthchecks/healthchecks/releases/tag/v3.11"
+      "version": "3.11.1",
+      "gitref": "refs/tags/v3.11.1",
+      "revision": "0c0592b7fe63e4457a1bc4100cd2f1aab1ad4906",
+      "url": "https://github.com/healthchecks/healthchecks/releases/tag/v3.11.1"
     },
     "nginx-vod-module": {
       "version": "1.33",
