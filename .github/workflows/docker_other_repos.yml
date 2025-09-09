@@ -97,6 +97,7 @@ jobs:
           commit_message="$before -> $after"
           echo "commit_message=$commit_message" >> $GITHUB_ENV
           sed -i "s/${before/\./\\.}$/$after/g" "${{ env.repository }}/${{ env.dockerfile_location }}"Dockerfile*
+          sed -i "s/${before/\./\\.} AS /$after AS /g" "${{ env.repository }}/${{ env.dockerfile_location }}"Dockerfile*
         env:
           image: ${{ matrix.image }}
           repository: ${{ matrix.repository }}
