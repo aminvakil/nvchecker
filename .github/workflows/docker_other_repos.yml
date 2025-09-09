@@ -38,6 +38,8 @@ jobs:
             image: alpine
           - repository: prometheus_bot
             image: alpine
+          - repository: prometheus_bot
+            image: golang
           - repository: docker-squid
             image: alpine
           - repository: docker-ocserv
