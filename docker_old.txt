@@ -5,7 +5,7 @@
       "version": "3.22.1"
     },
     "archlinux": {
-      "version": "base-20250907.0.417472"
+      "version": "base-20250914.0.420821"
     },
     "debian10": {
       "version": "buster-20240612"
@@ -32,7 +32,7 @@
       "version": "jammy-20250819"
     },
     "ubuntu24": {
-      "version": "noble-20250805"
+      "version": "noble-20250910"
     }
   }
 }
