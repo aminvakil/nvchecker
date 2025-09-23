@@ -5,7 +5,7 @@
       "version": "3.22.1"
     },
     "archlinux": {
-      "version": "base-20250914.0.420821"
+      "version": "base-20250921.0.423275"
     },
     "debian10": {
       "version": "buster-20240612"
