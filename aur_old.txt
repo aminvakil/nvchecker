@@ -22,9 +22,9 @@
       "url": "https://github.com/ansible/awx/releases/tag/24.6.1"
     },
     "butane": {
-      "version": "0.25.0",
-      "gitref": "refs/tags/v0.25.0",
-      "url": "https://github.com/coreos/butane/releases/tag/v0.25.0"
+      "version": "0.25.1",
+      "gitref": "refs/tags/v0.25.1",
+      "url": "https://github.com/coreos/butane/releases/tag/v0.25.1"
     },
     "cadvisor": {
       "version": "0.53.0",
