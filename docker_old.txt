@@ -29,10 +29,10 @@
       "version": "3.9.1.2"
     },
     "ubuntu22": {
-      "version": "jammy-20250819"
+      "version": "jammy-20251001"
     },
     "ubuntu24": {
-      "version": "noble-20250910"
+      "version": "noble-20250925"
     }
   }
 }
