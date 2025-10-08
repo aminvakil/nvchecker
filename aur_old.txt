@@ -77,8 +77,8 @@
       "url": "https://github.com/alexei-led/pumba/releases/tag/0.11.6"
     },
     "spotdl": {
-      "version": "4.4.2",
-      "url": "https://pypi.org/project/spotdl/4.4.2/"
+      "version": "4.4.3",
+      "url": "https://pypi.org/project/spotdl/4.4.3/"
     },
     "xssmap": {
       "version": "20200305.152024",
