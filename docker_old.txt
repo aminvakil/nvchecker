@@ -26,7 +26,7 @@
       "version": "jammy-20251001"
     },
     "ubuntu24": {
-      "version": "noble-20250925"
+      "version": "noble-20251001"
     }
   }
 }
