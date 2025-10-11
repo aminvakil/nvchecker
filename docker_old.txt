@@ -20,7 +20,7 @@
       "version": "1.25.2-alpine"
     },
     "kong-gateway3.10": {
-      "version": "3.10.0.5"
+      "version": "3.10.0.6"
     },
     "ubuntu22": {
       "version": "jammy-20251001"
