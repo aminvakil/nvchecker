@@ -5,7 +5,7 @@
       "version": "3.22.2"
     },
     "archlinux": {
-      "version": "base-20251005.0.430597"
+      "version": "base-20251012.0.434149"
     },
     "debian10": {
       "version": "buster-20240612"
@@ -17,7 +17,7 @@
       "version": "bookworm-20250929"
     },
     "golang1.25": {
-      "version": "1.25.2-alpine"
+      "version": "1.25.3-alpine"
     },
     "kong-gateway3.10": {
       "version": "3.10.0.6"
