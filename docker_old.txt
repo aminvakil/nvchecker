@@ -11,22 +11,22 @@
       "version": "buster-20240612"
     },
     "debian11": {
-      "version": "bullseye-20251020"
+      "version": "bullseye-20251117"
     },
     "debian12": {
-      "version": "bookworm-20251020"
+      "version": "bookworm-20251117"
     },
     "golang1.25": {
-      "version": "1.25.3-alpine"
+      "version": "1.25.4-alpine"
     },
     "kong-gateway3.10": {
       "version": "3.10.0.6"
     },
     "ubuntu22": {
-      "version": "jammy-20251001"
+      "version": "jammy-20251013"
     },
     "ubuntu24": {
-      "version": "noble-20251001"
+      "version": "noble-20251013"
     }
   }
 }
