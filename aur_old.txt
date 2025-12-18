@@ -27,9 +27,9 @@
       "url": "https://github.com/coreos/butane/releases/tag/v0.25.1"
     },
     "cadvisor": {
-      "version": "0.53.0",
-      "gitref": "refs/tags/v0.53.0",
-      "url": "https://github.com/google/cadvisor/releases/tag/v0.53.0"
+      "version": "0.54.1",
+      "gitref": "refs/tags/v0.54.1",
+      "url": "https://github.com/google/cadvisor/releases/tag/v0.54.1"
     },
     "docker-bench-security": {
       "version": "1.6.1",
@@ -89,7 +89,7 @@
       "url": "https://github.com/secdec/xssmap/commit/1a208b11fdcfdd413d1cf76a6c8fc570f4b802d2"
     },
     "zoiper": {
-      "version": "5.6.11"
+      "version": "5.6.12"
     }
   }
 }
