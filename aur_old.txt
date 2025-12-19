@@ -27,9 +27,9 @@
       "url": "https://github.com/coreos/butane/releases/tag/v0.25.1"
     },
     "cadvisor": {
-      "version": "0.54.1",
-      "gitref": "refs/tags/v0.54.1",
-      "url": "https://github.com/google/cadvisor/releases/tag/v0.54.1"
+      "version": "0.55.0",
+      "gitref": "refs/tags/v0.55.0",
+      "url": "https://github.com/google/cadvisor/releases/tag/v0.55.0"
     },
     "docker-bench-security": {
       "version": "1.6.1",
