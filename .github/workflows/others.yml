@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out the codebase.
-        uses: actions/checkout@v3
+        uses: actions/checkout@main
 
       - name: Pull base image.
         run: docker pull quay.io/aminvakil/archlinux:latest
@@ -67,7 +67,7 @@ jobs:
 
       - name: Create Others Pull Request
         if: env.OTHERS_HAS_CHANGED == 'true' && github.event_name != 'pull_request'
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v8
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: ${{ env.others_nvcmp_output }}
