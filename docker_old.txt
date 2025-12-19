@@ -2,7 +2,7 @@
   "version": 2,
   "data": {
     "alpine": {
-      "version": "3.22.2"
+      "version": "3.23.2"
     },
     "archlinux": {
       "version": "base-20251214.0.467559"
