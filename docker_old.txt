@@ -19,6 +19,9 @@
     "golang1.25": {
       "version": "1.25.5-alpine"
     },
+    "kong-gateway3.10": {
+      "version": "3.10.0.7"
+    },
     "ubuntu22": {
       "version": "jammy-20251013"
     },
