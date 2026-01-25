@@ -22,14 +22,14 @@
       "url": "https://github.com/ansible/awx/releases/tag/24.6.1"
     },
     "butane": {
-      "version": "0.25.1",
-      "gitref": "refs/tags/v0.25.1",
-      "url": "https://github.com/coreos/butane/releases/tag/v0.25.1"
+      "version": "0.26.0",
+      "gitref": "refs/tags/v0.26.0",
+      "url": "https://github.com/coreos/butane/releases/tag/v0.26.0"
     },
     "cadvisor": {
-      "version": "0.55.1",
-      "gitref": "refs/tags/v0.55.1",
-      "url": "https://github.com/google/cadvisor/releases/tag/v0.55.1"
+      "version": "0.56.2",
+      "gitref": "refs/tags/v0.56.2",
+      "url": "https://github.com/google/cadvisor/releases/tag/v0.56.2"
     },
     "docker-bench-security": {
       "version": "1.6.1",
@@ -68,10 +68,10 @@
       "url": "https://github.com/fboender/multi-git-status/releases/tag/2.3"
     },
     "opkssh": {
-      "version": "0.11.0",
-      "gitref": "refs/tags/v0.11.0",
-      "revision": "3073c236f1bf71640da2158a7b651a9f707606d9",
-      "url": "https://github.com/openpubkey/opkssh/releases/tag/v0.11.0"
+      "version": "0.12.0",
+      "gitref": "refs/tags/v0.12.0",
+      "revision": "f60d86d2a70527e337842352761bbdd306999dbc",
+      "url": "https://github.com/openpubkey/opkssh/releases/tag/v0.12.0"
     },
     "pumba": {
       "version": "0.11.6",
@@ -87,9 +87,6 @@
       "version": "20200305.152024",
       "revision": "1a208b11fdcfdd413d1cf76a6c8fc570f4b802d2",
       "url": "https://github.com/secdec/xssmap/commit/1a208b11fdcfdd413d1cf76a6c8fc570f4b802d2"
-    },
-    "zoiper": {
-      "version": "5.6.12"
     }
   }
 }
