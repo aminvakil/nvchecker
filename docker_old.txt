@@ -5,28 +5,28 @@
       "version": "3.23.2"
     },
     "archlinux": {
-      "version": "base-20260104.0.477168"
+      "version": "base-20260118.0.482696"
     },
     "debian10": {
       "version": "buster-20240612"
     },
     "debian11": {
-      "version": "bullseye-20251229"
+      "version": "bullseye-20260112"
     },
     "debian12": {
-      "version": "bookworm-20251229"
+      "version": "bookworm-20260112"
     },
     "golang1.25": {
-      "version": "1.25.5-alpine"
+      "version": "1.25.6-alpine"
     },
     "kong-gateway3.10": {
       "version": "3.10.0.7"
     },
     "ubuntu22": {
-      "version": "jammy-20251013"
+      "version": "jammy-20260109"
     },
     "ubuntu24": {
-      "version": "noble-20251013"
+      "version": "noble-20260113"
     }
   }
 }
