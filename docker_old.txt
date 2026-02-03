@@ -5,16 +5,16 @@
       "version": "3.23.3"
     },
     "archlinux": {
-      "version": "base-20260125.0.484595"
+      "version": "base-20260201.0.486523"
     },
     "debian10": {
       "version": "buster-20240612"
     },
     "debian11": {
-      "version": "bullseye-20260112"
+      "version": "bullseye-20260202"
     },
     "debian12": {
-      "version": "bookworm-20260112"
+      "version": "bookworm-20260202"
     },
     "golang1.25": {
       "version": "1.25.6-alpine"
