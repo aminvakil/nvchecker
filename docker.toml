@@ -16,13 +16,6 @@ registry = "docker.io"
 container = "library/archlinux"
 include_regex = "base-2.*"
 
-[debian10]
-source = "container"
-registry = "docker.io"
-container = "library/debian"
-include_regex = "buster-.*"
-exclude_regex = "buster-.*-slim"
-
 [debian11]
 source = "container"
 registry = "docker.io"

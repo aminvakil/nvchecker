@@ -18,9 +18,6 @@ jobs:
           - repository: docker-archlinux
             image: archlinux
           - repository: docker-os-systemd
-            image: debian10
-            dockerfile_location: images/
-          - repository: docker-os-systemd
             image: debian11
             dockerfile_location: images/
           - repository: docker-os-systemd
