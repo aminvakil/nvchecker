@@ -55,16 +55,6 @@ jobs:
           echo "release_url=${release_url}" >> $GITHUB_ENV
           mv others_new.txt others_old.txt
 
-      # - name: Create Others Issue.
-      #   id: others-create-issue
-      #   if: env.OTHERS_HAS_CHANGED == 'true' && github.event_name != 'pull_request'
-      #   uses: JasonEtco/create-an-issue@v2
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #   with:
-      #     update_existing: true
-      #     filename: .github/OTHERS_ISSUE_TEMPLATE.md
-
       - name: Create Others Pull Request
         if: env.OTHERS_HAS_CHANGED == 'true' && github.event_name != 'pull_request'
         uses: peter-evans/create-pull-request@v8

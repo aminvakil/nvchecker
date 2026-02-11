@@ -55,16 +55,6 @@ jobs:
           echo "release_url=${release_url}" >> $GITHUB_ENV
           mv aur_new.txt aur_old.txt
 
-      # - name: Create AUR Issue.
-      #   id: aur-create-issue
-      #   if: env.AUR_HAS_CHANGED == 'true' && github.event_name != 'pull_request'
-      #   uses: JasonEtco/create-an-issue@v2
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #   with:
-      #     update_existing: true
-      #     filename: .github/AUR_ISSUE_TEMPLATE.md
-
       - name: Create AUR Pull Request
         if: env.AUR_HAS_CHANGED == 'true' && github.event_name != 'pull_request'
         uses: peter-evans/create-pull-request@v8
