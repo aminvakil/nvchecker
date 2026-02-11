@@ -7,14 +7,14 @@
     "archlinux": {
       "version": "base-20260208.0.488728"
     },
-    "debian10": {
-      "version": "buster-20240612"
-    },
     "debian11": {
       "version": "bullseye-20260202"
     },
     "debian12": {
       "version": "bookworm-20260202"
+    },
+    "debian13": {
+      "version": "trixie-20260202"
     },
     "golang1.25": {
       "version": "1.25.7-alpine"
