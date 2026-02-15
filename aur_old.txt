@@ -79,10 +79,10 @@
       "url": "https://github.com/hanselime/paqet/releases/tag/v1.0.0-alpha.16"
     },
     "pumba": {
-      "version": "0.11.6",
-      "gitref": "refs/tags/0.11.6",
-      "revision": "636b568844e76e27899bb94c372fc09f5e0c18b2",
-      "url": "https://github.com/alexei-led/pumba/releases/tag/0.11.6"
+      "version": "0.11.7",
+      "gitref": "refs/tags/0.11.7",
+      "revision": "6db94e6b0cb205d2359de06f3924c754ac3b3b67",
+      "url": "https://github.com/alexei-led/pumba/releases/tag/0.11.7"
     },
     "spotdl": {
       "version": "4.4.3",
