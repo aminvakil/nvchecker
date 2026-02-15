@@ -43,7 +43,7 @@ github = "secdec/xssmap"
 [pumba]
 source = "github"
 github = "alexei-led/pumba"
-use_max_tag = true
+use_latest_release = true
 
 [dockle]
 source = "github"
