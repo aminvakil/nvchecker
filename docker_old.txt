@@ -5,7 +5,7 @@
       "version": "3.23.3"
     },
     "archlinux": {
-      "version": "base-20260208.0.488728"
+      "version": "base-20260215.0.490969"
     },
     "debian11": {
       "version": "bullseye-20260202"
@@ -23,10 +23,10 @@
       "version": "1.26.0-alpine"
     },
     "ubuntu22": {
-      "version": "jammy-20260109"
+      "version": "jammy-20260210.1"
     },
     "ubuntu24": {
-      "version": "noble-20260113"
+      "version": "noble-20260210.1"
     }
   }
 }
