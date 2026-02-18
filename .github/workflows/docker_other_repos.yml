@@ -111,8 +111,11 @@ jobs:
         with:
           app-id: ${{ secrets.APP_ID }}
           private-key: ${{ secrets.APP_PRIVATE_KEY }}
+          owner: "${{ github.repository_owner }}"
+          repositories: "${{ env.repository }}"
         env:
           image: ${{ matrix.image }}
+          repository: ${{ matrix.repository }}
 
       - name: Create ${{ env.image }} Pull Request
         if: env.OS_CHANGED == 'true'
