@@ -55,9 +55,9 @@
       "url": "https://github.com/mzur/gnome-shell-wsmatrix/releases/tag/v12.2"
     },
     "google-tsunami-security-scanner": {
-      "version": "v0.1.0",
-      "gitref": "refs/tags/v0.1.0",
-      "url": "https://github.com/google/tsunami-security-scanner/releases/tag/v0.1.0"
+      "version": "v0.2.0",
+      "gitref": "refs/tags/v0.2.0",
+      "url": "https://github.com/google/tsunami-security-scanner/releases/tag/v0.2.0"
     },
     "jmeter-plugins-manager": {
       "version": "1.11"
@@ -74,15 +74,14 @@
       "url": "https://github.com/openpubkey/opkssh/releases/tag/v0.13.0"
     },
     "paqet": {
-      "version": "1.0.0-alpha.16",
-      "gitref": "refs/tags/v1.0.0-alpha.16",
-      "url": "https://github.com/hanselime/paqet/releases/tag/v1.0.0-alpha.16"
+      "version": "1.0.0-alpha.17",
+      "gitref": "refs/tags/v1.0.0-alpha.17",
+      "url": "https://github.com/hanselime/paqet/releases/tag/v1.0.0-alpha.17"
     },
     "pumba": {
-      "version": "0.11.6",
-      "gitref": "refs/tags/0.11.6",
-      "revision": "636b568844e76e27899bb94c372fc09f5e0c18b2",
-      "url": "https://github.com/alexei-led/pumba/releases/tag/0.11.6"
+      "version": "0.12.3",
+      "gitref": "refs/tags/0.12.3",
+      "url": "https://github.com/alexei-led/pumba/releases/tag/0.12.3"
     },
     "spotdl": {
       "version": "4.4.3",
