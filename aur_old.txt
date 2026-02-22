@@ -74,9 +74,9 @@
       "url": "https://github.com/openpubkey/opkssh/releases/tag/v0.13.0"
     },
     "paqet": {
-      "version": "1.0.0-alpha.17",
-      "gitref": "refs/tags/v1.0.0-alpha.17",
-      "url": "https://github.com/hanselime/paqet/releases/tag/v1.0.0-alpha.17"
+      "version": "1.0.0-alpha.18",
+      "gitref": "refs/tags/v1.0.0-alpha.18",
+      "url": "https://github.com/hanselime/paqet/releases/tag/v1.0.0-alpha.18"
     },
     "pumba": {
       "version": "0.12.3",
