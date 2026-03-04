@@ -103,3 +103,9 @@ source = "github"
 github = "hanselime/paqet"
 use_latest_release = true
 prefix = "v"
+
+[DPYProxy]
+source = "github"
+github = "UPB-SysSec/DPYProxy"
+use_latest_release = true
+prefix = "v"
