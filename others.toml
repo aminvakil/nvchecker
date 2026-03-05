@@ -38,12 +38,6 @@ source = "github"
 github = "kaltura/nginx-vod-module"
 use_max_tag = true
 
-[query-exporter]
-source = "github"
-github = "albertodonato/query-exporter"
-use_max_tag = true
-prefix = ""
-
 [healthchecks]
 source = "github"
 github = "healthchecks/healthchecks"
