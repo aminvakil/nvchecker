@@ -16,11 +16,8 @@
     "debian13": {
       "version": "trixie-20260223"
     },
-    "golang1.25": {
-      "version": "1.25.7-alpine"
-    },
     "golang1.26": {
-      "version": "1.26.0-alpine"
+      "version": "1.26.1-alpine"
     },
     "ubuntu22": {
       "version": "jammy-20260210.1"
