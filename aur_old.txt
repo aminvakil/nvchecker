@@ -65,7 +65,7 @@
       "url": "https://github.com/google/tsunami-security-scanner/releases/tag/v0.2.0"
     },
     "jmeter-plugins-manager": {
-      "version": "1.11"
+      "version": "1.12"
     },
     "multi-git-status": {
       "version": "2.3",
