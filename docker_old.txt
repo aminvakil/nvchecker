@@ -20,7 +20,7 @@
       "version": "1.26.1-alpine"
     },
     "ubuntu22": {
-      "version": "jammy-20260217"
+      "version": "jammy-20260322.1"
     },
     "ubuntu24": {
       "version": "noble-20260217"
