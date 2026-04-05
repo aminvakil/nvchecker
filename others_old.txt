@@ -20,9 +20,9 @@
       "url": "https://github.com/kaltura/nginx-vod-module/releases/tag/1.33"
     },
     "node_exporter": {
-      "version": "v1.10.2",
-      "gitref": "refs/tags/v1.10.2",
-      "url": "https://github.com/prometheus/node_exporter/releases/tag/v1.10.2"
+      "version": "v1.11.0",
+      "gitref": "refs/tags/v1.11.0",
+      "url": "https://github.com/prometheus/node_exporter/releases/tag/v1.11.0"
     },
     "ocserv": {
       "version": "1.4.1"
