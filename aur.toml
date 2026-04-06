@@ -79,7 +79,7 @@ cmd = "curl -Is https://jmeter-plugins.org/get/ | grep Location | sed -e 's/.*jm
 
 [android-sdk-build-tools]
 source = "cmd"
-cmd = "curl -s https://developer.android.com/tools/releases/build-tools | grep -oP 'Build Tools, Revision [0-9.]+(?!-rc)' | sed 's/Build Tools, Revision //' | head -n 1"
+cmd = "curl -s https://dl.google.com/android/repository/repository2-1.xml | grep -oP '<remotePackage path=\"build-tools;[0-9.]+(?!-rc)\">' | head -n 1 | grep -oP '[0-9.]+'"
 
 [opkssh]
 source = "github"
