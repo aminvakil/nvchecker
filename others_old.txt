@@ -11,7 +11,7 @@
       "version": "13"
     },
     "grafana_dashboard_1860": {
-      "version": "43"
+      "version": "44"
     },
     "nginx-vod-module": {
       "version": "1.33",
@@ -20,9 +20,9 @@
       "url": "https://github.com/kaltura/nginx-vod-module/releases/tag/1.33"
     },
     "node_exporter": {
-      "version": "v1.11.0",
-      "gitref": "refs/tags/v1.11.0",
-      "url": "https://github.com/prometheus/node_exporter/releases/tag/v1.11.0"
+      "version": "v1.11.1",
+      "gitref": "refs/tags/v1.11.1",
+      "url": "https://github.com/prometheus/node_exporter/releases/tag/v1.11.1"
     },
     "ocserv": {
       "version": "1.4.1"
