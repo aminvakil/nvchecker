@@ -5,7 +5,7 @@
       "version": "3.23.3"
     },
     "archlinux": {
-      "version": "base-20260405.0.511327"
+      "version": "base-20260412.0.513370"
     },
     "debian11": {
       "version": "bullseye-20260406"
