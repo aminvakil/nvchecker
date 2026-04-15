@@ -109,3 +109,9 @@ source = "github"
 github = "UPB-SysSec/DPYProxy"
 use_latest_release = true
 prefix = "v"
+
+[pi-mono]
+source = "github"
+github = "badlogic/pi-mono"
+use_latest_release = true
+prefix = "v"
