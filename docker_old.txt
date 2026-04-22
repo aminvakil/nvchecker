@@ -8,13 +8,13 @@
       "version": "base-20260419.0.517065"
     },
     "debian11": {
-      "version": "bullseye-20260406"
+      "version": "bullseye-20260421"
     },
     "debian12": {
-      "version": "bookworm-20260406"
+      "version": "bookworm-20260421"
     },
     "debian13": {
-      "version": "trixie-20260406"
+      "version": "trixie-20260421"
     },
     "golang1.26": {
       "version": "1.26.2-alpine"
