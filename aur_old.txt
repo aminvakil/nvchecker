@@ -84,9 +84,9 @@
       "url": "https://github.com/hanselime/paqet/releases/tag/v1.0.0-alpha.19"
     },
     "pi-mono": {
-      "version": "0.68.1",
-      "gitref": "refs/tags/v0.68.1",
-      "url": "https://github.com/badlogic/pi-mono/releases/tag/v0.68.1"
+      "version": "0.69.0",
+      "gitref": "refs/tags/v0.69.0",
+      "url": "https://github.com/badlogic/pi-mono/releases/tag/v0.69.0"
     },
     "pumba": {
       "version": "1.0.6",
