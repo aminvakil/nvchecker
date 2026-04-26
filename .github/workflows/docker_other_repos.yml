@@ -104,12 +104,31 @@ jobs:
           repositories: "${{ matrix.update.repository }}"
 
       - name: Create ${{ matrix.update.image }} Pull Request
-        uses: peter-evans/create-pull-request@v8
-        with:
-          token: ${{ steps.generate-token.outputs.token }}
-          path: "./${{ matrix.update.repository }}"
-          commit-message: ${{ env.commit_message }}
-          branch: ${{ matrix.update.image }}
-          delete-branch: true
-          title: Bump ${{ matrix.update.image }}
-          body: ${{ env.commit_message }}
+        env:
+          GH_TOKEN: ${{ steps.generate-token.outputs.token }}
+          GH_REPO: ${{ github.repository_owner }}/${{ matrix.update.repository }}
+          BRANCH_NAME: ${{ matrix.update.image }}
+          PR_TITLE: Bump ${{ matrix.update.image }}
+        run: |
+          cd "${{ matrix.update.repository }}"
+
+          if [ -z "$(git status --porcelain)" ]; then
+            printf 'No changes to commit.\n'
+            exit 0
+          fi
+
+          base_branch=$(gh repo view "$GH_REPO" --json defaultBranchRef --jq .defaultBranchRef.name)
+          git config user.name "GitHub"
+          git config user.email "noreply@github.com"
+          git checkout -B "$BRANCH_NAME"
+          git add -A
+          git commit --author="${GITHUB_ACTOR} <${GITHUB_ACTOR}@users.noreply.github.com>" -m "$commit_message"
+          git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${GH_REPO}.git"
+          git push --force origin "$BRANCH_NAME"
+
+          pr_number=$(gh pr list --repo "$GH_REPO" --head "$BRANCH_NAME" --state open --json number --jq '.[0].number // empty')
+          if [ -n "$pr_number" ]; then
+            gh pr edit "$pr_number" --repo "$GH_REPO" --base "$base_branch" --title "$PR_TITLE" --body "$commit_message"
+          else
+            gh pr create --repo "$GH_REPO" --base "$base_branch" --head "$BRANCH_NAME" --title "$PR_TITLE" --body "$commit_message"
+          fi
