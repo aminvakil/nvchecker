@@ -19,7 +19,7 @@ jobs:
       updates: ${{ steps.nvcheck.outputs.updates }}
     steps:
       - name: Check out the codebase.
-        uses: actions/checkout@main
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
 
       - name: Pull base image.
         run: docker pull quay.io/aminvakil/archlinux:latest
@@ -81,7 +81,7 @@ jobs:
       matrix:
         update: ${{ fromJson(needs.Docker_Other_Repos.outputs.updates) }}
     steps:
-      - uses: actions/checkout@main
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           repository: "aminvakil/${{ matrix.update.repository }}"
           path: "./${{ matrix.update.repository }}"
@@ -96,7 +96,7 @@ jobs:
           sed -i "s/${before/\./\\.}$/$after/g" "${{ matrix.update.repository }}/${{ matrix.update.dockerfile_location }}"Dockerfile*
           sed -i "s/${before/\./\\.} AS /$after AS /g" "${{ matrix.update.repository }}/${{ matrix.update.dockerfile_location }}"Dockerfile*
 
-      - uses: actions/create-github-app-token@main
+      - uses: actions/create-github-app-token@1b10c78c7865c340bc4f6099eb2f838309f1e8c3 # v3.1.1
         id: generate-token
         with:
           client-id: ${{ secrets.APP_CLIENT_ID }}
