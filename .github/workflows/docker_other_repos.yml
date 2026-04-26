@@ -85,6 +85,7 @@ jobs:
         with:
           repository: "aminvakil/${{ matrix.update.repository }}"
           path: "./${{ matrix.update.repository }}"
+          persist-credentials: false
 
       - name: Bump version
         run: |
