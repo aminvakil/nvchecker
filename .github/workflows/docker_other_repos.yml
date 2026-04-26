@@ -4,6 +4,9 @@ name: Docker Other Repos
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
   schedule:
     - cron: '0 2 * * *'
 
@@ -106,7 +109,7 @@ jobs:
           dockerfile_location: ${{ matrix.dockerfile_location }}
 
       - uses: actions/create-github-app-token@main
-        if: env.OS_CHANGED == 'true'
+        if: env.OS_CHANGED == 'true' && github.event_name != 'pull_request'
         id: generate-token
         with:
           app-id: ${{ secrets.APP_ID }}
@@ -118,7 +121,7 @@ jobs:
           repository: ${{ matrix.repository }}
 
       - name: Create ${{ env.image }} Pull Request
-        if: env.OS_CHANGED == 'true'
+        if: env.OS_CHANGED == 'true' && github.event_name != 'pull_request'
         uses: peter-evans/create-pull-request@v8
         with:
           token: ${{ steps.generate-token.outputs.token }}
