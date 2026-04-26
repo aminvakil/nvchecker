@@ -15,6 +15,8 @@ jobs:
   AUR:
     name: AUR
     runs-on: ubuntu-latest
+    outputs:
+      updates: ${{ steps.nvcheck.outputs.updates }}
     steps:
       - name: Check out the codebase.
         uses: actions/checkout@main
@@ -35,32 +37,69 @@ jobs:
         run: docker exec "$(cat ${container_id})" pacman -S nvchecker git jq pyalpm python-packaging --noconfirm
 
       - name: Nvcheck!
+        id: nvcheck
         run: |
           docker exec "$(cat ${container_id})" nvchecker --failures -c /nvchecker/aur.toml
-          aur_nvcmp_output=$(docker exec "$(cat ${container_id})" nvcmp -c /nvchecker/aur.toml)
           aur_nvcmp_json=$(docker exec "$(cat ${container_id})" nvcmp -j -c /nvchecker/aur.toml)
-          nvchecker_name=$(echo "$aur_nvcmp_json" | docker exec -i "$(cat ${container_id})" jq -r '.[0].name // empty')
-          release_url=$(docker exec "$(cat ${container_id})" jq -r --arg name "$nvchecker_name" '.data[$name].url // "None"' /nvchecker/aur_new.txt)
-          if [[ $aur_nvcmp_output ]]; then AUR_HAS_CHANGED='true' ; fi
-          echo "AUR_HAS_CHANGED=$AUR_HAS_CHANGED" >> $GITHUB_ENV
-          echo 'aur_nvcmp_output<<EOF' >> $GITHUB_ENV
-          echo $aur_nvcmp_output >> $GITHUB_ENV
-          echo 'EOF' >> $GITHUB_ENV
+          updates=$(echo "$aur_nvcmp_json" | docker exec -i "$(cat ${container_id})" jq -c '[.[]]')
+          echo 'updates<<EOF' >> "$GITHUB_OUTPUT"
+          echo "$updates" >> "$GITHUB_OUTPUT"
+          echo 'EOF' >> "$GITHUB_OUTPUT"
+
+      - name: Stop and remove container forcefully.
+        run: docker rm -f "$(cat ${container_id})"
+
+  Create-AUR-Pull-Requests:
+    name: Create AUR Pull Request for ${{ matrix.update.name }}
+    needs: AUR
+    if: needs.AUR.outputs.updates != '[]'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        update: ${{ fromJson(needs.AUR.outputs.updates) }}
+    steps:
+      - name: Check out the codebase.
+        uses: actions/checkout@main
+
+      - name: Pull base image.
+        run: docker pull quay.io/aminvakil/archlinux:latest
+
+      - name: Run a container of base image and mount package on it.
+        run: |
+          container_id=$(mktemp)
+          docker run --detach --privileged --cgroup-parent=docker.slice --cgroupns private --tmpfs /tmp --tmpfs /run --tmpfs /run/lock -v "${PWD}":/nvchecker quay.io/aminvakil/archlinux:latest > "${container_id}"
+          echo "container_id=$container_id" >> $GITHUB_ENV
+
+      - name: pacman -Syu
+        run: docker exec "$(cat ${container_id})" pacman -Syu --noconfirm
+
+      - name: Install nvchecker and git.
+        run: docker exec "$(cat ${container_id})" pacman -S nvchecker git jq pyalpm python-packaging --noconfirm
+
+      - name: Prepare AUR bump
+        run: |
+          docker exec "$(cat ${container_id})" nvchecker --failures -c /nvchecker/aur.toml
+          release_url=$(docker exec "$(cat ${container_id})" jq -r --arg name "${{ matrix.update.name }}" '.data[$name].url // "None"' /nvchecker/aur_new.txt)
+          docker exec "$(cat ${container_id})" nvtake -c /nvchecker/aur.toml "${{ matrix.update.name }}"
+          docker exec "$(cat ${container_id})" rm -f /nvchecker/aur_old.txt~
+          safe_name=$(printf '%s' "${{ matrix.update.name }}" | tr -c 'A-Za-z0-9._-' '-' | sed 's/^-*//; s/-*$//')
+          echo "branch_name=aurbump-${safe_name}" >> $GITHUB_ENV
+          echo "commit_message=${{ matrix.update.name }} ${{ matrix.update.oldver }} -> ${{ matrix.update.newver }}" >> $GITHUB_ENV
           echo "release_url=${release_url}" >> $GITHUB_ENV
-          mv aur_new.txt aur_old.txt
 
       - name: Create AUR Pull Request
-        if: env.AUR_HAS_CHANGED == 'true' && github.event_name != 'pull_request'
+        if: github.event_name != 'pull_request'
         uses: peter-evans/create-pull-request@v8
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: ${{ env.aur_nvcmp_output }}
+          commit-message: ${{ env.commit_message }}
           committer: GitHub <noreply@github.com>
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           signoff: false
-          branch: aurbump
+          branch: ${{ env.branch_name }}
           delete-branch: true
-          title: 'AUR Bump'
+          title: 'AUR Bump: ${{ matrix.update.name }}'
           body: ${{ env.release_url }}
           draft: false
 
