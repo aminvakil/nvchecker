@@ -40,18 +40,7 @@ jobs:
           others_nvcmp_output=$(docker exec "$(cat ${container_id})" nvcmp -c /nvchecker/others.toml)
           others_nvcmp_json=$(docker exec "$(cat ${container_id})" nvcmp -j -c /nvchecker/others.toml)
           nvchecker_name=$(echo "$others_nvcmp_json" | docker exec -i "$(cat ${container_id})" jq -r '.[0].name // empty')
-          new_version=$(echo "$others_nvcmp_json" | docker exec -i "$(cat ${container_id})" jq -r '.[0].newver // empty')
-          nvchecker_source=$(docker exec "$(cat ${container_id})" awk "/\[$nvchecker_name\]/{getline; print}" /nvchecker/others.toml | awk '{print $3}' | tr -d '"')
-          nvchecker_repository=$(docker exec "$(cat ${container_id})" awk "/\[$nvchecker_name\]/{getline; getline; print}" /nvchecker/others.toml | awk '{print $3}' | tr -d '"')
-          nvchecker_prefix=$(docker exec "$(cat ${container_id})" awk "/\[$nvchecker_name\]/{getline; getline; getline; getline; print}" /nvchecker/others.toml | awk '{print $3}' | tr -d '"')
-          case "$nvchecker_source" in
-          ("github")
-          release_url="https://github.com/${nvchecker_repository}/releases/tag/${nvchecker_prefix}${new_version}"
-          ;;
-          (*)
-          release_url=None
-          ;;
-          esac
+          release_url=$(docker exec "$(cat ${container_id})" jq -r --arg name "$nvchecker_name" '.data[$name].url // "None"' /nvchecker/others_new.txt)
           if [[ $others_nvcmp_output ]]; then OTHERS_HAS_CHANGED='true' ; fi
           echo "OTHERS_HAS_CHANGED=$OTHERS_HAS_CHANGED" >> $GITHUB_ENV
           echo 'others_nvcmp_output<<EOF' >> $GITHUB_ENV
