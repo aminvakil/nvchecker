@@ -82,7 +82,7 @@ jobs:
           docker exec "$(cat ${container_id})" nvchecker --failures -c /nvchecker/aur.toml
           release_url=$(docker exec "$(cat ${container_id})" jq -r --arg name "${{ matrix.update.name }}" '.data[$name].url // "None"' /nvchecker/aur_new.txt)
           docker exec "$(cat ${container_id})" nvtake -c /nvchecker/aur.toml "${{ matrix.update.name }}"
-          docker exec "$(cat ${container_id})" rm -f /nvchecker/aur_old.txt~
+          docker exec "$(cat ${container_id})" rm -f /nvchecker/aur_old.txt~ /nvchecker/aur_new.txt
           safe_name=$(printf '%s' "${{ matrix.update.name }}" | tr -c 'A-Za-z0-9._-' '-' | sed 's/^-*//; s/-*$//')
           echo "branch_name=aurbump-${safe_name}" >> $GITHUB_ENV
           echo "commit_message=${{ matrix.update.name }} ${{ matrix.update.oldver }} -> ${{ matrix.update.newver }}" >> $GITHUB_ENV
