@@ -89,18 +89,28 @@ jobs:
           printf 'commit_message=%s\n' "${{ matrix.update.name }} ${{ matrix.update.oldver }} -> ${{ matrix.update.newver }}" >> "$GITHUB_ENV"
 
       - name: Create Docker Pull Request
-        uses: peter-evans/create-pull-request@v8
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: ${{ env.commit_message }}
-          committer: GitHub <noreply@github.com>
-          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
-          signoff: false
-          branch: ${{ env.branch_name }}
-          delete-branch: true
-          title: 'Docker Bump: ${{ matrix.update.name }}'
-          body: ${{ env.commit_message }}
-          draft: false
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_TITLE: 'Docker Bump: ${{ matrix.update.name }}'
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            printf 'No changes to commit.\n'
+            exit 0
+          fi
+
+          git config user.name "GitHub"
+          git config user.email "noreply@github.com"
+          git checkout -B "$branch_name"
+          git add -A
+          git commit --author="${GITHUB_ACTOR} <${GITHUB_ACTOR}@users.noreply.github.com>" -m "$commit_message"
+          git push --force origin "$branch_name"
+
+          pr_number=$(gh pr list --head "$branch_name" --state open --json number --jq '.[0].number // empty')
+          if [ -n "$pr_number" ]; then
+            gh pr edit "$pr_number" --base main --title "$PR_TITLE" --body "$commit_message"
+          else
+            gh pr create --base main --head "$branch_name" --title "$PR_TITLE" --body "$commit_message"
+          fi
 
       - name: Stop and remove container forcefully.
         run: docker rm -f "$(cat ${container_id})"
