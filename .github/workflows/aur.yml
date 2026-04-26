@@ -4,9 +4,6 @@ name: AUR
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
   schedule:
     - cron: '0 2 * * *'
 
@@ -89,7 +86,6 @@ jobs:
           echo "release_url=${release_url}" >> $GITHUB_ENV
 
       - name: Create AUR Pull Request
-        if: github.event_name != 'pull_request'
         uses: peter-evans/create-pull-request@v8
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
