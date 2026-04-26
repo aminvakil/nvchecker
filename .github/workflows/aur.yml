@@ -7,6 +7,9 @@ name: AUR
   schedule:
     - cron: '0 2 * * *'
 
+permissions:
+  contents: read
+
 jobs:
 
   AUR:
@@ -49,6 +52,9 @@ jobs:
     needs: AUR
     if: needs.AUR.outputs.updates != '[]'
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     strategy:
       fail-fast: false
       matrix:

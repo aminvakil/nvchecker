@@ -7,6 +7,9 @@ name: Others
   schedule:
     - cron: '0 2 * * *'
 
+permissions:
+  contents: read
+
 jobs:
 
   Others:
@@ -49,6 +52,9 @@ jobs:
     needs: Others
     if: needs.Others.outputs.updates != '[]'
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     strategy:
       fail-fast: false
       matrix:
