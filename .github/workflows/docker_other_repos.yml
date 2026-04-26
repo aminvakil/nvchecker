@@ -25,7 +25,7 @@ jobs:
         run: |
           container_id=$(mktemp)
           docker run --detach --privileged --cgroup-parent=docker.slice --cgroupns private --tmpfs /tmp --tmpfs /run --tmpfs /run/lock -v "${PWD}":/nvchecker quay.io/aminvakil/archlinux:latest > "${container_id}"
-          echo "container_id=$container_id" >> $GITHUB_ENV
+          printf 'container_id=%s\n' "$container_id" >> "$GITHUB_ENV"
 
       - name: pacman -Syu
         run: docker exec "$(cat ${container_id})" pacman -Syu --noconfirm
@@ -63,9 +63,7 @@ jobs:
               target("docker-ocserv"; "alpine"; "alpine"; "")
             ]
           ')
-          echo 'updates<<EOF' >> "$GITHUB_OUTPUT"
-          echo "$updates" >> "$GITHUB_OUTPUT"
-          echo 'EOF' >> "$GITHUB_OUTPUT"
+          printf 'updates<<EOF\n%s\nEOF\n' "$updates" >> "$GITHUB_OUTPUT"
 
       - name: Stop and remove container forcefully.
         run: docker rm -f "$(cat ${container_id})"
@@ -90,7 +88,7 @@ jobs:
           before="${{ matrix.update.oldver }}"
           after="${{ matrix.update.newver }}"
           commit_message="$before -> $after"
-          echo "commit_message=$commit_message" >> $GITHUB_ENV
+          printf 'commit_message=%s\n' "$commit_message" >> "$GITHUB_ENV"
           sed -i "s/${before/\./\\.}$/$after/g" "${{ matrix.update.repository }}/${{ matrix.update.dockerfile_location }}"Dockerfile*
           sed -i "s/${before/\./\\.} AS /$after AS /g" "${{ matrix.update.repository }}/${{ matrix.update.dockerfile_location }}"Dockerfile*
 

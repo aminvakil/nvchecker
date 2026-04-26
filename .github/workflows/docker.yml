@@ -26,7 +26,7 @@ jobs:
         run: |
           container_id=$(mktemp)
           docker run --detach --privileged --cgroup-parent=docker.slice --cgroupns private --tmpfs /tmp --tmpfs /run --tmpfs /run/lock -v "${PWD}":/nvchecker quay.io/aminvakil/archlinux:latest > "${container_id}"
-          echo "container_id=$container_id" >> $GITHUB_ENV
+          printf 'container_id=%s\n' "$container_id" >> "$GITHUB_ENV"
 
       - name: pacman -Syu
         run: docker exec "$(cat ${container_id})" pacman -Syu --noconfirm
@@ -40,9 +40,7 @@ jobs:
           docker exec "$(cat ${container_id})" nvchecker --failures -c /nvchecker/docker.toml
           docker_nvcmp_json=$(docker exec "$(cat ${container_id})" nvcmp -j -c /nvchecker/docker.toml)
           updates=$(echo "$docker_nvcmp_json" | docker exec -i "$(cat ${container_id})" jq -c '[.[]]')
-          echo 'updates<<EOF' >> "$GITHUB_OUTPUT"
-          echo "$updates" >> "$GITHUB_OUTPUT"
-          echo 'EOF' >> "$GITHUB_OUTPUT"
+          printf 'updates<<EOF\n%s\nEOF\n' "$updates" >> "$GITHUB_OUTPUT"
 
       - name: Stop and remove container forcefully.
         run: docker rm -f "$(cat ${container_id})"
@@ -67,7 +65,7 @@ jobs:
         run: |
           container_id=$(mktemp)
           docker run --detach --privileged --cgroup-parent=docker.slice --cgroupns private --tmpfs /tmp --tmpfs /run --tmpfs /run/lock -v "${PWD}":/nvchecker quay.io/aminvakil/archlinux:latest > "${container_id}"
-          echo "container_id=$container_id" >> $GITHUB_ENV
+          printf 'container_id=%s\n' "$container_id" >> "$GITHUB_ENV"
 
       - name: pacman -Syu
         run: docker exec "$(cat ${container_id})" pacman -Syu --noconfirm
@@ -81,8 +79,8 @@ jobs:
           docker exec "$(cat ${container_id})" nvtake -c /nvchecker/docker.toml "${{ matrix.update.name }}"
           docker exec "$(cat ${container_id})" rm -f /nvchecker/docker_old.txt~ /nvchecker/docker_new.txt
           safe_name=$(printf '%s' "${{ matrix.update.name }}" | tr -c 'A-Za-z0-9._-' '-' | sed 's/^-*//; s/-*$//')
-          echo "branch_name=dockerbump-${safe_name}" >> $GITHUB_ENV
-          echo "commit_message=${{ matrix.update.name }} ${{ matrix.update.oldver }} -> ${{ matrix.update.newver }}" >> $GITHUB_ENV
+          printf 'branch_name=%s\n' "dockerbump-${safe_name}" >> "$GITHUB_ENV"
+          printf 'commit_message=%s\n' "${{ matrix.update.name }} ${{ matrix.update.oldver }} -> ${{ matrix.update.newver }}" >> "$GITHUB_ENV"
 
       - name: Create Docker Pull Request
         uses: peter-evans/create-pull-request@v8
