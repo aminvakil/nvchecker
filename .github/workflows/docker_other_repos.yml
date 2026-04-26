@@ -12,42 +12,11 @@ name: Docker Other Repos
 
 jobs:
 
-  Docker-Other-Repos:
+  Docker_Other_Repos:
     name: Docker-Other-Repos
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        include:
-          - repository: docker-archlinux
-            image: archlinux
-          - repository: docker-os-systemd
-            image: debian11
-            dockerfile_location: images/
-          - repository: docker-os-systemd
-            image: debian12
-            dockerfile_location: images/
-          - repository: docker-os-systemd
-            image: debian13
-            dockerfile_location: images/
-          - repository: docker-os-systemd
-            image: ubuntu22
-            dockerfile_location: images/
-          - repository: docker-os-systemd
-            image: ubuntu24
-            dockerfile_location: images/
-          - repository: docker-alpine-ftp-server-tls
-            image: alpine
-          - repository: docker-alpine-nfs-server
-            image: alpine
-          - repository: prometheus_bot
-            image: alpine
-          - repository: prometheus_bot
-            image: golang
-          - repository: docker-squid
-            image: alpine
-          - repository: docker-ocserv
-            image: alpine
-
+    outputs:
+      updates: ${{ steps.nvcheck.outputs.updates }}
     steps:
       - name: Check out the codebase.
         uses: actions/checkout@main
@@ -65,75 +34,86 @@ jobs:
         run: docker exec "$(cat ${container_id})" pacman -Syu --noconfirm
 
       - name: Install nvchecker and git.
-        run: docker exec "$(cat ${container_id})" pacman -S nvchecker git pyalpm --noconfirm
+        run: docker exec "$(cat ${container_id})" pacman -S nvchecker git jq pyalpm --noconfirm
 
       - name: Nvcheck!
+        id: nvcheck
         run: |
           docker exec "$(cat ${container_id})" nvchecker --failures -c /nvchecker/docker.toml
-          docker_nvcmp_output=$(docker exec "$(cat ${container_id})" nvcmp -c /nvchecker/docker.toml)
-          if [[ $docker_nvcmp_output ]]; then DOCKER_HAS_CHANGED='true' ; fi
-          echo "DOCKER_HAS_CHANGED=$DOCKER_HAS_CHANGED" >> $GITHUB_ENV
-          echo 'docker_nvcmp_output<<EOF' >> $GITHUB_ENV
-          echo $docker_nvcmp_output >> $GITHUB_ENV
-          echo 'EOF' >> $GITHUB_ENV
-          mv docker_new.txt docker_old.txt
+          docker_nvcmp_json=$(docker exec "$(cat ${container_id})" nvcmp -j -c /nvchecker/docker.toml)
+          updates=$(echo "$docker_nvcmp_json" | docker exec -i "$(cat ${container_id})" jq -c '
+            def target($repository; $image; $source; $dockerfile_location):
+              .[] | select(.name == $source) | {
+                repository: $repository,
+                image: $image,
+                source: $source,
+                dockerfile_location: $dockerfile_location,
+                oldver: .oldver,
+                newver: .newver
+              };
+            [
+              target("docker-archlinux"; "archlinux"; "archlinux"; ""),
+              target("docker-os-systemd"; "debian11"; "debian11"; "images/"),
+              target("docker-os-systemd"; "debian12"; "debian12"; "images/"),
+              target("docker-os-systemd"; "debian13"; "debian13"; "images/"),
+              target("docker-os-systemd"; "ubuntu22"; "ubuntu22"; "images/"),
+              target("docker-os-systemd"; "ubuntu24"; "ubuntu24"; "images/"),
+              target("docker-alpine-ftp-server-tls"; "alpine"; "alpine"; ""),
+              target("docker-alpine-nfs-server"; "alpine"; "alpine"; ""),
+              target("prometheus_bot"; "alpine"; "alpine"; ""),
+              target("prometheus_bot"; "golang"; "golang1.26"; ""),
+              target("docker-squid"; "alpine"; "alpine"; ""),
+              target("docker-ocserv"; "alpine"; "alpine"; "")
+            ]
+          ')
+          echo 'updates<<EOF' >> "$GITHUB_OUTPUT"
+          echo "$updates" >> "$GITHUB_OUTPUT"
+          echo 'EOF' >> "$GITHUB_OUTPUT"
 
-      - name: Check what has been changed
-        if: env.DOCKER_HAS_CHANGED == 'true'
-        run: |
-          if [[ "${{ env.docker_nvcmp_output }}" == *"$image"* ]]; then OS_CHANGED='true'; fi
-          echo "OS_CHANGED=$OS_CHANGED" >> $GITHUB_ENV
-        env:
-          image: ${{ matrix.image }}
+      - name: Stop and remove container forcefully.
+        run: docker rm -f "$(cat ${container_id})"
 
+  Create_Docker_Other_Repos_Pull_Requests:
+    name: Create ${{ matrix.update.image }} Pull Request for ${{ matrix.update.repository }}
+    needs: Docker_Other_Repos
+    if: needs.Docker_Other_Repos.outputs.updates != '[]'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        update: ${{ fromJson(needs.Docker_Other_Repos.outputs.updates) }}
+    steps:
       - uses: actions/checkout@main
-        if: env.OS_CHANGED == 'true'
         with:
-          repository: "aminvakil/${{ env.repository }}"
-          path: "./${{ env.repository }}"
-        env:
-          repository: ${{ matrix.repository }}
+          repository: "aminvakil/${{ matrix.update.repository }}"
+          path: "./${{ matrix.update.repository }}"
 
       - name: Bump version
-        if: env.OS_CHANGED == 'true'
         run: |
-          before=$(echo "${{ env.docker_nvcmp_output }}" | sed "s/.*$image/$image/g" | awk '{print $2}')
-          after=$(echo "${{ env.docker_nvcmp_output }}" | sed "s/.*$image/$image/g" | awk '{print $4}')
+          before="${{ matrix.update.oldver }}"
+          after="${{ matrix.update.newver }}"
           commit_message="$before -> $after"
           echo "commit_message=$commit_message" >> $GITHUB_ENV
-          sed -i "s/${before/\./\\.}$/$after/g" "${{ env.repository }}/${{ env.dockerfile_location }}"Dockerfile*
-          sed -i "s/${before/\./\\.} AS /$after AS /g" "${{ env.repository }}/${{ env.dockerfile_location }}"Dockerfile*
-        env:
-          image: ${{ matrix.image }}
-          repository: ${{ matrix.repository }}
-          dockerfile_location: ${{ matrix.dockerfile_location }}
+          sed -i "s/${before/\./\\.}$/$after/g" "${{ matrix.update.repository }}/${{ matrix.update.dockerfile_location }}"Dockerfile*
+          sed -i "s/${before/\./\\.} AS /$after AS /g" "${{ matrix.update.repository }}/${{ matrix.update.dockerfile_location }}"Dockerfile*
 
       - uses: actions/create-github-app-token@main
-        if: env.OS_CHANGED == 'true' && github.event_name != 'pull_request'
+        if: github.event_name != 'pull_request'
         id: generate-token
         with:
           app-id: ${{ secrets.APP_ID }}
           private-key: ${{ secrets.APP_PRIVATE_KEY }}
           owner: "${{ github.repository_owner }}"
-          repositories: "${{ env.repository }}"
-        env:
-          image: ${{ matrix.image }}
-          repository: ${{ matrix.repository }}
+          repositories: "${{ matrix.update.repository }}"
 
-      - name: Create ${{ env.image }} Pull Request
-        if: env.OS_CHANGED == 'true' && github.event_name != 'pull_request'
+      - name: Create ${{ matrix.update.image }} Pull Request
+        if: github.event_name != 'pull_request'
         uses: peter-evans/create-pull-request@v8
         with:
           token: ${{ steps.generate-token.outputs.token }}
-          path: "./${{ env.repository }}"
+          path: "./${{ matrix.update.repository }}"
           commit-message: ${{ env.commit_message }}
-          branch: ${{ env.image }}
+          branch: ${{ matrix.update.image }}
           delete-branch: true
-          title: Bump ${{ env.image }}
+          title: Bump ${{ matrix.update.image }}
           body: ${{ env.commit_message }}
-        env:
-          image: ${{ matrix.image }}
-          repository: ${{ matrix.repository }}
-
-      - name: Stop and remove container forcefully.
-        run: docker rm -f "$(cat ${container_id})"
