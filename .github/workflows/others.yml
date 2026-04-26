@@ -35,10 +35,12 @@ jobs:
         run: |
           docker exec "$(cat ${container_id})" nvchecker --failures -c /nvchecker/others.toml
           others_nvcmp_output=$(docker exec "$(cat ${container_id})" nvcmp -c /nvchecker/others.toml)
-          nvchecker_source=$(docker exec "$(cat ${container_id})" awk "/\[$(echo $others_nvcmp_output | awk '{print $1}')\]/{getline; print}" /nvchecker/others.toml | awk '{print $3}' | tr -d '"')
-          nvchecker_repository=$(docker exec "$(cat ${container_id})" awk "/\[$(echo $others_nvcmp_output | awk '{print $1}')\]/{getline; getline; print}" /nvchecker/others.toml | awk '{print $3}' | tr -d '"')
-          nvchecker_prefix=$(docker exec "$(cat ${container_id})" awk "/\[$(echo $others_nvcmp_output | awk '{print $1}')\]/{getline; getline; getline; getline; print}" /nvchecker/others.toml | awk '{print $3}' | tr -d '"')
-          new_version=$(echo ${others_nvcmp_output} | awk '{print $4}')
+          others_nvcmp_json=$(docker exec "$(cat ${container_id})" nvcmp -j -c /nvchecker/others.toml)
+          nvchecker_name=$(echo "$others_nvcmp_json" | docker exec -i "$(cat ${container_id})" jq -r '.[0].name // empty')
+          new_version=$(echo "$others_nvcmp_json" | docker exec -i "$(cat ${container_id})" jq -r '.[0].newver // empty')
+          nvchecker_source=$(docker exec "$(cat ${container_id})" awk "/\[$nvchecker_name\]/{getline; print}" /nvchecker/others.toml | awk '{print $3}' | tr -d '"')
+          nvchecker_repository=$(docker exec "$(cat ${container_id})" awk "/\[$nvchecker_name\]/{getline; getline; print}" /nvchecker/others.toml | awk '{print $3}' | tr -d '"')
+          nvchecker_prefix=$(docker exec "$(cat ${container_id})" awk "/\[$nvchecker_name\]/{getline; getline; getline; getline; print}" /nvchecker/others.toml | awk '{print $3}' | tr -d '"')
           case "$nvchecker_source" in
           ("github")
           release_url="https://github.com/${nvchecker_repository}/releases/tag/${nvchecker_prefix}${new_version}"
