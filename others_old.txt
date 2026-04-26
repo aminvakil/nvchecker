@@ -11,7 +11,7 @@
       "version": "13"
     },
     "grafana_dashboard_1860": {
-      "version": "44"
+      "version": "45"
     },
     "nginx-vod-module": {
       "version": "1.33",
