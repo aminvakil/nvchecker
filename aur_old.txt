@@ -7,7 +7,7 @@
       "url": "https://github.com/UPB-SysSec/DPYProxy/releases/tag/v2.1.0"
     },
     "android-sdk-build-tools": {
-      "version": "34.0.0"
+      "version": "37.0.0"
     },
     "anteon": {
       "version": "2.6.0",
