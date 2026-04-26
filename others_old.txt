@@ -25,7 +25,7 @@
       "url": "https://github.com/prometheus/node_exporter/releases/tag/v1.11.1"
     },
     "ocserv": {
-      "version": "1.4.2"
+      "version": "1.4.1"
     },
     "prometheus-lts": {
       "version": "3.5"
