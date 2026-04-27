@@ -115,3 +115,9 @@ source = "github"
 github = "badlogic/pi-mono"
 use_latest_release = true
 prefix = "v"
+
+[mhrv-rs]
+source = "github"
+github = "therealaleph/MasterHttpRelayVPN-RUST"
+use_latest_release = true
+prefix = "v"
