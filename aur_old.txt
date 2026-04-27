@@ -73,10 +73,10 @@
       "url": "https://github.com/fboender/multi-git-status/releases/tag/2.3"
     },
     "opkssh": {
-      "version": "0.13.0",
-      "gitref": "refs/tags/v0.13.0",
-      "revision": "8c80f2de25f633f69a1080fa4980d66684849bae",
-      "url": "https://github.com/openpubkey/opkssh/releases/tag/v0.13.0"
+      "version": "0.14.0",
+      "gitref": "refs/tags/v0.14.0",
+      "revision": "193d79871f3bad3cd27cfb94734c265773a99c9b",
+      "url": "https://github.com/openpubkey/opkssh/releases/tag/v0.14.0"
     },
     "paqet": {
       "version": "1.0.0-alpha.19",
