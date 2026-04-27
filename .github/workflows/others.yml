@@ -84,7 +84,7 @@ jobs:
 
       - name: Prepare Others bump
         run: |
-          docker exec "$(cat ${container_id})" nvchecker --failures -c /nvchecker/others.toml
+          docker exec "$(cat ${container_id})" nvchecker --failures -c /nvchecker/others.toml -e "${{ matrix.update.name }}"
           release_url=$(docker exec "$(cat ${container_id})" jq -r --arg name "${{ matrix.update.name }}" '.data[$name].url // "None"' /nvchecker/others_new.txt)
           docker exec "$(cat ${container_id})" nvtake -c /nvchecker/others.toml "${{ matrix.update.name }}"
           docker exec "$(cat ${container_id})" rm -f /nvchecker/others_old.txt~ /nvchecker/others_new.txt
