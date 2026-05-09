@@ -8,7 +8,7 @@
       "version": "base-20260503.0.523481"
     },
     "debian11": {
-      "version": "bullseye-20260421"
+      "version": "bullseye-20260505"
     },
     "debian12": {
       "version": "bookworm-20260505"
