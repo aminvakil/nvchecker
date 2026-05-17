@@ -68,9 +68,9 @@
       "version": "1.12"
     },
     "mhrv-rs": {
-      "version": "1.9.26",
-      "gitref": "refs/tags/v1.9.26",
-      "url": "https://github.com/therealaleph/MasterHttpRelayVPN-RUST/releases/tag/v1.9.26"
+      "version": "1.9.28",
+      "gitref": "refs/tags/v1.9.28",
+      "url": "https://github.com/therealaleph/MasterHttpRelayVPN-RUST/releases/tag/v1.9.28"
     },
     "multi-git-status": {
       "version": "2.3",
