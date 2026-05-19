@@ -102,6 +102,11 @@
       "version": "4.5.0",
       "url": "https://pypi.org/project/spotdl/4.5.0/"
     },
+    "xray": {
+      "version": "26.3.27",
+      "gitref": "refs/tags/v26.3.27",
+      "url": "https://github.com/XTLS/Xray-core/releases/tag/v26.3.27"
+    },
     "xssmap": {
       "version": "20200305.152024",
       "revision": "1a208b11fdcfdd413d1cf76a6c8fc570f4b802d2",
