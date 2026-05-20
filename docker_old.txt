@@ -11,7 +11,7 @@
       "version": "bullseye-20260505"
     },
     "debian12": {
-      "version": "bookworm-20260505"
+      "version": "bookworm-20260518"
     },
     "debian13": {
       "version": "trixie-20260505"
