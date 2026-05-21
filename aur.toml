@@ -122,3 +122,9 @@ source = "github"
 github = "XTLS/Xray-core"
 use_latest_release = true
 prefix = "v"
+
+[slipstream]
+source = "github"
+github = "Mygod/slipstream-rust"
+use_latest_release = true
+prefix = "v"
