@@ -98,6 +98,11 @@
       "gitref": "refs/tags/1.1.6",
       "url": "https://github.com/alexei-led/pumba/releases/tag/1.1.6"
     },
+    "slipstream": {
+      "version": "0.1.1",
+      "gitref": "refs/tags/v0.1.1",
+      "url": "https://github.com/Mygod/slipstream-rust/releases/tag/v0.1.1"
+    },
     "spotdl": {
       "version": "4.5.0",
       "url": "https://pypi.org/project/spotdl/4.5.0/"
