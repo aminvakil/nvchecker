@@ -93,16 +93,6 @@
       "gitref": "refs/tags/v0.75.5",
       "url": "https://github.com/earendil-works/pi/releases/tag/v0.75.5"
     },
-    "pi-mono": {
-      "version": "0.75.5",
-      "gitref": "refs/tags/v0.75.5",
-      "url": "https://github.com/earendil-works/pi/releases/tag/v0.75.5"
-    },
-    "pumba": {
-      "version": "1.1.6",
-      "gitref": "refs/tags/1.1.6",
-      "url": "https://github.com/alexei-led/pumba/releases/tag/1.1.6"
-    },
     "slipstream": {
       "version": "0.1.1",
       "gitref": "refs/tags/v0.1.1",
