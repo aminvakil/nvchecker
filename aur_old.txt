@@ -89,9 +89,9 @@
       "url": "https://github.com/hanselime/paqet/releases/tag/v1.0.0-alpha.19"
     },
     "pi": {
-      "version": "0.78.1",
-      "gitref": "refs/tags/v0.78.1",
-      "url": "https://github.com/earendil-works/pi/releases/tag/v0.78.1"
+      "version": "0.79.0",
+      "gitref": "refs/tags/v0.79.0",
+      "url": "https://github.com/earendil-works/pi/releases/tag/v0.79.0"
     },
     "slipstream": {
       "version": "0.1.1",
