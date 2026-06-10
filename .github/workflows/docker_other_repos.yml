@@ -61,6 +61,7 @@ jobs:
               target("docker-os-systemd"; "debian13"; "debian13"; "images/"),
               target("docker-os-systemd"; "ubuntu22"; "ubuntu22"; "images/"),
               target("docker-os-systemd"; "ubuntu24"; "ubuntu24"; "images/"),
+              target("docker-os-systemd"; "ubuntu26"; "ubuntu26"; "images/"),
               target("docker-alpine-ftp-server-tls"; "alpine"; "alpine"; ""),
               target("docker-alpine-nfs-server"; "alpine"; "alpine"; ""),
               target("prometheus_bot"; "alpine"; "alpine"; ""),
