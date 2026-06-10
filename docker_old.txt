@@ -24,6 +24,9 @@
     },
     "ubuntu24": {
       "version": "noble-20260509.1"
+    },
+    "ubuntu26": {
+      "version": "resolute-20260421"
     }
   }
 }
