@@ -67,6 +67,11 @@
     "jmeter-plugins-manager": {
       "version": "1.12"
     },
+    "loreai": {
+      "version": "0.27.0",
+      "gitref": "refs/tags/0.27.0",
+      "url": "https://github.com/BYK/loreai/releases/tag/0.27.0"
+    },
     "mhrv-rs": {
       "version": "1.9.36",
       "gitref": "refs/tags/v1.9.36",
