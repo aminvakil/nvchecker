@@ -128,3 +128,8 @@ source = "github"
 github = "Mygod/slipstream-rust"
 use_latest_release = true
 prefix = "v"
+
+[loreai]
+source = "github"
+github = "BYK/loreai"
+use_latest_release = true
