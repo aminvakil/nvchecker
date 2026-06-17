@@ -68,9 +68,9 @@
       "version": "1.12"
     },
     "loreai": {
-      "version": "0.31.2",
-      "gitref": "refs/tags/0.31.2",
-      "url": "https://github.com/BYK/loreai/releases/tag/0.31.2"
+      "version": "0.32.0",
+      "gitref": "refs/tags/0.32.0",
+      "url": "https://github.com/BYK/loreai/releases/tag/0.32.0"
     },
     "mhrv-rs": {
       "version": "1.9.36",
