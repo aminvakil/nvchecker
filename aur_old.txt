@@ -2,9 +2,9 @@
   "version": 2,
   "data": {
     "DPYProxy": {
-      "version": "2.2.0",
-      "gitref": "refs/tags/v2.2.0",
-      "url": "https://github.com/UPB-SysSec/DPYProxy/releases/tag/v2.2.0"
+      "version": "2.1.0",
+      "gitref": "refs/tags/v2.1.0",
+      "url": "https://github.com/UPB-SysSec/DPYProxy/releases/tag/v2.1.0"
     },
     "android-sdk-build-tools": {
       "version": "37.0.0"
