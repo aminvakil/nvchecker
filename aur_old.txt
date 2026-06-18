@@ -48,6 +48,11 @@
       "revision": "54368575d2a0c34a82fb05c904b8207284a64891",
       "url": "https://github.com/goodwithtech/dockle/releases/tag/v0.4.15"
     },
+    "dpyproxy": {
+      "version": "2.2.0",
+      "gitref": "refs/tags/v2.2.0",
+      "url": "https://github.com/UPB-SysSec/DPYProxy/releases/tag/v2.2.0"
+    },
     "dstp": {
       "version": "0.4.23",
       "gitref": "refs/tags/v0.4.23",
