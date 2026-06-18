@@ -133,10 +133,3 @@ prefix = "v"
 source = "github"
 github = "BYK/loreai"
 use_latest_release = true
-
-[thelounge]
-source = "github"
-github = "thelounge/thelounge"
-use_latest_release = true
-prefix = "v"
-include_prereleases = true
