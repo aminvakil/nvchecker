@@ -133,9 +133,3 @@ prefix = "v"
 source = "github"
 github = "BYK/loreai"
 use_latest_release = true
-
-[dpyproxy]
-source = "github"
-github = "UPB-SysSec/DPYProxy"
-use_latest_release = true
-prefix = "v"
