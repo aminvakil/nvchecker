@@ -91,9 +91,8 @@ jobs:
             jq -r ".data | keys[]" /nvchecker/docker_old.txt |
             while IFS= read -r name; do
               if ! grep -qxF "[$name]" /nvchecker/docker.toml; then
-                tmp=$(mktemp)
-                jq --arg name "$name" "del(.data[\$name])" /nvchecker/docker_old.txt > "$tmp"
-                mv "$tmp" /nvchecker/docker_old.txt
+                jq --arg name "$name" "del(.data[\$name])" /nvchecker/docker_old.txt > /nvchecker/docker_new.txt
+                mv /nvchecker/docker_new.txt /nvchecker/docker_old.txt
               fi
             done
           '

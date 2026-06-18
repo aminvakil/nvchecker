@@ -91,9 +91,8 @@ jobs:
             jq -r ".data | keys[]" /nvchecker/aur_old.txt |
             while IFS= read -r name; do
               if ! grep -qxF "[$name]" /nvchecker/aur.toml; then
-                tmp=$(mktemp)
-                jq --arg name "$name" "del(.data[\$name])" /nvchecker/aur_old.txt > "$tmp"
-                mv "$tmp" /nvchecker/aur_old.txt
+                jq --arg name "$name" "del(.data[\$name])" /nvchecker/aur_old.txt > /nvchecker/aur_new.txt
+                mv /nvchecker/aur_new.txt /nvchecker/aur_old.txt
               fi
             done
           '
