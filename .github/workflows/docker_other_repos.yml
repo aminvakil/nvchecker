@@ -65,7 +65,7 @@ jobs:
               target("docker-alpine-ftp-server-tls"; "alpine"; "alpine"; ""),
               target("docker-alpine-nfs-server"; "alpine"; "alpine"; ""),
               target("prometheus_bot"; "alpine"; "alpine"; ""),
-              target("prometheus_bot"; "golang"; "golang1.26"; ""),
+              target("prometheus_bot"; "golang"; "golang"; ""),
               target("docker-squid"; "alpine"; "alpine"; ""),
               target("docker-ocserv"; "alpine"; "alpine"; "")
             ]
