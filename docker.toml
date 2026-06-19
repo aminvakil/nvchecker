@@ -48,7 +48,7 @@ registry = "docker.io"
 container = "library/ubuntu"
 include_regex = "resolute.*"
 
-["golang1.26"]
+[golang1.26]
 source = "container"
 registry = "docker.io"
 container = "library/golang"
