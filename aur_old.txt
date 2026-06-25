@@ -98,6 +98,11 @@
       "gitref": "refs/tags/v0.80.2",
       "url": "https://github.com/earendil-works/pi/releases/tag/v0.80.2"
     },
+    "sentry-relay": {
+      "version": "26.6.0",
+      "gitref": "refs/tags/26.6.0",
+      "url": "https://github.com/getsentry/relay/releases/tag/26.6.0"
+    },
     "slipstream": {
       "version": "0.1.1",
       "gitref": "refs/tags/v0.1.1",
