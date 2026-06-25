@@ -133,3 +133,8 @@ prefix = "v"
 source = "github"
 github = "BYK/loreai"
 use_latest_release = true
+
+[sentry-relay]
+source = "github"
+github = "getsentry/relay"
+use_latest_release = true
