@@ -89,9 +89,9 @@
       "url": "https://github.com/openpubkey/opkssh/releases/tag/v0.15.0"
     },
     "paqet": {
-      "version": "1.0.0-alpha.19",
-      "gitref": "refs/tags/v1.0.0-alpha.19",
-      "url": "https://github.com/hanselime/paqet/releases/tag/v1.0.0-alpha.19"
+      "version": "1.0.0-alpha.20",
+      "gitref": "refs/tags/v1.0.0-alpha.20",
+      "url": "https://github.com/hanselime/paqet/releases/tag/v1.0.0-alpha.20"
     },
     "pi": {
       "version": "0.80.2",
