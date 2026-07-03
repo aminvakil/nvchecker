@@ -28,7 +28,7 @@
       "version": "1.5.0"
     },
     "prometheus-lts": {
-      "version": "3.5"
+      "version": "3.13"
     }
   }
 }
