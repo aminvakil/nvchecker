@@ -36,4 +36,4 @@ use_max_tag = true
 
 [prometheus-lts]
 source = "cmd"
-cmd = 'curl -s "https://raw.githubusercontent.com/prometheus/docs/refs/heads/main/docs/introduction/release-cycle.md" | grep "Supported" | awk "{print \$3}" | tr -cd "[:digit:]."'
+cmd = 'curl -s "https://raw.githubusercontent.com/prometheus/docs/refs/heads/main/docs/introduction/release-cycle.md" | grep "Supported" | tail -n 1 | awk "{print \$3}" | tr -cd "[:digit:]."'
