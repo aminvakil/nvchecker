@@ -14,7 +14,7 @@
       "version": "trixie-20260623"
     },
     "golang": {
-      "version": "1.26.4-alpine"
+      "version": "1.26.5-alpine"
     },
     "ubuntu22": {
       "version": "jammy-20260627"
