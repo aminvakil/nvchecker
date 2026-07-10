@@ -92,13 +92,18 @@ jobs:
           persist-credentials: false
 
       - name: Bump version
+        env:
+          OLD_VERSION: ${{ matrix.update.oldver }}
+          NEW_VERSION: ${{ matrix.update.newver }}
+          REPOSITORY: ${{ matrix.update.repository }}
+          DOCKERFILE_LOCATION: ${{ matrix.update.dockerfile_location }}
         run: |
-          before="${{ matrix.update.oldver }}"
-          after="${{ matrix.update.newver }}"
+          before="${OLD_VERSION}"
+          after="${NEW_VERSION}"
           commit_message="$before -> $after"
           printf 'commit_message=%s\n' "$commit_message" >> "$GITHUB_ENV"
-          sed -i "s/${before/\./\\.}$/$after/g" "${{ matrix.update.repository }}/${{ matrix.update.dockerfile_location }}"Dockerfile*
-          sed -i "s/${before/\./\\.} AS /$after AS /g" "${{ matrix.update.repository }}/${{ matrix.update.dockerfile_location }}"Dockerfile*
+          sed -i "s/${before/\./\\.}$/$after/g" "${REPOSITORY}/${DOCKERFILE_LOCATION}"Dockerfile*
+          sed -i "s/${before/\./\\.} AS /$after AS /g" "${REPOSITORY}/${DOCKERFILE_LOCATION}"Dockerfile*
 
       - uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
         id: generate-token
@@ -114,8 +119,9 @@ jobs:
           GH_REPO: ${{ github.repository_owner }}/${{ matrix.update.repository }}
           BRANCH_NAME: ${{ matrix.update.image }}
           PR_TITLE: Bump ${{ matrix.update.image }}
+          REPOSITORY: ${{ matrix.update.repository }}
         run: |
-          cd "${{ matrix.update.repository }}"
+          cd "${REPOSITORY}"
 
           if [ -z "$(git status --porcelain)" ]; then
             printf 'No changes to commit.\n'
