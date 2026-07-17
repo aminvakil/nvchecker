@@ -94,9 +94,9 @@
       "url": "https://github.com/hanselime/paqet/releases/tag/v1.0.0-alpha.20"
     },
     "pi": {
-      "version": "0.80.7",
-      "gitref": "refs/tags/v0.80.7",
-      "url": "https://github.com/earendil-works/pi/releases/tag/v0.80.7"
+      "version": "0.80.10",
+      "gitref": "refs/tags/v0.80.10",
+      "url": "https://github.com/earendil-works/pi/releases/tag/v0.80.10"
     },
     "sentry-relay": {
       "version": "26.7.0",
