@@ -5,7 +5,7 @@
       "version": "3.24.1"
     },
     "archlinux": {
-      "version": "base-20260712.0.555161"
+      "version": "base-20260719.0.558177"
     },
     "debian12": {
       "version": "bookworm-20260713"
