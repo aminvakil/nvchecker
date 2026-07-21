@@ -109,8 +109,8 @@
       "url": "https://github.com/Mygod/slipstream-rust/releases/tag/v0.1.1"
     },
     "spotdl": {
-      "version": "4.5.0",
-      "url": "https://pypi.org/project/spotdl/4.5.0/"
+      "version": "4.5.2",
+      "url": "https://pypi.org/project/spotdl/4.5.2/"
     },
     "xray": {
       "version": "26.3.27",
