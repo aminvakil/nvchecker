@@ -138,3 +138,7 @@ use_latest_release = true
 source = "github"
 github = "getsentry/relay"
 use_latest_release = true
+
+[codex-security]
+source = "npm"
+npm = "@openai/codex-security"
