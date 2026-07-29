@@ -36,6 +36,10 @@
       "gitref": "refs/tags/v0.60.5",
       "url": "https://github.com/google/cadvisor/releases/tag/v0.60.5"
     },
+    "codex-security": {
+      "version": "0.1.1",
+      "url": "https://www.npmjs.com/package/@openai/codex-security/v/0.1.1"
+    },
     "docker-bench-security": {
       "version": "1.6.1",
       "gitref": "refs/tags/v1.6.1",
