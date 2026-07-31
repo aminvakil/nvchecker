@@ -142,3 +142,8 @@ use_latest_release = true
 [codex-security]
 source = "npm"
 npm = "@openai/codex-security"
+
+[hadolint]
+source = "github"
+github = "hadolint/hadolint"
+use_latest_release = true
