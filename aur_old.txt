@@ -68,6 +68,11 @@
       "gitref": "refs/tags/v0.2.0",
       "url": "https://github.com/google/tsunami-security-scanner/releases/tag/v0.2.0"
     },
+    "hadolint": {
+      "version": "v2.15.1",
+      "gitref": "refs/tags/v2.15.1",
+      "url": "https://github.com/hadolint/hadolint/releases/tag/v2.15.1"
+    },
     "jmeter-plugins-manager": {
       "version": "1.12"
     },
