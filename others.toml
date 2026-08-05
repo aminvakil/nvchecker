@@ -43,3 +43,8 @@ source = "github"
 github = "IgorWarzocha/howaboua-pi-stuff"
 use_max_release = true
 include_regex = "@howaboua/pi-gippity-control.+"
+
+[mkinitcpio-systemd-extras]
+source = "github"
+github = "wolegis/mkinitcpio-systemd-extras"
+use_max_tag = true
