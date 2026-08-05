@@ -13,6 +13,12 @@
     "grafana_dashboard_1860": {
       "version": "45"
     },
+    "mkinitcpio-systemd-extras": {
+      "version": "v0.10.1",
+      "gitref": "refs/tags/v0.10.1",
+      "revision": "e03d55fae3309433012c06fc4be5b7341f2c0c19",
+      "url": "https://github.com/wolegis/mkinitcpio-systemd-extras/releases/tag/v0.10.1"
+    },
     "nginx-vod-module": {
       "version": "1.33",
       "gitref": "refs/tags/1.33",
