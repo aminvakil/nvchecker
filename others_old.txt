@@ -14,10 +14,10 @@
       "version": "45"
     },
     "mkinitcpio-systemd-extras": {
-      "version": "v0.10.1",
-      "gitref": "refs/tags/v0.10.1",
-      "revision": "e03d55fae3309433012c06fc4be5b7341f2c0c19",
-      "url": "https://github.com/wolegis/mkinitcpio-systemd-extras/releases/tag/v0.10.1"
+      "version": "v0.10.2",
+      "gitref": "refs/tags/v0.10.2",
+      "revision": "a39ecffb21baf0e64c4bb195f9a3f72a86be3c56",
+      "url": "https://github.com/wolegis/mkinitcpio-systemd-extras/releases/tag/v0.10.2"
     },
     "nginx-vod-module": {
       "version": "1.33",
