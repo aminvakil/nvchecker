@@ -34,9 +34,9 @@
       "version": "1.5.0"
     },
     "pi-gipptiy-control": {
-      "version": "@howaboua/pi-gippity-control@0.0.7",
-      "gitref": "refs/tags/@howaboua/pi-gippity-control@0.0.7",
-      "url": "https://github.com/IgorWarzocha/howaboua-pi-stuff/releases/tag/%40howaboua/pi-gippity-control%400.0.7"
+      "version": "@howaboua/pi-gippity-control@0.0.8",
+      "gitref": "refs/tags/@howaboua/pi-gippity-control@0.0.8",
+      "url": "https://github.com/IgorWarzocha/howaboua-pi-stuff/releases/tag/%40howaboua/pi-gippity-control%400.0.8"
     },
     "prometheus-lts": {
       "version": "3.13"
