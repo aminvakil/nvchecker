@@ -38,12 +38,6 @@ use_max_tag = true
 source = "cmd"
 cmd = 'curl -s "https://raw.githubusercontent.com/prometheus/docs/refs/heads/main/docs/introduction/release-cycle.md" | grep "Supported" | tail -n 1 | awk "{print \$3}" | tr -cd "[:digit:]."'
 
-[pi-gipptiy-control]
-source = "github"
-github = "IgorWarzocha/howaboua-pi-stuff"
-use_max_release = true
-include_regex = "@howaboua/pi-gippity-control.+"
-
 [mkinitcpio-systemd-extras]
 source = "github"
 github = "wolegis/mkinitcpio-systemd-extras"
