@@ -74,7 +74,7 @@
       "url": "https://github.com/hadolint/hadolint/releases/tag/v2.15.1"
     },
     "jmeter-plugins-manager": {
-      "version": "1.12"
+      "version": "2.0"
     },
     "loreai": {
       "version": "0.40.0",
