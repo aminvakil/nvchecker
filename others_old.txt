@@ -14,10 +14,10 @@
       "version": "45"
     },
     "mkinitcpio-systemd-extras": {
-      "version": "v0.10.1",
-      "gitref": "refs/tags/v0.10.1",
-      "revision": "e03d55fae3309433012c06fc4be5b7341f2c0c19",
-      "url": "https://github.com/wolegis/mkinitcpio-systemd-extras/releases/tag/v0.10.1"
+      "version": "v0.10.3",
+      "gitref": "refs/tags/v0.10.3",
+      "revision": "56a5c2ef7bb3ec7aac6dd921facbd9520ab0bac6",
+      "url": "https://github.com/wolegis/mkinitcpio-systemd-extras/releases/tag/v0.10.3"
     },
     "nginx-vod-module": {
       "version": "1.33",
@@ -32,11 +32,6 @@
     },
     "ocserv": {
       "version": "1.5.0"
-    },
-    "pi-gipptiy-control": {
-      "version": "@howaboua/pi-gippity-control@0.0.8",
-      "gitref": "refs/tags/@howaboua/pi-gippity-control@0.0.8",
-      "url": "https://github.com/IgorWarzocha/howaboua-pi-stuff/releases/tag/%40howaboua/pi-gippity-control%400.0.8"
     },
     "prometheus-lts": {
       "version": "3.13"
