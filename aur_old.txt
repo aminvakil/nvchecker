@@ -108,9 +108,10 @@
       "url": "https://github.com/earendil-works/pi/releases/tag/v0.84.2"
     },
     "sentry-relay": {
-      "version": "26.7.2",
-      "gitref": "refs/tags/26.7.2",
-      "url": "https://github.com/getsentry/relay/releases/tag/26.7.2"
+      "version": "26.8.0",
+      "gitref": "refs/tags/26.8.0",
+      "url": "https://github.com/getsentry/relay/releases/tag/26.8.0",
+      "creation_time": "2026-08-17T06:50:04Z"
     },
     "slipstream": {
       "version": "0.1.1",
