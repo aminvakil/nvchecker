@@ -86,11 +86,6 @@
       "gitref": "refs/tags/v1.9.36",
       "url": "https://github.com/therealaleph/MasterHttpRelayVPN-RUST/releases/tag/v1.9.36"
     },
-    "multi-git-status": {
-      "version": "2.3",
-      "gitref": "refs/tags/2.3",
-      "url": "https://github.com/fboender/multi-git-status/releases/tag/2.3"
-    },
     "opkssh": {
       "version": "0.16.0",
       "gitref": "refs/tags/v0.16.0",
@@ -104,9 +99,10 @@
       "creation_time": "2026-08-22T12:23:49Z"
     },
     "pi": {
-      "version": "0.84.2",
-      "gitref": "refs/tags/v0.84.2",
-      "url": "https://github.com/earendil-works/pi/releases/tag/v0.84.2"
+      "version": "0.84.3",
+      "gitref": "refs/tags/v0.84.3",
+      "url": "https://github.com/earendil-works/pi/releases/tag/v0.84.3",
+      "creation_time": "2026-08-24T11:09:57Z"
     },
     "sentry-relay": {
       "version": "26.8.0",
