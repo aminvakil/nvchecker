@@ -88,11 +88,6 @@ github = "google/cadvisor"
 use_latest_release = true
 prefix = "v"
 
-[multi-git-status]
-source = "github"
-github = "fboender/multi-git-status"
-use_latest_release = true
-
 [paqet]
 source = "github"
 github = "hanselime/paqet"
