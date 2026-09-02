@@ -83,9 +83,10 @@
       "url": "https://github.com/BYK/loreai/releases/tag/0.40.0"
     },
     "mhrv-rs": {
-      "version": "1.9.36",
-      "gitref": "refs/tags/v1.9.36",
-      "url": "https://github.com/therealaleph/MasterHttpRelayVPN-RUST/releases/tag/v1.9.36"
+      "version": "1.9.37",
+      "gitref": "refs/tags/v1.9.37",
+      "url": "https://github.com/therealaleph/MasterHttpRelayVPN-RUST/releases/tag/v1.9.37",
+      "creation_time": "2026-09-01T18:35:52Z"
     },
     "opkssh": {
       "version": "0.16.0",
