@@ -142,3 +142,8 @@ npm = "@openai/codex-security"
 source = "github"
 github = "hadolint/hadolint"
 use_latest_release = true
+
+[zg]
+source = "github"
+github = "zvec-ai/zvec-grep"
+use_latest_release = true
