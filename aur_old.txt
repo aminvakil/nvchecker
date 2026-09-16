@@ -107,10 +107,10 @@
       "creation_time": "2026-09-05T12:29:01Z"
     },
     "sentry-relay": {
-      "version": "26.8.0",
-      "gitref": "refs/tags/26.8.0",
-      "url": "https://github.com/getsentry/relay/releases/tag/26.8.0",
-      "creation_time": "2026-08-17T06:50:04Z"
+      "version": "26.9.0",
+      "gitref": "refs/tags/26.9.0",
+      "url": "https://github.com/getsentry/relay/releases/tag/26.9.0",
+      "creation_time": "2026-09-15T17:35:43Z"
     },
     "slipstream": {
       "version": "0.1.1",
