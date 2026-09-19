@@ -11,7 +11,7 @@
       "version": "bookworm-20260918"
     },
     "debian13": {
-      "version": "trixie-20260824"
+      "version": "trixie-20260918"
     },
     "golang": {
       "version": "1.26.8-alpine"
