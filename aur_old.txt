@@ -39,8 +39,8 @@
       "creation_time": "2026-09-18T22:43:39Z"
     },
     "codex-security": {
-      "version": "0.1.29",
-      "url": "https://www.npmjs.com/package/@openai/codex-security/v/0.1.29"
+      "version": "0.1.30",
+      "url": "https://www.npmjs.com/package/@openai/codex-security/v/0.1.30"
     },
     "docker-bench-security": {
       "version": "1.6.1",
