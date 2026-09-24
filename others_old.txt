@@ -8,7 +8,7 @@
       "version": "5"
     },
     "grafana_dashboard_15798": {
-      "version": "13"
+      "version": "16"
     },
     "grafana_dashboard_1860": {
       "version": "45"
