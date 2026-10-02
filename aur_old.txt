@@ -102,10 +102,10 @@
       "creation_time": "2026-08-22T12:23:49Z"
     },
     "pi": {
-      "version": "0.99.2",
-      "gitref": "refs/tags/v0.99.2",
-      "url": "https://github.com/earendil-works/pi/releases/tag/v0.99.2",
-      "creation_time": "2026-09-30T19:30:47Z"
+      "version": "1.0.0",
+      "gitref": "refs/tags/v1.0.0",
+      "url": "https://github.com/earendil-works/pi/releases/tag/v1.0.0",
+      "creation_time": "2026-10-01T19:20:55Z"
     },
     "sentry-relay": {
       "version": "26.9.0",
