@@ -8,7 +8,7 @@
       "version": "base-20261004.0.606936"
     },
     "debian12": {
-      "version": "bookworm-20260918"
+      "version": "bookworm-20261005"
     },
     "debian13": {
       "version": "trixie-20260918"
