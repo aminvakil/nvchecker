@@ -118,6 +118,11 @@
       "gitref": "refs/tags/v0.1.1",
       "url": "https://github.com/Mygod/slipstream-rust/releases/tag/v0.1.1"
     },
+    "spotapi": {
+      "version": "1.2.8",
+      "url": "https://pypi.org/project/spotapi/1.2.8/",
+      "creation_time": "2026-06-14T09:24:40.991155Z"
+    },
     "spotdl": {
       "version": "4.5.2",
       "url": "https://pypi.org/project/spotdl/4.5.2/"
