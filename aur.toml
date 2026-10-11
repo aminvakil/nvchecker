@@ -62,6 +62,10 @@ prefix = "v"
 source = "pypi"
 github = "spotdl"
 
+[spotapi]
+source = "pypi"
+pypi = "spotapi"
+
 [docker-bench-security]
 source = "github"
 github = "docker/docker-bench-security"
