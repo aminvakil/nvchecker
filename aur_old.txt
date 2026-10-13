@@ -84,10 +84,10 @@
       "url": "https://github.com/BYK/loreai/releases/tag/0.40.0"
     },
     "mhrv-rs": {
-      "version": "1.9.37",
-      "gitref": "refs/tags/v1.9.37",
-      "url": "https://github.com/therealaleph/MasterHttpRelayVPN-RUST/releases/tag/v1.9.37",
-      "creation_time": "2026-09-01T18:35:52Z"
+      "version": "1.9.38",
+      "gitref": "refs/tags/v1.9.38",
+      "url": "https://github.com/therealaleph/MasterHttpRelayVPN-RUST/releases/tag/v1.9.38",
+      "creation_time": "2026-10-12T18:33:58Z"
     },
     "opkssh": {
       "version": "0.17.0",
@@ -112,11 +112,6 @@
       "gitref": "refs/tags/26.9.0",
       "url": "https://github.com/getsentry/relay/releases/tag/26.9.0",
       "creation_time": "2026-09-15T17:35:43Z"
-    },
-    "slipstream": {
-      "version": "0.1.1",
-      "gitref": "refs/tags/v0.1.1",
-      "url": "https://github.com/Mygod/slipstream-rust/releases/tag/v0.1.1"
     },
     "spotapi": {
       "version": "1.2.8",
