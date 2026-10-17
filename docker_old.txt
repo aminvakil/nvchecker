@@ -23,7 +23,7 @@
       "version": "noble-20260930.1"
     },
     "ubuntu26": {
-      "version": "resolute-20260927"
+      "version": "resolute-20261006"
     }
   }
 }
