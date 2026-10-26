@@ -120,8 +120,9 @@
       "creation_time": "2026-06-14T09:24:40.991155Z"
     },
     "spotdl": {
-      "version": "4.5.2",
-      "url": "https://pypi.org/project/spotdl/4.5.2/"
+      "version": "4.6.0",
+      "url": "https://pypi.org/project/spotdl/4.6.0/",
+      "creation_time": "2026-10-26T03:51:32.109674Z"
     },
     "xray": {
       "version": "26.10.21",
