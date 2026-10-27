@@ -20,7 +20,7 @@
       "version": "jammy-20260930"
     },
     "ubuntu24": {
-      "version": "noble-20260930.1"
+      "version": "noble-20261024.1"
     },
     "ubuntu26": {
       "version": "resolute-20261024.1"
