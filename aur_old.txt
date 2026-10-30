@@ -91,10 +91,10 @@
       "creation_time": "2026-10-12T18:33:58Z"
     },
     "opkssh": {
-      "version": "0.19.1",
-      "gitref": "refs/tags/v0.19.1",
-      "revision": "d8590f3a49c698fdde2e34067c45938edd308348",
-      "url": "https://github.com/openpubkey/opkssh/releases/tag/v0.19.1"
+      "version": "0.19.2",
+      "gitref": "refs/tags/v0.19.2",
+      "revision": "9d0d51418e282313500b2affe39b2889529535fb",
+      "url": "https://github.com/openpubkey/opkssh/releases/tag/v0.19.2"
     },
     "paqet": {
       "version": "1.0.0-alpha.21",
