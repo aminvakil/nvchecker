@@ -125,10 +125,10 @@
       "creation_time": "2026-10-26T03:51:32.109674Z"
     },
     "xray": {
-      "version": "26.10.29",
-      "gitref": "refs/tags/v26.10.29",
-      "url": "https://github.com/XTLS/Xray-core/releases/tag/v26.10.29",
-      "creation_time": "2026-10-29T08:43:27Z"
+      "version": "26.10.31",
+      "gitref": "refs/tags/v26.10.31",
+      "url": "https://github.com/XTLS/Xray-core/releases/tag/v26.10.31",
+      "creation_time": "2026-10-31T13:37:42Z"
     },
     "xssmap": {
       "version": "20200305.152024",
