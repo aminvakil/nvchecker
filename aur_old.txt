@@ -109,10 +109,10 @@
       "creation_time": "2026-10-21T22:49:48Z"
     },
     "sentry-relay": {
-      "version": "26.10.0",
-      "gitref": "refs/tags/26.10.0",
-      "url": "https://github.com/getsentry/relay/releases/tag/26.10.0",
-      "creation_time": "2026-10-15T17:36:06Z"
+      "version": "26.10.1",
+      "gitref": "refs/tags/26.10.1",
+      "url": "https://github.com/getsentry/relay/releases/tag/26.10.1",
+      "creation_time": "2026-10-28T21:01:37Z"
     },
     "spotapi": {
       "version": "1.2.8",
