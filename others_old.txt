@@ -8,7 +8,7 @@
       "version": "5"
     },
     "grafana_dashboard_1860": {
-      "version": "45"
+      "version": "46"
     },
     "mkinitcpio-systemd-extras": {
       "version": "v0.10.3",
