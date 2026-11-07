@@ -11,9 +11,10 @@
       "version": "37.0.0"
     },
     "anteon": {
-      "version": "2.6.0",
-      "gitref": "refs/tags/selfhosted-2.6.0",
-      "url": "https://github.com/getanteon/anteon/releases/tag/selfhosted-2.6.0"
+      "version": "v2.4.0",
+      "gitref": "refs/tags/v2.4.0",
+      "url": "https://github.com/getanteon/anteon/releases/tag/v2.4.0",
+      "creation_time": "2026-11-06T16:04:32Z"
     },
     "assetfinder": {
       "version": "0.1.1",
