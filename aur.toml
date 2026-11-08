@@ -50,7 +50,7 @@ prefix = "v"
 source = "github"
 github = "getanteon/anteon"
 use_latest_release = true
-prefix = "selfhosted-"
+prefix = "v"
 
 [dstp]
 source = "github"
