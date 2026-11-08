@@ -25,11 +25,6 @@ cmd = "curl -s https://grafana.com/api/dashboards/12309/revisions | jq -r '.item
 source = "cmd"
 cmd = "curl 'https://api.cloudflare.com/client/v4/ips' -s | jq -r '.result.etag'"
 
-[nginx-vod-module]
-source = "github"
-github = "kaltura/nginx-vod-module"
-use_max_tag = true
-
 [prometheus-lts]
 source = "regex"
 url = "https://prometheus.io/docs/introduction/release-cycle/"
