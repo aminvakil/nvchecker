@@ -66,6 +66,10 @@ github = "spotdl"
 source = "pypi"
 pypi = "spotapi"
 
+[spotipyFree]
+source = "pypi"
+pypi = "spotipyFree"
+
 [docker-bench-security]
 source = "github"
 github = "docker/docker-bench-security"
