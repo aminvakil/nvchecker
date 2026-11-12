@@ -124,6 +124,11 @@
       "url": "https://pypi.org/project/spotdl/4.6.0/",
       "creation_time": "2026-10-26T03:51:32.109674Z"
     },
+    "spotipyFree": {
+      "version": "1.9.14",
+      "url": "https://pypi.org/project/spotipyFree/1.9.14/",
+      "creation_time": "2026-08-02T20:20:09.664815Z"
+    },
     "xray": {
       "version": "26.11.9",
       "gitref": "refs/tags/v26.11.9",
