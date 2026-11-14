@@ -11,16 +11,10 @@
       "version": "46"
     },
     "mkinitcpio-systemd-extras": {
-      "version": "v0.10.3",
-      "gitref": "refs/tags/v0.10.3",
-      "revision": "56a5c2ef7bb3ec7aac6dd921facbd9520ab0bac6",
-      "url": "https://github.com/wolegis/mkinitcpio-systemd-extras/releases/tag/v0.10.3"
-    },
-    "nginx-vod-module": {
-      "version": "1.33",
-      "gitref": "refs/tags/1.33",
-      "revision": "1750eb08021e362859887fdfe842ed6a4997f576",
-      "url": "https://github.com/kaltura/nginx-vod-module/releases/tag/1.33"
+      "version": "v0.10.4",
+      "gitref": "refs/tags/v0.10.4",
+      "revision": "82e4480ec7bf7b2558ce86ba946404d63a479c79",
+      "url": "https://github.com/wolegis/mkinitcpio-systemd-extras/releases/tag/v0.10.4"
     },
     "node_exporter": {
       "version": "v1.12.1",
