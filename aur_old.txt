@@ -116,9 +116,9 @@
       "creation_time": "2026-10-28T21:01:37Z"
     },
     "spotapi": {
-      "version": "2.0.0",
-      "url": "https://pypi.org/project/spotapi/2.0.0/",
-      "creation_time": "2026-11-11T03:48:50.730144Z"
+      "version": "2.1.0",
+      "url": "https://pypi.org/project/spotapi/2.1.0/",
+      "creation_time": "2026-11-13T22:53:16.827409Z"
     },
     "spotdl": {
       "version": "4.6.0",
