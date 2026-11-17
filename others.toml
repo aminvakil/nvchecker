@@ -34,3 +34,11 @@ regex = '<strong>Prometheus ([\d.]+)</strong>'
 source = "github"
 github = "wolegis/mkinitcpio-systemd-extras"
 use_max_tag = true
+
+[pi-codex-imagegen]
+source = "npm"
+npm = "@howaboua/pi-codex-imagegen"
+
+[pi-gippity-control]
+source = "npm"
+npm = "@howaboua/pi-gippity-control"
