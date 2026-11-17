@@ -24,6 +24,10 @@
     "ocserv": {
       "version": "1.6.0"
     },
+    "pi-codex-imagegen": {
+      "version": "0.0.14",
+      "url": "https://www.npmjs.com/package/@howaboua/pi-codex-imagegen/v/0.0.14"
+    },
     "prometheus-lts": {
       "version": "3.13"
     }
