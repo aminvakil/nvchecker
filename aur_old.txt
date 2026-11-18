@@ -142,10 +142,10 @@
       "url": "https://github.com/secdec/xssmap/commit/1a208b11fdcfdd413d1cf76a6c8fc570f4b802d2"
     },
     "zg": {
-      "version": "v0.3.0",
-      "gitref": "refs/tags/v0.3.0",
-      "url": "https://github.com/zvec-ai/zvec-grep/releases/tag/v0.3.0",
-      "creation_time": "2026-11-03T07:02:12Z"
+      "version": "v0.3.1",
+      "gitref": "refs/tags/v0.3.1",
+      "url": "https://github.com/zvec-ai/zvec-grep/releases/tag/v0.3.1",
+      "creation_time": "2026-11-18T07:03:31Z"
     }
   }
 }
