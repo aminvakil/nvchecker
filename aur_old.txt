@@ -34,10 +34,10 @@
       "url": "https://github.com/coreos/butane/releases/tag/v0.29.0"
     },
     "cadvisor": {
-      "version": "0.61.0",
-      "gitref": "refs/tags/v0.61.0",
-      "url": "https://github.com/google/cadvisor/releases/tag/v0.61.0",
-      "creation_time": "2026-11-16T14:23:55Z"
+      "version": "0.61.1",
+      "gitref": "refs/tags/v0.61.1",
+      "url": "https://github.com/google/cadvisor/releases/tag/v0.61.1",
+      "creation_time": "2026-11-18T20:46:56Z"
     },
     "codex-security": {
       "version": "0.10.0",
