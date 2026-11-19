@@ -149,3 +149,9 @@ use_latest_release = true
 source = "github"
 github = "zvec-ai/zvec-grep"
 use_latest_release = true
+
+[tvpipe]
+source = "github"
+github = "mitsuhiko/tvpipe"
+use_latest_release = true
+prefix = "v"
