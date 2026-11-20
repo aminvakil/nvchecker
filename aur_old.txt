@@ -130,6 +130,12 @@
       "url": "https://pypi.org/project/spotipyFree/1.9.14/",
       "creation_time": "2026-08-02T20:20:09.664815Z"
     },
+    "tvpipe": {
+      "version": "0.2.0",
+      "gitref": "refs/tags/v0.2.0",
+      "url": "https://github.com/mitsuhiko/tvpipe/releases/tag/v0.2.0",
+      "creation_time": "2026-11-19T02:32:26Z"
+    },
     "xray": {
       "version": "26.11.9",
       "gitref": "refs/tags/v26.11.9",
