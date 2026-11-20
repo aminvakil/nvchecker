@@ -17,10 +17,10 @@
       "url": "https://github.com/wolegis/mkinitcpio-systemd-extras/releases/tag/v0.10.4"
     },
     "node_exporter": {
-      "version": "v1.13.0",
-      "gitref": "refs/tags/v1.13.0",
-      "url": "https://github.com/prometheus/node_exporter/releases/tag/v1.13.0",
-      "creation_time": "2026-11-18T12:16:52Z"
+      "version": "v1.13.1",
+      "gitref": "refs/tags/v1.13.1",
+      "url": "https://github.com/prometheus/node_exporter/releases/tag/v1.13.1",
+      "creation_time": "2026-11-19T20:29:54Z"
     },
     "ocserv": {
       "version": "1.6.0"
