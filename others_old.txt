@@ -30,8 +30,8 @@
       "url": "https://www.npmjs.com/package/@howaboua/pi-codex-imagegen/v/0.0.16"
     },
     "pi-gippity-control": {
-      "version": "0.0.32",
-      "url": "https://www.npmjs.com/package/@howaboua/pi-gippity-control/v/0.0.32"
+      "version": "0.0.33",
+      "url": "https://www.npmjs.com/package/@howaboua/pi-gippity-control/v/0.0.33"
     },
     "prometheus-lts": {
       "version": "3.13"
