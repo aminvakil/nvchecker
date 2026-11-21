@@ -26,8 +26,8 @@
       "version": "1.6.0"
     },
     "pi-codex-imagegen": {
-      "version": "0.0.15",
-      "url": "https://www.npmjs.com/package/@howaboua/pi-codex-imagegen/v/0.0.15"
+      "version": "0.0.16",
+      "url": "https://www.npmjs.com/package/@howaboua/pi-codex-imagegen/v/0.0.16"
     },
     "pi-gippity-control": {
       "version": "0.0.32",
