@@ -115,6 +115,12 @@
       "url": "https://github.com/getsentry/relay/releases/tag/26.11.0",
       "creation_time": "2026-11-15T17:36:11Z"
     },
+    "skirk": {
+      "version": "0.1.59",
+      "gitref": "refs/tags/v0.1.59",
+      "url": "https://github.com/ShahabSL/Skirk/releases/tag/v0.1.59",
+      "creation_time": "2026-11-22T04:23:45Z"
+    },
     "spotapi": {
       "version": "2.1.0",
       "url": "https://pypi.org/project/spotapi/2.1.0/",
