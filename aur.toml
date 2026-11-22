@@ -155,3 +155,9 @@ source = "github"
 github = "mitsuhiko/tvpipe"
 use_latest_release = true
 prefix = "v"
+
+[skirk]
+source = "github"
+github = "ShahabSL/Skirk"
+use_latest_release = true
+prefix = "v"
