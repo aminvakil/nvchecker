@@ -116,10 +116,10 @@
       "creation_time": "2026-11-15T17:36:11Z"
     },
     "skirk": {
-      "version": "0.1.59",
-      "gitref": "refs/tags/v0.1.59",
-      "url": "https://github.com/ShahabSL/Skirk/releases/tag/v0.1.59",
-      "creation_time": "2026-11-22T04:23:45Z"
+      "version": "0.1.60",
+      "gitref": "refs/tags/v0.1.60",
+      "url": "https://github.com/ShahabSL/Skirk/releases/tag/v0.1.60",
+      "creation_time": "2026-11-22T19:29:58Z"
     },
     "spotapi": {
       "version": "2.1.3",
