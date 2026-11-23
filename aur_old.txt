@@ -137,10 +137,10 @@
       "creation_time": "2026-11-23T02:11:07.993653Z"
     },
     "tvpipe": {
-      "version": "0.3.0",
-      "gitref": "refs/tags/v0.3.0",
-      "url": "https://github.com/mitsuhiko/tvpipe/releases/tag/v0.3.0",
-      "creation_time": "2026-11-20T15:29:30Z"
+      "version": "0.4.0",
+      "gitref": "refs/tags/v0.4.0",
+      "url": "https://github.com/mitsuhiko/tvpipe/releases/tag/v0.4.0",
+      "creation_time": "2026-11-22T20:25:03Z"
     },
     "xray": {
       "version": "26.11.9",
