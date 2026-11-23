@@ -132,9 +132,9 @@
       "creation_time": "2026-10-26T03:51:32.109674Z"
     },
     "spotipyFree": {
-      "version": "1.9.14",
-      "url": "https://pypi.org/project/spotipyFree/1.9.14/",
-      "creation_time": "2026-08-02T20:20:09.664815Z"
+      "version": "1.9.15",
+      "url": "https://pypi.org/project/spotipyFree/1.9.15/",
+      "creation_time": "2026-11-23T02:11:07.993653Z"
     },
     "tvpipe": {
       "version": "0.3.0",
