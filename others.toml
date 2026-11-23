@@ -42,3 +42,9 @@ npm = "@howaboua/pi-codex-imagegen"
 [pi-gippity-control]
 source = "npm"
 npm = "@howaboua/pi-gippity-control"
+
+[gondolin]
+source = "github"
+github = "earendil-works/gondolin"
+use_latest_release = true
+prefix = "v"
